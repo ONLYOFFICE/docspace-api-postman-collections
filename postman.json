@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "4.0.0",
+		"version": "3.6.0",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -5104,6 +5104,12 @@
         "disabled": true
         },
         {
+        "key": "encemail",
+        "value": "some text",
+        "description": "The user encrypted email address.",
+        "disabled": true
+        },
+        {
         "key": "culture",
         "value": "some text",
         "description": "Culture",
@@ -7543,10 +7549,10 @@
 			"item": [
 				{
     "name": "/api/2.0/files/logos",
-                "description": "",
+                "description": "Uploads a temporary image to create a room logo.",
                  "item": [
                             {
-                                "name": "uploadRoomLogo",
+                                "name": "Upload a room logo image",
                                 "request": {
     "method": "POST",
     "header": [
@@ -7588,7 +7594,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Uploads a temporary image to create a room logo."
 }
                                 ,"response": [
                             ]
@@ -7597,10 +7603,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms",
-                "description": "",
+                "description": "Creates a room in the Rooms section.",
                  "item": [
                             {
-                                "name": "createRoom",
+                                "name": "Create a room",
                                 "request": {
     "method": "POST",
     "header": [
@@ -7642,7 +7648,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Creates a room in the Rooms section."
 }
                                 ,"response": [
                             ]
@@ -7651,10 +7657,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms",
-                "description": "",
+                "description": "Returns the contents of the Rooms section by the parameters specified in the request.",
                  "item": [
                             {
-                                "name": "getRoomsFolder",
+                                "name": "Get rooms",
                                 "request": {
     "method": "GET",
     "header": [
@@ -7780,7 +7786,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the contents of the Rooms section by the parameters specified in the request."
 }
                                 ,"response": [
                             ]
@@ -7789,10 +7795,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/:id",
-                "description": "",
+                "description": "Removes a room with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "deleteRoom",
+                                "name": "Remove a room",
                                 "request": {
     "method": "DELETE",
     "header": [
@@ -7840,7 +7846,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Removes a room with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -7849,10 +7855,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/:id",
-                "description": "",
+                "description": "Returns the room information.",
                  "item": [
                             {
-                                "name": "getRoomInfo",
+                                "name": "Get room information",
                                 "request": {
     "method": "GET",
     "header": [
@@ -7894,7 +7900,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns the room information."
 }
                                 ,"response": [
                             ]
@@ -7903,10 +7909,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/:id",
-                "description": "",
+                "description": "Updates a room with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "updateRoom",
+                                "name": "Update a room",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -7954,7 +7960,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Updates a room with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -7963,10 +7969,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/:id/archive",
-                "description": "",
+                "description": "Moves a room with the ID specified in the request to the Archive section.",
                  "item": [
                             {
-                                "name": "archiveRoom",
+                                "name": "Archive a room",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -8015,7 +8021,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Moves a room with the ID specified in the request to the Archive section."
 }
                                 ,"response": [
                             ]
@@ -8024,10 +8030,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/:id/cover",
-                "description": "",
+                "description": "Changes a cover of a room with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "changeRoomCover",
+                                "name": "Change the room cover",
                                 "request": {
     "method": "POST",
     "header": [
@@ -8076,7 +8082,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Changes a cover of a room with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -8085,10 +8091,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/:id/indexexport",
-                "description": "",
+                "description": "Starts the index export of a room with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "startRoomIndexExport",
+                                "name": "Start the room index export",
                                 "request": {
     "method": "POST",
     "header": [
@@ -8131,7 +8137,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Starts the index export of a room with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -8140,10 +8146,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/:id/link",
-                "description": "",
+                "description": "Returns the primary external link of the room with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "getRoomsPrimaryExternalLink",
+                                "name": "Get the room primary external link",
                                 "request": {
     "method": "GET",
     "header": [
@@ -8186,7 +8192,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns the primary external link of the room with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -8195,10 +8201,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/:id/links",
-                "description": "",
+                "description": "Returns the links of the room with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "getRoomLinks",
+                                "name": "Get the room links",
                                 "request": {
     "method": "GET",
     "header": [
@@ -8247,7 +8253,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the links of the room with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -8256,10 +8262,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/:id/links",
-                "description": "",
+                "description": "Sets the room external or invitation link with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "setRoomLink",
+                                "name": "Set the room external or invitation link",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -8308,7 +8314,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Sets the room external or invitation link with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -8317,10 +8323,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/:id/logo",
-                "description": "",
+                "description": "Creates a logo for a room with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "createRoomLogo",
+                                "name": "Create a room logo",
                                 "request": {
     "method": "POST",
     "header": [
@@ -8369,7 +8375,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Creates a logo for a room with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -8378,10 +8384,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/:id/logo",
-                "description": "",
+                "description": "Removes a logo from a room with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "deleteRoomLogo",
+                                "name": "Remove a room logo",
                                 "request": {
     "method": "DELETE",
     "header": [
@@ -8424,7 +8430,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Removes a logo from a room with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -8433,10 +8439,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/:id/news",
-                "description": "",
+                "description": "Returns a list of all the new items from a room with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "getNewRoomItems",
+                                "name": "Get the new room items",
                                 "request": {
     "method": "GET",
     "header": [
@@ -8479,7 +8485,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns a list of all the new items from a room with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -8488,10 +8494,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/:id/pin",
-                "description": "",
+                "description": "Pins a room with the ID specified in the request to the top of the list.",
                  "item": [
                             {
-                                "name": "pinRoom",
+                                "name": "Pin a room",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -8534,7 +8540,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Pins a room with the ID specified in the request to the top of the list."
 }
                                 ,"response": [
                             ]
@@ -8543,10 +8549,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/:id/reorder",
-                "description": "",
+                "description": "Reorders the room with ID specified in the request.",
                  "item": [
                             {
-                                "name": "reorderRoom",
+                                "name": "Reorder the room",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -8589,7 +8595,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Reorders the room with ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -8598,10 +8604,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/:id/resend",
-                "description": "",
+                "description": "Resends the email invitations to a room with the ID specified in the request to the selected users.",
                  "item": [
                             {
-                                "name": "resendEmailInvitations",
+                                "name": "Resend the room invitations",
                                 "request": {
     "method": "POST",
     "header": [
@@ -8644,7 +8650,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Resends the email invitations to a room with the ID specified in the request to the selected users."
 }
                                 ,"response": [
                             ]
@@ -8653,10 +8659,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/:id/share",
-                "description": "",
+                "description": "Returns the access rights of a room with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "getRoomSecurityInfo",
+                                "name": "Get the room access rights",
                                 "request": {
     "method": "GET",
     "header": [
@@ -8723,7 +8729,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the access rights of a room with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -8732,10 +8738,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/:id/share",
-                "description": "",
+                "description": "Sets the access rights to the room with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "setRoomSecurity",
+                                "name": "Set the room access rights",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -8784,7 +8790,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Sets the access rights to the room with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -8793,10 +8799,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/:id/tags",
-                "description": "",
+                "description": "Adds the tags to a room with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "addRoomTags",
+                                "name": "Add the room tags",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -8845,7 +8851,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Adds the tags to a room with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -8854,10 +8860,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/:id/tags",
-                "description": "",
+                "description": "Removes the tags from a room with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "deleteRoomTags",
+                                "name": "Remove the room tags",
                                 "request": {
     "method": "DELETE",
     "header": [
@@ -8906,7 +8912,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Removes the tags from a room with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -8915,10 +8921,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/:id/unarchive",
-                "description": "",
+                "description": "Moves a room with the ID specified in the request from the Archive section to the Rooms section.",
                  "item": [
                             {
-                                "name": "unarchiveRoom",
+                                "name": "Unarchive a room",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -8967,7 +8973,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Moves a room with the ID specified in the request from the Archive section to the Rooms section."
 }
                                 ,"response": [
                             ]
@@ -8976,10 +8982,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/:id/unpin",
-                "description": "",
+                "description": "Unpins a room with the ID specified in the request from the top of the list.",
                  "item": [
                             {
-                                "name": "unpinRoom",
+                                "name": "Unpin a room",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -9022,7 +9028,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Unpins a room with the ID specified in the request from the top of the list."
 }
                                 ,"response": [
                             ]
@@ -9031,10 +9037,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/covers",
-                "description": "",
+                "description": "Returns a list of all covers.",
                  "item": [
                             {
-                                "name": "getRoomCovers",
+                                "name": "Get covers",
                                 "request": {
     "method": "GET",
     "header": [
@@ -9071,7 +9077,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns a list of all covers."
 }
                                 ,"response": [
                             ]
@@ -9080,10 +9086,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/fromtemplate",
-                "description": "",
+                "description": "Creates a room in the Rooms section based on the template.",
                  "item": [
                             {
-                                "name": "createRoomFromTemplate",
+                                "name": "Create a room from the template",
                                 "request": {
     "method": "POST",
     "header": [
@@ -9126,7 +9132,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Creates a room in the Rooms section based on the template."
 }
                                 ,"response": [
                             ]
@@ -9135,10 +9141,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/fromtemplate/status",
-                "description": "",
+                "description": "Returns the progress of creating a room from the template.",
                  "item": [
                             {
-                                "name": "getRoomCreatingStatus",
+                                "name": "Get the room creation progress",
                                 "request": {
     "method": "GET",
     "header": [
@@ -9176,7 +9182,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns the progress of creating a room from the template."
 }
                                 ,"response": [
                             ]
@@ -9185,10 +9191,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/indexexport",
-                "description": "",
+                "description": "Returns the room index export.",
                  "item": [
                             {
-                                "name": "getRoomIndexExport",
+                                "name": "Get the room index export",
                                 "request": {
     "method": "GET",
     "header": [
@@ -9225,7 +9231,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns the room index export."
 }
                                 ,"response": [
                             ]
@@ -9234,10 +9240,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/indexexport",
-                "description": "",
+                "description": "Terminates the room index export.",
                  "item": [
                             {
-                                "name": "terminateRoomIndexExport",
+                                "name": "Terminate the room index export",
                                 "request": {
     "method": "DELETE",
     "header": [
@@ -9268,7 +9274,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Terminates the room index export."
 }
                                 ,"response": [
                             ]
@@ -9277,10 +9283,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/news",
-                "description": "",
+                "description": "Returns the room new items.",
                  "item": [
                             {
-                                "name": "getRoomsNewItems",
+                                "name": "Get the room new items",
                                 "request": {
     "method": "GET",
     "header": [
@@ -9317,7 +9323,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns the room new items."
 }
                                 ,"response": [
                             ]
@@ -9326,10 +9332,10 @@
                         },
 				{
     "name": "/api/2.0/files/rooms/thirdparty/:id",
-                "description": "",
+                "description": "Creates a room in the Rooms section stored in a third-party storage.",
                  "item": [
                             {
-                                "name": "createRoomThirdParty",
+                                "name": "Create a third-party room",
                                 "request": {
     "method": "POST",
     "header": [
@@ -9378,7 +9384,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Creates a room in the Rooms section stored in a third-party storage."
 }
                                 ,"response": [
                             ]
@@ -9387,10 +9393,10 @@
                         },
 				{
     "name": "/api/2.0/files/roomtemplate",
-                "description": "",
+                "description": "Starts creating the room template.",
                  "item": [
                             {
-                                "name": "createRoomTemplate",
+                                "name": "Start creating room template",
                                 "request": {
     "method": "POST",
     "header": [
@@ -9432,7 +9438,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Starts creating the room template."
 }
                                 ,"response": [
                             ]
@@ -9441,10 +9447,10 @@
                         },
 				{
     "name": "/api/2.0/files/roomtemplate/:id/public",
-                "description": "",
+                "description": "Returns the public settings of the room template with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "getPublicSettings",
+                                "name": "Get public settings",
                                 "request": {
     "method": "GET",
     "header": [
@@ -9487,7 +9493,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns the public settings of the room template with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -9496,10 +9502,10 @@
                         },
 				{
     "name": "/api/2.0/files/roomtemplate/public",
-                "description": "",
+                "description": "Sets the public settings for the room template with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "setPublicSettings",
+                                "name": "Set public settings",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -9536,7 +9542,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Sets the public settings for the room template with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -9545,10 +9551,10 @@
                         },
 				{
     "name": "/api/2.0/files/roomtemplate/status",
-                "description": "",
+                "description": "Returns the progress status of the room template creation process.",
                  "item": [
                             {
-                                "name": "getRoomTemplateCreatingStatus",
+                                "name": "Get status of room template creation",
                                 "request": {
     "method": "GET",
     "header": [
@@ -9585,7 +9591,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns the progress status of the room template creation process."
 }
                                 ,"response": [
                             ]
@@ -9594,10 +9600,10 @@
                         },
 				{
     "name": "/api/2.0/files/tags",
-                "description": "",
+                "description": "Creates a custom room tag with the parameters specified in the request.",
                  "item": [
                             {
-                                "name": "createRoomTag",
+                                "name": "Create a room tag",
                                 "request": {
     "method": "POST",
     "header": [
@@ -9639,7 +9645,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Creates a custom room tag with the parameters specified in the request."
 }
                                 ,"response": [
                             ]
@@ -9648,10 +9654,10 @@
                         },
 				{
     "name": "/api/2.0/files/tags",
-                "description": "",
+                "description": "Deletes a bunch of custom room tags specified in the request.",
                  "item": [
                             {
-                                "name": "deleteCustomTags",
+                                "name": "Delete the custom room tags",
                                 "request": {
     "method": "DELETE",
     "header": [
@@ -9687,7 +9693,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Deletes a bunch of custom room tags specified in the request."
 }
                                 ,"response": [
                             ]
@@ -9696,10 +9702,10 @@
                         },
 				{
     "name": "/api/2.0/files/tags",
-                "description": "",
+                "description": "Returns a list of custom room tags.",
                  "item": [
                             {
-                                "name": "getRoomTagsInfo",
+                                "name": "Get the room tags",
                                 "request": {
     "method": "GET",
     "header": [
@@ -9753,7 +9759,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns a list of custom room tags."
 }
                                 ,"response": [
                             ]
@@ -13591,10 +13597,10 @@
 					"item": [
 						{
     "name": "/api/2.0/files/thirdparty",
-                "description": "",
+                "description": "Returns a list of all the connected third-party accounts.",
                  "item": [
                             {
-                                "name": "getThirdPartyAccounts",
+                                "name": "Get the third-party accounts",
                                 "request": {
     "method": "GET",
     "header": [
@@ -13630,7 +13636,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns a list of all the connected third-party accounts."
 }
                                 ,"response": [
                             ]
@@ -13639,10 +13645,10 @@
                         },
 						{
     "name": "/api/2.0/files/thirdparty",
-                "description": "",
+                "description": "Saves the third-party storage service account. For WebDav, Yandex, kDrive and SharePoint, the login and password are used for authentication. For other providers, the authentication is performed using a token received via OAuth 2.0.   **Note**: List of provider keys: DropboxV2, Box, WebDav, Yandex, OneDrive, SharePoint, GoogleDrive, kDrive.",
                  "item": [
                             {
-                                "name": "saveThirdParty",
+                                "name": "Save a third-party account",
                                 "request": {
     "method": "POST",
     "header": [
@@ -13684,7 +13690,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Saves the third-party storage service account. For WebDav, Yandex, kDrive and SharePoint, the login and password are used for authentication. For other providers, the authentication is performed using a token received via OAuth 2.0.   **Note**: List of provider keys: DropboxV2, Box, WebDav, Yandex, OneDrive, SharePoint, GoogleDrive, kDrive."
 }
                                 ,"response": [
                             ]
@@ -13693,10 +13699,10 @@
                         },
 						{
     "name": "/api/2.0/files/thirdparty/:providerId",
-                "description": "",
+                "description": "Removes the third-party storage service account with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "deleteThirdParty",
+                                "name": "Remove a third-party account",
                                 "request": {
     "method": "DELETE",
     "header": [
@@ -13738,7 +13744,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Removes the third-party storage service account with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -13747,10 +13753,10 @@
                         },
 						{
     "name": "/api/2.0/files/thirdparty/backup",
-                "description": "",
+                "description": "Returns a backup of the connected third-party account.",
                  "item": [
                             {
-                                "name": "getBackupThirdPartyAccount",
+                                "name": "Get a third-party account backup",
                                 "request": {
     "method": "GET",
     "header": [
@@ -13787,7 +13793,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns a backup of the connected third-party account."
 }
                                 ,"response": [
                             ]
@@ -13796,10 +13802,10 @@
                         },
 						{
     "name": "/api/2.0/files/thirdparty/backup",
-                "description": "",
+                "description": "Saves a backup of the connected third-party account.   **Note**: List of provider keys: DropboxV2, Box, WebDav, Yandex, OneDrive, SharePoint, GoogleDrive, kDrive.",
                  "item": [
                             {
-                                "name": "saveThirdPartyBackup",
+                                "name": "Save a third-party account backup",
                                 "request": {
     "method": "POST",
     "header": [
@@ -13842,7 +13848,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Saves a backup of the connected third-party account.   **Note**: List of provider keys: DropboxV2, Box, WebDav, Yandex, OneDrive, SharePoint, GoogleDrive, kDrive."
 }
                                 ,"response": [
                             ]
@@ -13851,10 +13857,10 @@
                         },
 						{
     "name": "/api/2.0/files/thirdparty/capabilities",
-                "description": "",
+                "description": "Returns the list of the available providers.   **Note**: Available provider keys: DropboxV2, Box, WebDav, Yandex, OneDrive, SharePoint, GoogleDrive, kDrive.",
                  "item": [
                             {
-                                "name": "getCapabilities",
+                                "name": "Get providers",
                                 "request": {
     "method": "GET",
     "header": [
@@ -13891,7 +13897,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns the list of the available providers.   **Note**: Available provider keys: DropboxV2, Box, WebDav, Yandex, OneDrive, SharePoint, GoogleDrive, kDrive."
 }
                                 ,"response": [
                             ]
@@ -13900,10 +13906,10 @@
                         },
 						{
     "name": "/api/2.0/files/thirdparty/common",
-                "description": "",
+                "description": "Returns a list of the third-party services connected to the Common section.",
                  "item": [
                             {
-                                "name": "getCommonThirdPartyFolders",
+                                "name": "Get the common third-party services",
                                 "request": {
     "method": "GET",
     "header": [
@@ -13940,7 +13946,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns a list of the third-party services connected to the Common section."
 }
                                 ,"response": [
                             ]
@@ -13949,10 +13955,10 @@
                         },
 						{
     "name": "/api/2.0/files/thirdparty/providers",
-                "description": "",
+                "description": "Returns a list of all providers.   **Note**: Available provider keys: Dropbox, Box, WebDav, OneDrive, GoogleDrive, kDrive, ownCloud, Nextcloud.",
                  "item": [
                             {
-                                "name": "getAllProviders",
+                                "name": "Get all providers",
                                 "request": {
     "method": "GET",
     "header": [
@@ -13987,9 +13993,15 @@
     "variable": [
     ],
     "query": [
+        {
+        "key": "excludewebdav",
+        "value": "true",
+        "description": "Specifies whether WebDAV resources should be excluded from the result..",
+        "disabled": true
+        }
     ]
     },
-    "description": ""
+    "description": "Returns a list of all providers.   **Note**: Available provider keys: Dropbox, Box, WebDav, OneDrive, GoogleDrive, kDrive, ownCloud, Nextcloud."
 }
                                 ,"response": [
                             ]
@@ -14003,10 +14015,10 @@
 					"item": [
 						{
     "name": "/api/2.0/files/rooms/resetquota",
-                "description": "",
+                "description": "Resets the quota limit for the rooms with the IDs specified in the request.",
                  "item": [
                             {
-                                "name": "resetRoomQuota",
+                                "name": "Reset the room quota limit",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -14049,7 +14061,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Resets the quota limit for the rooms with the IDs specified in the request."
 }
                                 ,"response": [
                             ]
@@ -14058,10 +14070,10 @@
                         },
 						{
     "name": "/api/2.0/files/rooms/roomquota",
-                "description": "",
+                "description": "Changes the quota limit for the rooms with the IDs specified in the request.",
                  "item": [
                             {
-                                "name": "updateRoomsQuota",
+                                "name": "Change the room quota limit",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -14104,7 +14116,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Changes the quota limit for the rooms with the IDs specified in the request."
 }
                                 ,"response": [
                             ]
@@ -14118,10 +14130,10 @@
 					"item": [
 						{
     "name": "/api/2.0/files/file/:fileId/group/:groupId/share",
-                "description": "",
+                "description": "Returns the group members with their file security information.",
                  "item": [
                             {
-                                "name": "getGroupsMembersWithFileSecurity",
+                                "name": "Get group members with security information",
                                 "request": {
     "method": "GET",
     "header": [
@@ -14189,7 +14201,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the group members with their file security information."
 }
                                 ,"response": [
                             ]
@@ -14198,10 +14210,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/sendeditornotify",
-                "description": "",
+                "description": "Sends a message to the users who are mentioned in the file with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "sendEditorNotify",
+                                "name": "Send the mention message",
                                 "request": {
     "method": "POST",
     "header": [
@@ -14250,7 +14262,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Sends a message to the users who are mentioned in the file with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -14259,10 +14271,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/share",
-                "description": "",
+                "description": "Sets the sharing settings to a file with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "setFileSecurityInfo",
+                                "name": "Share a file",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -14311,7 +14323,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Sets the sharing settings to a file with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -14320,10 +14332,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/sharedusers",
-                "description": "",
+                "description": "Returns a list of users with their access rights to the file with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "getSharedUsers",
+                                "name": "Get user access rights by file ID",
                                 "request": {
     "method": "GET",
     "header": [
@@ -14366,7 +14378,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns a list of users with their access rights to the file with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -14375,10 +14387,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:id/share",
-                "description": "",
+                "description": "Returns the detailed information about the shared file with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "getFileSecurityInfo",
+                                "name": "Get the shared file information",
                                 "request": {
     "method": "GET",
     "header": [
@@ -14433,7 +14445,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the detailed information about the shared file with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -14442,10 +14454,10 @@
                         },
 						{
     "name": "/api/2.0/files/folder/:folderId/group/:groupId/share",
-                "description": "",
+                "description": "Returns the group members with their folder security information.",
                  "item": [
                             {
-                                "name": "getGroupsMembersWithFolderSecurity",
+                                "name": "Get group members with security information",
                                 "request": {
     "method": "GET",
     "header": [
@@ -14513,7 +14525,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the group members with their folder security information."
 }
                                 ,"response": [
                             ]
@@ -14522,10 +14534,10 @@
                         },
 						{
     "name": "/api/2.0/files/folder/:folderId/share",
-                "description": "",
+                "description": "Sets the sharing settings to a folder with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "setFolderSecurityInfo",
+                                "name": "Share a folder",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -14574,7 +14586,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Sets the sharing settings to a folder with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -14583,10 +14595,10 @@
                         },
 						{
     "name": "/api/2.0/files/folder/:id/share",
-                "description": "",
+                "description": "Returns the detailed information about the shared folder with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "getFolderSecurityInfo",
+                                "name": "Get the shared folder information",
                                 "request": {
     "method": "GET",
     "header": [
@@ -14641,7 +14653,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the detailed information about the shared folder with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -14650,10 +14662,10 @@
                         },
 						{
     "name": "/api/2.0/files/owner",
-                "description": "",
+                "description": "Changes the owner of the file with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "changeFileOwner",
+                                "name": "Change the file owner",
                                 "request": {
     "method": "POST",
     "header": [
@@ -14695,7 +14707,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Changes the owner of the file with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -14704,10 +14716,10 @@
                         },
 						{
     "name": "/api/2.0/files/share",
-                "description": "",
+                "description": "Returns the sharing rights for all the files and folders specified in the request.",
                  "item": [
                             {
-                                "name": "getSecurityInfo",
+                                "name": "Get the sharing rights",
                                 "request": {
     "method": "POST",
     "header": [
@@ -14749,7 +14761,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns the sharing rights for all the files and folders specified in the request."
 }
                                 ,"response": [
                             ]
@@ -14758,10 +14770,10 @@
                         },
 						{
     "name": "/api/2.0/files/share",
-                "description": "",
+                "description": "Removes the sharing rights from all the files and folders specified in the request.",
                  "item": [
                             {
-                                "name": "removeSecurityInfo",
+                                "name": "Remove the sharing rights",
                                 "request": {
     "method": "DELETE",
     "header": [
@@ -14803,7 +14815,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Removes the sharing rights from all the files and folders specified in the request."
 }
                                 ,"response": [
                             ]
@@ -14812,10 +14824,10 @@
                         },
 						{
     "name": "/api/2.0/files/share",
-                "description": "",
+                "description": "Sets the sharing rights to all the files and folders specified in the request.",
                  "item": [
                             {
-                                "name": "setSecurityInfo",
+                                "name": "Set the sharing rights",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -14857,7 +14869,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Sets the sharing rights to all the files and folders specified in the request."
 }
                                 ,"response": [
                             ]
@@ -14866,10 +14878,10 @@
                         },
 						{
     "name": "/api/2.0/files/share/:key",
-                "description": "",
+                "description": "Returns the external data by the key specified in the request.",
                  "item": [
                             {
-                                "name": "getExternalShareData",
+                                "name": "Get the external data",
                                 "request": {
     "method": "GET",
     "header": [
@@ -14923,7 +14935,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the external data by the key specified in the request."
 }
                                 ,"response": [
                             ]
@@ -14932,10 +14944,10 @@
                         },
 						{
     "name": "/api/2.0/files/share/:key/password",
-                "description": "",
+                "description": "Applies a password specified in the request to get the external data.",
                  "item": [
                             {
-                                "name": "applyExternalSharePassword",
+                                "name": "Apply external data password",
                                 "request": {
     "method": "POST",
     "header": [
@@ -14984,7 +14996,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Applies a password specified in the request to get the external data."
 }
                                 ,"response": [
                             ]
@@ -14998,10 +15010,10 @@
 					"item": [
 						{
     "name": "/api/2.0/files/:folderId",
-                "description": "",
+                "description": "Returns the detailed list of files and folders located in the folder with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "getFolderByFolderId",
+                                "name": "Get a folder by ID",
                                 "request": {
     "method": "GET",
     "header": [
@@ -15044,6 +15056,12 @@
         "key": "userIdOrGroupId",
         "value": "75a5f745-f697-4418-b38d-0fe0d277e258",
         "description": "The user or group ID.",
+        "disabled": true
+        },
+        {
+        "key": "sharedBy",
+        "value": "75a5f745-f697-4418-b38d-0fe0d277e258",
+        "description": "The identifier of the user who shared the folder or file.",
         "disabled": true
         },
         {
@@ -15132,7 +15150,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the detailed list of files and folders located in the folder with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -15141,10 +15159,10 @@
                         },
 						{
     "name": "/api/2.0/files/:folderId/formfilter",
-                "description": "",
+                "description": "Returns the form filter of a folder with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "getFolder",
+                                "name": "Get folder form filter",
                                 "request": {
     "method": "GET",
     "header": [
@@ -15186,7 +15204,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns the form filter of a folder with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -15195,10 +15213,10 @@
                         },
 						{
     "name": "/api/2.0/files/:folderId/insert",
-                "description": "",
+                "description": "Inserts a file specified in the request to the selected folder by single file uploading.",
                  "item": [
                             {
-                                "name": "insertFile",
+                                "name": "Insert a file",
                                 "request": {
     "method": "POST",
     "header": [
@@ -15246,7 +15264,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Inserts a file specified in the request to the selected folder by single file uploading."
 }
                                 ,"response": [
                             ]
@@ -15255,10 +15273,10 @@
                         },
 						{
     "name": "/api/2.0/files/:folderId/news",
-                "description": "",
+                "description": "Returns a list of all the new items from a folder with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "getNewFolderItems",
+                                "name": "Get new folder items",
                                 "request": {
     "method": "GET",
     "header": [
@@ -15300,7 +15318,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns a list of all the new items from a folder with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -15309,10 +15327,10 @@
                         },
 						{
     "name": "/api/2.0/files/:folderId/subfolders",
-                "description": "",
+                "description": "Returns a list of all the subfolders from a folder with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "getFolders",
+                                "name": "Get subfolders",
                                 "request": {
     "method": "GET",
     "header": [
@@ -15354,7 +15372,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns a list of all the subfolders from a folder with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -15363,10 +15381,10 @@
                         },
 						{
     "name": "/api/2.0/files/:folderId/upload",
-                "description": "",
+                "description": "Uploads a file specified in the request to the selected folder by single file uploading or standart multipart/form-data method.   **Note**:  You can upload files in two different ways:   <ol>  <li>Using single file upload. You should set the Content-Type and Content-Disposition headers to specify a file name and content type, and send the file to the request body.</li>  <li>Using standart multipart/form-data method.</li>  </ol>",
                  "item": [
                             {
-                                "name": "uploadFile",
+                                "name": "Upload a file",
                                 "request": {
     "method": "POST",
     "header": [
@@ -15414,7 +15432,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Uploads a file specified in the request to the selected folder by single file uploading or standart multipart/form-data method.   **Note**:  You can upload files in two different ways:   <ol>  <li>Using single file upload. You should set the Content-Type and Content-Disposition headers to specify a file name and content type, and send the file to the request body.</li>  <li>Using standart multipart/form-data method.</li>  </ol>"
 }
                                 ,"response": [
                             ]
@@ -15423,10 +15441,10 @@
                         },
 						{
     "name": "/api/2.0/files/:folderId/upload/check",
-                "description": "",
+                "description": "Checks the file uploads to the folder with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "checkUpload",
+                                "name": "Check file uploads",
                                 "request": {
     "method": "POST",
     "header": [
@@ -15475,7 +15493,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Checks the file uploads to the folder with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -15484,10 +15502,10 @@
                         },
 						{
     "name": "/api/2.0/files/@favorites",
-                "description": "",
+                "description": "Returns the detailed list of files and folders located in the Favorites section.",
                  "item": [
                             {
-                                "name": "getFavoritesFolder",
+                                "name": "Get the Favorites section",
                                 "request": {
     "method": "GET",
     "header": [
@@ -15565,7 +15583,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the detailed list of files and folders located in the Favorites section."
 }
                                 ,"response": [
                             ]
@@ -15574,10 +15592,10 @@
                         },
 						{
     "name": "/api/2.0/files/@my",
-                "description": "",
+                "description": "Returns the detailed list of files and folders located in the My documents section.",
                  "item": [
                             {
-                                "name": "getMyFolder",
+                                "name": "Get the My documents section",
                                 "request": {
     "method": "GET",
     "header": [
@@ -15661,7 +15679,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the detailed list of files and folders located in the My documents section."
 }
                                 ,"response": [
                             ]
@@ -15670,10 +15688,10 @@
                         },
 						{
     "name": "/api/2.0/files/@my/insert",
-                "description": "",
+                "description": "Inserts a file specified in the request to the My documents section by single file uploading.",
                  "item": [
                             {
-                                "name": "insertFileToMyFromBody",
+                                "name": "Insert a file to the My documents section",
                                 "request": {
     "method": "POST",
     "header": [
@@ -15716,7 +15734,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Inserts a file specified in the request to the My documents section by single file uploading."
 }
                                 ,"response": [
                             ]
@@ -15725,10 +15743,10 @@
                         },
 						{
     "name": "/api/2.0/files/@my/upload",
-                "description": "",
+                "description": "Uploads a file specified in the request to the My documents section by single file uploading or standart multipart/form-data method.   **Note**:  You can upload files in two different ways:   <ol>  <li>Using single file upload. You should set the Content-Type and Content-Disposition headers to specify a file name and content type, and send the file to the request body.</li>  <li>Using standart multipart/form-data method.</li>  </ol>",
                  "item": [
                             {
-                                "name": "uploadFileToMy",
+                                "name": "Upload a file to the My documents section",
                                 "request": {
     "method": "POST",
     "header": [
@@ -15771,7 +15789,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Uploads a file specified in the request to the My documents section by single file uploading or standart multipart/form-data method.   **Note**:  You can upload files in two different ways:   <ol>  <li>Using single file upload. You should set the Content-Type and Content-Disposition headers to specify a file name and content type, and send the file to the request body.</li>  <li>Using standart multipart/form-data method.</li>  </ol>"
 }
                                 ,"response": [
                             ]
@@ -15780,10 +15798,10 @@
                         },
 						{
     "name": "/api/2.0/files/@privacy",
-                "description": "",
+                "description": "Returns the detailed list of files and folders located in the Private Room section.",
                  "item": [
                             {
-                                "name": "getPrivacyFolder",
+                                "name": "Get the Private Room section",
                                 "request": {
     "method": "GET",
     "header": [
@@ -15861,7 +15879,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the detailed list of files and folders located in the Private Room section."
 }
                                 ,"response": [
                             ]
@@ -15870,10 +15888,10 @@
                         },
 						{
     "name": "/api/2.0/files/@recent",
-                "description": "",
+                "description": "Returns the detailed list of files located in the Recent section.",
                  "item": [
                             {
-                                "name": "getRecentFolder",
+                                "name": "Get the Recent section",
                                 "request": {
     "method": "GET",
     "header": [
@@ -15975,7 +15993,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the detailed list of files located in the Recent section."
 }
                                 ,"response": [
                             ]
@@ -15984,10 +16002,10 @@
                         },
 						{
     "name": "/api/2.0/files/@root",
-                "description": "",
+                "description": "Returns all the sections matching the parameters specified in the request.",
                  "item": [
                             {
-                                "name": "getRootFolders",
+                                "name": "Get filtered sections",
                                 "request": {
     "method": "GET",
     "header": [
@@ -16071,7 +16089,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns all the sections matching the parameters specified in the request."
 }
                                 ,"response": [
                             ]
@@ -16080,10 +16098,10 @@
                         },
 						{
     "name": "/api/2.0/files/@trash",
-                "description": "",
+                "description": "Returns the detailed list of files and folders located in the Trash section.",
                  "item": [
                             {
-                                "name": "getTrashFolder",
+                                "name": "Get the Trash section",
                                 "request": {
     "method": "GET",
     "header": [
@@ -16167,7 +16185,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the detailed list of files and folders located in the Trash section."
 }
                                 ,"response": [
                             ]
@@ -16176,10 +16194,10 @@
                         },
 						{
     "name": "/api/2.0/files/filesusedspace",
-                "description": "",
+                "description": "Returns the used space of files in the root folders.",
                  "item": [
                             {
-                                "name": "getFilesUsedSpace",
+                                "name": "Get used space of files",
                                 "request": {
     "method": "GET",
     "header": [
@@ -16215,7 +16233,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns the used space of files in the root folders."
 }
                                 ,"response": [
                             ]
@@ -16224,10 +16242,10 @@
                         },
 						{
     "name": "/api/2.0/files/folder/:folderId",
-                "description": "",
+                "description": "Creates a new folder with the title specified in the request. The parent folder ID can be also specified.",
                  "item": [
                             {
-                                "name": "createFolder",
+                                "name": "Create a folder",
                                 "request": {
     "method": "POST",
     "header": [
@@ -16275,7 +16293,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Creates a new folder with the title specified in the request. The parent folder ID can be also specified."
 }
                                 ,"response": [
                             ]
@@ -16284,10 +16302,10 @@
                         },
 						{
     "name": "/api/2.0/files/folder/:folderId",
-                "description": "",
+                "description": "Deletes a folder with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "deleteFolder",
+                                "name": "Delete a folder",
                                 "request": {
     "method": "DELETE",
     "header": [
@@ -16335,7 +16353,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Deletes a folder with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -16344,10 +16362,10 @@
                         },
 						{
     "name": "/api/2.0/files/folder/:folderId",
-                "description": "",
+                "description": "Returns the detailed information about a folder with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "getFolderInfo",
+                                "name": "Get folder information",
                                 "request": {
     "method": "GET",
     "header": [
@@ -16389,7 +16407,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns the detailed information about a folder with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -16398,10 +16416,10 @@
                         },
 						{
     "name": "/api/2.0/files/folder/:folderId",
-                "description": "",
+                "description": "Renames the selected folder with a new title specified in the request.",
                  "item": [
                             {
-                                "name": "renameFolder",
+                                "name": "Rename a folder",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -16449,7 +16467,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Renames the selected folder with a new title specified in the request."
 }
                                 ,"response": [
                             ]
@@ -16458,10 +16476,10 @@
                         },
 						{
     "name": "/api/2.0/files/folder/:folderId/log",
-                "description": "",
+                "description": "Returns the activity history of a folder with a specified identifier.",
                  "item": [
                             {
-                                "name": "getFolderHistory",
+                                "name": "Get folder history",
                                 "request": {
     "method": "GET",
     "header": [
@@ -16528,7 +16546,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the activity history of a folder with a specified identifier."
 }
                                 ,"response": [
                             ]
@@ -16537,10 +16555,10 @@
                         },
 						{
     "name": "/api/2.0/files/folder/:folderId/log/report",
-                "description": "",
+                "description": "Generates the activity history of a folder.",
                  "item": [
                             {
-                                "name": "createReportFolderHistory",
+                                "name": "Generates folder history",
                                 "request": {
     "method": "POST",
     "header": [
@@ -16584,7 +16602,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Generates the activity history of a folder."
 }
                                 ,"response": [
                             ]
@@ -16593,10 +16611,10 @@
                         },
 						{
     "name": "/api/2.0/files/folder/:folderId/order",
-                "description": "",
+                "description": "Sets the order of a folder with ID specified in the request.",
                  "item": [
                             {
-                                "name": "setFolderOrder",
+                                "name": "Set folder order",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -16645,7 +16663,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Sets the order of a folder with ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -16654,10 +16672,10 @@
                         },
 						{
     "name": "/api/2.0/files/folder/:folderId/path",
-                "description": "",
+                "description": "Returns a path to the folder with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "getFolderPath",
+                                "name": "Get the folder path",
                                 "request": {
     "method": "GET",
     "header": [
@@ -16700,7 +16718,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns a path to the folder with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -16709,10 +16727,10 @@
                         },
 						{
     "name": "/api/2.0/files/folder/:id/link",
-                "description": "",
+                "description": "Creates a primary external link by the identifier specified in the request.",
                  "item": [
                             {
-                                "name": "createFolderPrimaryExternalLink",
+                                "name": "Create primary external link",
                                 "request": {
     "method": "POST",
     "header": [
@@ -16761,7 +16779,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Creates a primary external link by the identifier specified in the request."
 }
                                 ,"response": [
                             ]
@@ -16770,10 +16788,10 @@
                         },
 						{
     "name": "/api/2.0/files/folder/:id/link",
-                "description": "",
+                "description": "Returns the primary external link by the identifier specified in the request.",
                  "item": [
                             {
-                                "name": "getFolderPrimaryExternalLink",
+                                "name": "Get primary external link",
                                 "request": {
     "method": "GET",
     "header": [
@@ -16828,7 +16846,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the primary external link by the identifier specified in the request."
 }
                                 ,"response": [
                             ]
@@ -16837,10 +16855,10 @@
                         },
 						{
     "name": "/api/2.0/files/folder/:id/links",
-                "description": "",
+                "description": "Returns the links of the folder with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "getFolderLinks",
+                                "name": "Get the folder links",
                                 "request": {
     "method": "GET",
     "header": [
@@ -16883,7 +16901,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns the links of the folder with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -16892,10 +16910,10 @@
                         },
 						{
     "name": "/api/2.0/files/folder/:id/links",
-                "description": "",
+                "description": "Sets the folder external link with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "setFolderPrimaryExternalLink",
+                                "name": "Set the folder external link",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -16944,7 +16962,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Sets the folder external link with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -16953,10 +16971,10 @@
                         },
 						{
     "name": "/api/2.0/files/recent",
-                "description": "",
+                "description": "Returns the detailed list of files located in the Recent section.",
                  "item": [
                             {
-                                "name": "getFolderRecent",
+                                "name": "Get the Recent section",
                                 "request": {
     "method": "GET",
     "header": [
@@ -17058,7 +17076,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the detailed list of files located in the Recent section."
 }
                                 ,"response": [
                             ]
@@ -17072,10 +17090,10 @@
 					"item": [
 						{
     "name": "/api/2.0/files/:fileId/order",
-                "description": "",
+                "description": "Sets the order of the file with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "setFileOrder",
+                                "name": "Set file order",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -17123,7 +17141,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Sets the order of the file with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -17132,10 +17150,10 @@
                         },
 						{
     "name": "/api/2.0/files/:folderId/file",
-                "description": "",
+                "description": "Creates a new file in the specified folder with the title specified in the request.   **Note**: If a file extension is different from DOCX/XLSX/PPTX and refers to one of the known text, spreadsheet, or presentation formats, it will be changed to DOCX/XLSX/PPTX accordingly. If the file extension is not specified or is unknown, the DOCX extension will be added to the file title.",
                  "item": [
                             {
-                                "name": "createFile",
+                                "name": "Create a file",
                                 "request": {
     "method": "POST",
     "header": [
@@ -17183,7 +17201,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Creates a new file in the specified folder with the title specified in the request.   **Note**: If a file extension is different from DOCX/XLSX/PPTX and refers to one of the known text, spreadsheet, or presentation formats, it will be changed to DOCX/XLSX/PPTX accordingly. If the file extension is not specified or is unknown, the DOCX extension will be added to the file title."
 }
                                 ,"response": [
                             ]
@@ -17192,10 +17210,10 @@
                         },
 						{
     "name": "/api/2.0/files/:folderId/html",
-                "description": "",
+                "description": "Creates an HTML (.html) file in the selected folder with the title and contents specified in the request.",
                  "item": [
                             {
-                                "name": "createHtmlFile",
+                                "name": "Create an HTML file",
                                 "request": {
     "method": "POST",
     "header": [
@@ -17243,7 +17261,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Creates an HTML (.html) file in the selected folder with the title and contents specified in the request."
 }
                                 ,"response": [
                             ]
@@ -17252,10 +17270,10 @@
                         },
 						{
     "name": "/api/2.0/files/:folderId/text",
-                "description": "",
+                "description": "Creates a text (.txt) file in the selected folder with the title and contents specified in the request.",
                  "item": [
                             {
-                                "name": "createTextFile",
+                                "name": "Create a text file",
                                 "request": {
     "method": "POST",
     "header": [
@@ -17303,7 +17321,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Creates a text (.txt) file in the selected folder with the title and contents specified in the request."
 }
                                 ,"response": [
                             ]
@@ -17312,10 +17330,10 @@
                         },
 						{
     "name": "/api/2.0/files/@my/file",
-                "description": "",
+                "description": "Creates a new file in the My documents section with the title specified in the request.   **Note**: If a file extension is different from DOCX/XLSX/PPTX and refers to one of the known text, spreadsheet, or presentation formats, it will be changed to DOCX/XLSX/PPTX accordingly. If the file extension is not specified or is unknown, the DOCX extension will be added to the file title.",
                  "item": [
                             {
-                                "name": "createFileInMyDocuments",
+                                "name": "Create a file in the My documents section",
                                 "request": {
     "method": "POST",
     "header": [
@@ -17358,7 +17376,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Creates a new file in the My documents section with the title specified in the request.   **Note**: If a file extension is different from DOCX/XLSX/PPTX and refers to one of the known text, spreadsheet, or presentation formats, it will be changed to DOCX/XLSX/PPTX accordingly. If the file extension is not specified or is unknown, the DOCX extension will be added to the file title."
 }
                                 ,"response": [
                             ]
@@ -17367,10 +17385,10 @@
                         },
 						{
     "name": "/api/2.0/files/@my/html",
-                "description": "",
+                "description": "Creates an HTML (.html) file in the My documents section with the title and contents specified in the request.",
                  "item": [
                             {
-                                "name": "createHtmlFileInMyDocuments",
+                                "name": "Create an HTML file in the My documents section",
                                 "request": {
     "method": "POST",
     "header": [
@@ -17413,7 +17431,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Creates an HTML (.html) file in the My documents section with the title and contents specified in the request."
 }
                                 ,"response": [
                             ]
@@ -17422,10 +17440,10 @@
                         },
 						{
     "name": "/api/2.0/files/@my/text",
-                "description": "",
+                "description": "Creates a text (.txt) file in the My documents section with the title and contents specified in the request.",
                  "item": [
                             {
-                                "name": "createTextFileInMyDocuments",
+                                "name": "Create a text file in the My documents section",
                                 "request": {
     "method": "POST",
     "header": [
@@ -17468,7 +17486,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Creates a text (.txt) file in the My documents section with the title and contents specified in the request."
 }
                                 ,"response": [
                             ]
@@ -17477,10 +17495,10 @@
                         },
 						{
     "name": "/api/2.0/files/favorites/:fileId",
-                "description": "",
+                "description": "Changes the favorite status of the file with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "toggleFileFavorite",
+                                "name": "Change the file favorite status",
                                 "request": {
     "method": "GET",
     "header": [
@@ -17528,7 +17546,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Changes the favorite status of the file with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -17537,10 +17555,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId",
-                "description": "",
+                "description": "Deletes a file with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "deleteFile",
+                                "name": "Delete a file",
                                 "request": {
     "method": "DELETE",
     "header": [
@@ -17588,7 +17606,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Deletes a file with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -17597,10 +17615,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId",
-                "description": "",
+                "description": "Returns the detailed information about a file with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "getFileInfo",
+                                "name": "Get file information",
                                 "request": {
     "method": "GET",
     "header": [
@@ -17648,7 +17666,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the detailed information about a file with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -17657,10 +17675,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId",
-                "description": "",
+                "description": "Updates the information of the selected file with the parameters specified in the request.",
                  "item": [
                             {
-                                "name": "updateFile",
+                                "name": "Update a file",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -17708,7 +17726,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Updates the information of the selected file with the parameters specified in the request."
 }
                                 ,"response": [
                             ]
@@ -17717,10 +17735,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/copyas",
-                "description": "",
+                "description": "Copies (and converts if possible) an existing file to the specified folder.",
                  "item": [
                             {
-                                "name": "copyFileAs",
+                                "name": "Copy a file",
                                 "request": {
     "method": "POST",
     "header": [
@@ -17769,7 +17787,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Copies (and converts if possible) an existing file to the specified folder."
 }
                                 ,"response": [
                             ]
@@ -17778,10 +17796,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/customfilter",
-                "description": "",
+                "description": "Sets the Custom Filter editing mode to a file with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "setCustomFilterTag",
+                                "name": "Set the Custom Filter editing mode",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -17830,7 +17848,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Sets the Custom Filter editing mode to a file with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -17839,10 +17857,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/edit/diff",
-                "description": "",
+                "description": "Returns a URL to the changes of a file version specified in the request.",
                  "item": [
                             {
-                                "name": "getEditDiffUrl",
+                                "name": "Get changes URL",
                                 "request": {
     "method": "GET",
     "header": [
@@ -17892,7 +17910,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns a URL to the changes of a file version specified in the request."
 }
                                 ,"response": [
                             ]
@@ -17901,10 +17919,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/edit/history",
-                "description": "",
+                "description": "Returns the version history of a file with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "getEditHistory",
+                                "name": "Get version history",
                                 "request": {
     "method": "GET",
     "header": [
@@ -17948,7 +17966,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns the version history of a file with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -17957,10 +17975,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/edit_session",
-                "description": "",
+                "description": "Creates a session to edit the existing file with multiple chunks (needed for WebDAV).   **Note**: Information about created session which includes:  <ul>  <li><b>id:</b> unique ID of this upload session,</li>  <li><b>created:</b> UTC time when the session was created,</li>  <li><b>expired:</b> UTC time when the session will expire if no chunks are sent before that time,</li>  <li><b>location:</b> URL where you should send your next chunk,</li>  <li><b>bytes_uploaded:</b> number of bytes uploaded for the specific upload ID,</li>  <li><b>bytes_total:</b> total number of bytes which will be uploaded.</li>  </ul>",
                  "item": [
                             {
-                                "name": "createEditSession",
+                                "name": "Create the editing session",
                                 "request": {
     "method": "POST",
     "header": [
@@ -18009,7 +18027,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Creates a session to edit the existing file with multiple chunks (needed for WebDAV).   **Note**: Information about created session which includes:  <ul>  <li><b>id:</b> unique ID of this upload session,</li>  <li><b>created:</b> UTC time when the session was created,</li>  <li><b>expired:</b> UTC time when the session will expire if no chunks are sent before that time,</li>  <li><b>location:</b> URL where you should send your next chunk,</li>  <li><b>bytes_uploaded:</b> number of bytes uploaded for the specific upload ID,</li>  <li><b>bytes_total:</b> total number of bytes which will be uploaded.</li>  </ul>"
 }
                                 ,"response": [
                             ]
@@ -18018,10 +18036,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/formrolemapping",
-                "description": "",
+                "description": "Saves the form role mapping.",
                  "item": [
                             {
-                                "name": "saveFormRoleMapping",
+                                "name": "Save form role mapping",
                                 "request": {
     "method": "POST",
     "header": [
@@ -18064,7 +18082,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Saves the form role mapping."
 }
                                 ,"response": [
                             ]
@@ -18073,10 +18091,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/formroles",
-                "description": "",
+                "description": "Returns all roles for the specified form.",
                  "item": [
                             {
-                                "name": "getAllFormRoles",
+                                "name": "Get form roles",
                                 "request": {
     "method": "GET",
     "header": [
@@ -18119,7 +18137,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns all roles for the specified form."
 }
                                 ,"response": [
                             ]
@@ -18128,10 +18146,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/history",
-                "description": "",
+                "description": "Changes the version history of a file with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "changeVersionHistory",
+                                "name": "Change version history",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -18180,7 +18198,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Changes the version history of a file with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -18189,10 +18207,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/history",
-                "description": "",
+                "description": "Returns the detailed information about all the available file versions with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "getFileVersionInfo",
+                                "name": "Get file versions",
                                 "request": {
     "method": "GET",
     "header": [
@@ -18235,7 +18253,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns the detailed information about all the available file versions with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -18244,10 +18262,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/isformpdf",
-                "description": "",
+                "description": "Checks if the PDF file is a form or not.",
                  "item": [
                             {
-                                "name": "isFormPDF",
+                                "name": "Check the PDF file",
                                 "request": {
     "method": "GET",
     "header": [
@@ -18290,7 +18308,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Checks if the PDF file is a form or not."
 }
                                 ,"response": [
                             ]
@@ -18299,10 +18317,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/lock",
-                "description": "",
+                "description": "Locks a file with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "lockFile",
+                                "name": "Lock a file",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -18351,7 +18369,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Locks a file with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -18360,10 +18378,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/log",
-                "description": "",
+                "description": "Returns the list of actions performed on the file with the specified identifier.",
                  "item": [
                             {
-                                "name": "getFileHistory",
+                                "name": "Get file history",
                                 "request": {
     "method": "GET",
     "header": [
@@ -18430,7 +18448,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the list of actions performed on the file with the specified identifier."
 }
                                 ,"response": [
                             ]
@@ -18439,10 +18457,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/manageformfilling",
-                "description": "",
+                "description": "Performs the specified form filling action.",
                  "item": [
                             {
-                                "name": "manageFormFilling",
+                                "name": "Perform form filling action",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -18485,7 +18503,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Performs the specified form filling action."
 }
                                 ,"response": [
                             ]
@@ -18494,10 +18512,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/openedit",
-                "description": "",
+                "description": "Returns the initialization configuration of a file to open it in the editor.",
                  "item": [
                             {
-                                "name": "openEditFile",
+                                "name": "Open a file configuration",
                                 "request": {
     "method": "GET",
     "header": [
@@ -18570,7 +18588,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the initialization configuration of a file to open it in the editor."
 }
                                 ,"response": [
                             ]
@@ -18579,10 +18597,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/presigned",
-                "description": "",
+                "description": "Returns a link to download a file with the ID specified in the request asynchronously.",
                  "item": [
                             {
-                                "name": "getPresignedFileUri",
+                                "name": "Get file download link asynchronously",
                                 "request": {
     "method": "GET",
     "header": [
@@ -18625,7 +18643,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns a link to download a file with the ID specified in the request asynchronously."
 }
                                 ,"response": [
                             ]
@@ -18634,10 +18652,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/presigneduri",
-                "description": "",
+                "description": "Returns a pre-signed URL to download a file with the specified ID.  This temporary link provides secure access to the file.",
                  "item": [
                             {
-                                "name": "getPresignedUri",
+                                "name": "Get file download link",
                                 "request": {
     "method": "GET",
     "header": [
@@ -18680,7 +18698,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns a pre-signed URL to download a file with the specified ID.  This temporary link provides secure access to the file."
 }
                                 ,"response": [
                             ]
@@ -18689,10 +18707,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/protectusers",
-                "description": "",
+                "description": "Returns a list of users with their access rights to the protected file with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "getProtectedFileUsers",
+                                "name": "Get users access rights to the protected file",
                                 "request": {
     "method": "GET",
     "header": [
@@ -18735,7 +18753,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns a list of users with their access rights to the protected file with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -18744,10 +18762,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/recent",
-                "description": "",
+                "description": "Adds a file with the ID specified in the request to the Recent section.",
                  "item": [
                             {
-                                "name": "addFileToRecent",
+                                "name": "Add a file to the Recent section",
                                 "request": {
     "method": "POST",
     "header": [
@@ -18790,7 +18808,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Adds a file with the ID specified in the request to the Recent section."
 }
                                 ,"response": [
                             ]
@@ -18799,12 +18817,12 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/restoreversion",
-                "description": "",
+                "description": "Restores a file version specified in the request.",
                  "item": [
                             {
-                                "name": "restoreFileVersion",
+                                "name": "Restore a file version",
                                 "request": {
-    "method": "GET",
+    "method": "POST",
     "header": [
         {
         "key": "Accept",
@@ -18857,7 +18875,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Restores a file version specified in the request."
 }
                                 ,"response": [
                             ]
@@ -18866,10 +18884,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/saveediting",
-                "description": "",
+                "description": "Saves edits to a file with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "saveEditingFileFromForm",
+                                "name": "Save file edits",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -18918,7 +18936,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Saves edits to a file with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -18927,10 +18945,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/startedit",
-                "description": "",
+                "description": "Informs about opening a file with the ID specified in the request for editing, locking it from being deleted or moved (this method is called by the mobile editors).",
                  "item": [
                             {
-                                "name": "startEditFile",
+                                "name": "Start file editing",
                                 "request": {
     "method": "POST",
     "header": [
@@ -18979,7 +18997,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Informs about opening a file with the ID specified in the request for editing, locking it from being deleted or moved (this method is called by the mobile editors)."
 }
                                 ,"response": [
                             ]
@@ -18988,10 +19006,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/startfilling",
-                "description": "",
+                "description": "Starts filling a file with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "startFillingFile",
+                                "name": "Start file filling",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -19034,7 +19052,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Starts filling a file with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -19043,10 +19061,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/trackeditfile",
-                "description": "",
+                "description": "Tracks file changes when editing.",
                  "item": [
                             {
-                                "name": "trackEditFile",
+                                "name": "Track file editing",
                                 "request": {
     "method": "GET",
     "header": [
@@ -19107,7 +19125,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Tracks file changes when editing."
 }
                                 ,"response": [
                             ]
@@ -19116,10 +19134,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:id/link",
-                "description": "",
+                "description": "Creates a primary external link by the identifier specified in the request.",
                  "item": [
                             {
-                                "name": "createFilePrimaryExternalLink",
+                                "name": "Create primary external link",
                                 "request": {
     "method": "POST",
     "header": [
@@ -19168,7 +19186,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Creates a primary external link by the identifier specified in the request."
 }
                                 ,"response": [
                             ]
@@ -19177,10 +19195,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:id/link",
-                "description": "",
+                "description": "Returns the primary external link by the identifier specified in the request.",
                  "item": [
                             {
-                                "name": "getFilePrimaryExternalLink",
+                                "name": "Get primary external link",
                                 "request": {
     "method": "GET",
     "header": [
@@ -19235,7 +19253,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the primary external link by the identifier specified in the request."
 }
                                 ,"response": [
                             ]
@@ -19244,10 +19262,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:id/links",
-                "description": "",
+                "description": "Returns the external links of a file with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "getFileLinks",
+                                "name": "Get file external links",
                                 "request": {
     "method": "GET",
     "header": [
@@ -19302,7 +19320,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the external links of a file with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -19311,10 +19329,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:id/links",
-                "description": "",
+                "description": "Sets an external link to a file with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "setFileExternalLink",
+                                "name": "Set an external link",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -19363,7 +19381,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Sets an external link to a file with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -19372,10 +19390,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:id/saveaspdf",
-                "description": "",
+                "description": "Saves a file with the identifier specified in the request as a PDF document.",
                  "item": [
                             {
-                                "name": "saveFileAsPdf",
+                                "name": "Save a file as PDF",
                                 "request": {
     "method": "POST",
     "header": [
@@ -19424,7 +19442,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Saves a file with the identifier specified in the request as a PDF document."
 }
                                 ,"response": [
                             ]
@@ -19433,10 +19451,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/fillresult",
-                "description": "",
+                "description": "Retrieves the result of a form-filling session.",
                  "item": [
                             {
-                                "name": "getFillResult",
+                                "name": "Get form-filling result",
                                 "request": {
     "method": "GET",
     "header": [
@@ -19479,7 +19497,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Retrieves the result of a form-filling session."
 }
                                 ,"response": [
                             ]
@@ -19488,10 +19506,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/referencedata",
-                "description": "",
+                "description": "Returns the reference data to uniquely identify a file in its system and check the availability of insering data into the destination spreadsheet by the external link.",
                  "item": [
                             {
-                                "name": "getReferenceData",
+                                "name": "Get reference data",
                                 "request": {
     "method": "POST",
     "header": [
@@ -19534,7 +19552,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns the reference data to uniquely identify a file in its system and check the availability of insering data into the destination spreadsheet by the external link."
 }
                                 ,"response": [
                             ]
@@ -19543,10 +19561,10 @@
                         },
 						{
     "name": "/api/2.0/files/masterform/:fileId/checkfillformdraft",
-                "description": "",
+                "description": "Checks if the current file is a form draft which can be filled out.",
                  "item": [
                             {
-                                "name": "checkFillFormDraft",
+                                "name": "Check the form draft filling",
                                 "request": {
     "method": "POST",
     "header": [
@@ -19595,7 +19613,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Checks if the current file is a form draft which can be filled out."
 }
                                 ,"response": [
                             ]
@@ -19604,10 +19622,10 @@
                         },
 						{
     "name": "/api/2.0/files/order",
-                "description": "",
+                "description": "Sets the order of the files specified in the request.",
                  "item": [
                             {
-                                "name": "setFilesOrder",
+                                "name": "Set order of files",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -19649,7 +19667,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Sets the order of the files specified in the request."
 }
                                 ,"response": [
                             ]
@@ -19658,10 +19676,10 @@
                         },
 						{
     "name": "/api/2.0/files/recent",
-                "description": "",
+                "description": "Removes files with the IDs specified in the request from the Recent section.",
                  "item": [
                             {
-                                "name": "deleteRecent",
+                                "name": "Delete recent files",
                                 "request": {
     "method": "DELETE",
     "header": [
@@ -19703,7 +19721,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Removes files with the IDs specified in the request from the Recent section."
 }
                                 ,"response": [
                             ]
@@ -19712,10 +19730,10 @@
                         },
 						{
     "name": "/api/2.0/files/templates",
-                "description": "",
+                "description": "Adds files with the IDs specified in the request to the template list.",
                  "item": [
                             {
-                                "name": "addTemplates",
+                                "name": "Add template files",
                                 "request": {
     "method": "POST",
     "header": [
@@ -19757,7 +19775,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Adds files with the IDs specified in the request to the template list."
 }
                                 ,"response": [
                             ]
@@ -19766,10 +19784,10 @@
                         },
 						{
     "name": "/api/2.0/files/templates",
-                "description": "",
+                "description": "Removes files with the IDs specified in the request from the template list.",
                  "item": [
                             {
-                                "name": "deleteTemplates",
+                                "name": "Delete template files",
                                 "request": {
     "method": "DELETE",
     "header": [
@@ -19811,7 +19829,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Removes files with the IDs specified in the request from the template list."
 }
                                 ,"response": [
                             ]
@@ -19820,10 +19838,10 @@
                         },
 						{
     "name": "/api/2.0/files/thumbnails",
-                "description": "",
+                "description": "Creates thumbnails for the files with the IDs specified in the request.",
                  "item": [
                             {
-                                "name": "createThumbnails",
+                                "name": "Create file thumbnails",
                                 "request": {
     "method": "POST",
     "header": [
@@ -19865,7 +19883,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Creates thumbnails for the files with the IDs specified in the request."
 }
                                 ,"response": [
                             ]
@@ -19879,10 +19897,10 @@
 					"item": [
 						{
     "name": "/api/2.0/files/:folderId/upload/create_session",
-                "description": "",
+                "description": "Creates the session to upload large files in multiple chunks to the folder with the ID specified in the request.   **Note**: Each chunk can have different length but the length should be multiple of <b>512</b> and greater or equal to <b>10 mb</b>. Last chunk can have any size.  After the initial response to the request with the <b>200 OK</b> status, you must get the <em>location</em> field value from the response. Send all your chunks to this location.  Each chunk must be sent in the exact order the chunks appear in the file.  After receiving each chunk, the server will respond with the current information about the upload session if no errors occurred.  When the number of bytes uploaded is equal to the number of bytes you sent in the initial request, the server responds with the <b>201 Created</b> status and sends you information about the uploaded file.  Information about created session which includes:  <ul>  <li><b>id:</b> unique ID of this upload session,</li>  <li><b>created:</b> UTC time when the session was created,</li>  <li><b>expired:</b> UTC time when the session will expire if no chunks are sent before that time,</li>  <li><b>location:</b> URL where you should send your next chunk,</li>  <li><b>bytes_uploaded:</b> number of bytes uploaded for the specific upload ID,</li>  <li><b>bytes_total:</b> total number of bytes which will be uploaded.</li>  </ul>",
                  "item": [
                             {
-                                "name": "createUploadSession",
+                                "name": "Chunked upload",
                                 "request": {
     "method": "POST",
     "header": [
@@ -19931,7 +19949,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Creates the session to upload large files in multiple chunks to the folder with the ID specified in the request.   **Note**: Each chunk can have different length but the length should be multiple of <b>512</b> and greater or equal to <b>10 mb</b>. Last chunk can have any size.  After the initial response to the request with the <b>200 OK</b> status, you must get the <em>location</em> field value from the response. Send all your chunks to this location.  Each chunk must be sent in the exact order the chunks appear in the file.  After receiving each chunk, the server will respond with the current information about the upload session if no errors occurred.  When the number of bytes uploaded is equal to the number of bytes you sent in the initial request, the server responds with the <b>201 Created</b> status and sends you information about the uploaded file.  Information about created session which includes:  <ul>  <li><b>id:</b> unique ID of this upload session,</li>  <li><b>created:</b> UTC time when the session was created,</li>  <li><b>expired:</b> UTC time when the session will expire if no chunks are sent before that time,</li>  <li><b>location:</b> URL where you should send your next chunk,</li>  <li><b>bytes_uploaded:</b> number of bytes uploaded for the specific upload ID,</li>  <li><b>bytes_total:</b> total number of bytes which will be uploaded.</li>  </ul>"
 }
                                 ,"response": [
                             ]
@@ -19940,10 +19958,10 @@
                         },
 						{
     "name": "/api/2.0/files/favorites",
-                "description": "",
+                "description": "Adds files and folders with the IDs specified in the request to the favorite list.",
                  "item": [
                             {
-                                "name": "addFavorites",
+                                "name": "Add favorite files and folders",
                                 "request": {
     "method": "POST",
     "header": [
@@ -19985,7 +20003,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Adds files and folders with the IDs specified in the request to the favorite list."
 }
                                 ,"response": [
                             ]
@@ -19994,10 +20012,10 @@
                         },
 						{
     "name": "/api/2.0/files/favorites",
-                "description": "",
+                "description": "Removes files and folders with the IDs specified in the request from the favorite list. This method uses the body parameters.",
                  "item": [
                             {
-                                "name": "deleteFavoritesFromBody",
+                                "name": "Delete favorite files and folders (using body parameters)",
                                 "request": {
     "method": "DELETE",
     "header": [
@@ -20039,7 +20057,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Removes files and folders with the IDs specified in the request from the favorite list. This method uses the body parameters."
 }
                                 ,"response": [
                             ]
@@ -20048,10 +20066,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/checkconversion",
-                "description": "",
+                "description": "Checks the conversion status of a file with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "checkConversionStatus",
+                                "name": "Get conversion status",
                                 "request": {
     "method": "GET",
     "header": [
@@ -20100,7 +20118,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Checks the conversion status of a file with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -20109,10 +20127,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/checkconversion",
-                "description": "",
+                "description": "Starts a conversion operation of a file with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "startFileConversion",
+                                "name": "Start file conversion",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -20161,7 +20179,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Starts a conversion operation of a file with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -20170,10 +20188,10 @@
                         },
 						{
     "name": "/api/2.0/files/file/:fileId/comment",
-                "description": "",
+                "description": "Updates a comment in a file with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "updateFileComment",
+                                "name": "Update a comment",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -20222,7 +20240,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Updates a comment in a file with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -20231,10 +20249,10 @@
                         },
 						{
     "name": "/api/2.0/files/fileops",
-                "description": "",
+                "description": "Returns a list of all the active file operations.",
                  "item": [
                             {
-                                "name": "getOperationStatuses",
+                                "name": "Get active file operations",
                                 "request": {
     "method": "GET",
     "header": [
@@ -20276,7 +20294,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns a list of all the active file operations."
 }
                                 ,"response": [
                             ]
@@ -20285,10 +20303,10 @@
                         },
 						{
     "name": "/api/2.0/files/fileops/:operationType",
-                "description": "",
+                "description": "Retrieves the statuses of operations filtered by the specified operation type.",
                  "item": [
                             {
-                                "name": "getOperationStatusesByType",
+                                "name": "Get file operation statuses",
                                 "request": {
     "method": "GET",
     "header": [
@@ -20336,7 +20354,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Retrieves the statuses of operations filtered by the specified operation type."
 }
                                 ,"response": [
                             ]
@@ -20345,10 +20363,10 @@
                         },
 						{
     "name": "/api/2.0/files/fileops/bulkdownload",
-                "description": "",
+                "description": "Starts the download process of files and folders with the IDs specified in the request.",
                  "item": [
                             {
-                                "name": "bulkDownload",
+                                "name": "Bulk download",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -20391,7 +20409,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Starts the download process of files and folders with the IDs specified in the request."
 }
                                 ,"response": [
                             ]
@@ -20400,10 +20418,10 @@
                         },
 						{
     "name": "/api/2.0/files/fileops/checkdestfolder",
-                "description": "",
+                "description": "Checks if files can be moved or copied to the specified folder.",
                  "item": [
                             {
-                                "name": "checkMoveOrCopyDestFolder",
+                                "name": "Check for moving or copying files to a folder",
                                 "request": {
     "method": "GET",
     "header": [
@@ -20446,7 +20464,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Checks if files can be moved or copied to the specified folder."
 }
                                 ,"response": [
                             ]
@@ -20455,10 +20473,10 @@
                         },
 						{
     "name": "/api/2.0/files/fileops/copy",
-                "description": "",
+                "description": "Copies all the selected files and folders to the folder with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "copyBatchItems",
+                                "name": "Copy to the folder",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -20501,7 +20519,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Copies all the selected files and folders to the folder with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -20510,10 +20528,10 @@
                         },
 						{
     "name": "/api/2.0/files/fileops/delete",
-                "description": "",
+                "description": "Deletes the files and folders with the IDs specified in the request.",
                  "item": [
                             {
-                                "name": "deleteBatchItems",
+                                "name": "Delete files and folders",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -20556,7 +20574,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Deletes the files and folders with the IDs specified in the request."
 }
                                 ,"response": [
                             ]
@@ -20565,10 +20583,10 @@
                         },
 						{
     "name": "/api/2.0/files/fileops/deleteversion",
-                "description": "",
+                "description": "Deletes the file versions with the IDs specified in the request.",
                  "item": [
                             {
-                                "name": "deleteFileVersions",
+                                "name": "Delete file versions",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -20611,7 +20629,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Deletes the file versions with the IDs specified in the request."
 }
                                 ,"response": [
                             ]
@@ -20620,10 +20638,10 @@
                         },
 						{
     "name": "/api/2.0/files/fileops/duplicate",
-                "description": "",
+                "description": "Duplicates all the selected files and folders.",
                  "item": [
                             {
-                                "name": "duplicateBatchItems",
+                                "name": "Duplicate files and folders",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -20666,7 +20684,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Duplicates all the selected files and folders."
 }
                                 ,"response": [
                             ]
@@ -20675,10 +20693,10 @@
                         },
 						{
     "name": "/api/2.0/files/fileops/emptytrash",
-                "description": "",
+                "description": "Deletes all the files and folders from the Trash folder.",
                  "item": [
                             {
-                                "name": "emptyTrash",
+                                "name": "Empty the Trash folder",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -20721,7 +20739,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Deletes all the files and folders from the Trash folder."
 }
                                 ,"response": [
                             ]
@@ -20730,10 +20748,10 @@
                         },
 						{
     "name": "/api/2.0/files/fileops/markasread",
-                "description": "",
+                "description": "Marks the files and folders with the IDs specified in the request as read.",
                  "item": [
                             {
-                                "name": "markAsRead",
+                                "name": "Mark as read",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -20776,7 +20794,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Marks the files and folders with the IDs specified in the request as read."
 }
                                 ,"response": [
                             ]
@@ -20785,10 +20803,10 @@
                         },
 						{
     "name": "/api/2.0/files/fileops/move",
-                "description": "",
+                "description": "Checks if files or folders can be moved or copied to the specified folder, moves or copies them, and returns their information.",
                  "item": [
                             {
-                                "name": "checkMoveOrCopyBatchItems",
+                                "name": "Move or copy files to a folder",
                                 "request": {
     "method": "GET",
     "header": [
@@ -20831,7 +20849,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Checks if files or folders can be moved or copied to the specified folder, moves or copies them, and returns their information."
 }
                                 ,"response": [
                             ]
@@ -20840,10 +20858,10 @@
                         },
 						{
     "name": "/api/2.0/files/fileops/move",
-                "description": "",
+                "description": "Moves or copies all the selected files and folders to the folder with the ID specified in the request.",
                  "item": [
                             {
-                                "name": "moveBatchItems",
+                                "name": "Move or copy to a folder",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -20886,7 +20904,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Moves or copies all the selected files and folders to the folder with the ID specified in the request."
 }
                                 ,"response": [
                             ]
@@ -20895,10 +20913,10 @@
                         },
 						{
     "name": "/api/2.0/files/fileops/terminate/:id",
-                "description": "",
+                "description": "Finishes an operation with the ID specified in the request or all the active operations.",
                  "item": [
                             {
-                                "name": "terminateTasks",
+                                "name": "Finish active operations",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -20941,7 +20959,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Finishes an operation with the ID specified in the request or all the active operations."
 }
                                 ,"response": [
                             ]
@@ -20955,10 +20973,10 @@
 					"item": [
 						{
     "name": "/api/2.0/files/@privacy/available",
-                "description": "",
+                "description": "Checks if the Private Room settings are available or not.",
                  "item": [
                             {
-                                "name": "isAvailablePrivacyRoomSettings",
+                                "name": "Check the Private Room availability",
                                 "request": {
     "method": "GET",
     "header": [
@@ -20995,7 +21013,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Checks if the Private Room settings are available or not."
 }
                                 ,"response": [
                             ]
@@ -21004,10 +21022,10 @@
                         },
 						{
     "name": "/api/2.0/files/changedeleteconfrim",
-                "description": "",
+                "description": "Specifies whether to confirm the file deletion or not.",
                  "item": [
                             {
-                                "name": "changeDeleteConfirm",
+                                "name": "Confirm the file deletion",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -21049,7 +21067,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Specifies whether to confirm the file deletion or not."
 }
                                 ,"response": [
                             ]
@@ -21058,10 +21076,10 @@
                         },
 						{
     "name": "/api/2.0/files/displayfileextension",
-                "description": "",
+                "description": "Specifies whether to display a file extension or not.",
                  "item": [
                             {
-                                "name": "displayFileExtension",
+                                "name": "Display a file extension",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -21103,7 +21121,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Specifies whether to display a file extension or not."
 }
                                 ,"response": [
                             ]
@@ -21112,10 +21130,10 @@
                         },
 						{
     "name": "/api/2.0/files/displayrecent",
-                "description": "",
+                "description": "Displays the Recent folder.",
                  "item": [
                             {
-                                "name": "displayRecent",
+                                "name": "Display the Recent folder",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -21157,7 +21175,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Displays the Recent folder."
 }
                                 ,"response": [
                             ]
@@ -21166,10 +21184,10 @@
                         },
 						{
     "name": "/api/2.0/files/docservice",
-                "description": "",
+                "description": "Checks the document service location URL.",
                  "item": [
                             {
-                                "name": "checkDocServiceUrl",
+                                "name": "Check the document service URL",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -21211,7 +21229,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Checks the document service location URL."
 }
                                 ,"response": [
                             ]
@@ -21220,10 +21238,10 @@
                         },
 						{
     "name": "/api/2.0/files/docservice",
-                "description": "",
+                "description": "Returns the URL address of the connected editors.",
                  "item": [
                             {
-                                "name": "getDocServiceUrl",
+                                "name": "Get the document service URL",
                                 "request": {
     "method": "GET",
     "header": [
@@ -21265,7 +21283,7 @@
         }
     ]
     },
-    "description": ""
+    "description": "Returns the URL address of the connected editors."
 }
                                 ,"response": [
                             ]
@@ -21274,10 +21292,10 @@
                         },
 						{
     "name": "/api/2.0/files/forcesave",
-                "description": "",
+                "description": "Specifies if the file forcesaving is enabled or not.",
                  "item": [
                             {
-                                "name": "forcesave",
+                                "name": "Change the forcesaving ability",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -21313,7 +21331,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Specifies if the file forcesaving is enabled or not."
 }
                                 ,"response": [
                             ]
@@ -21322,10 +21340,10 @@
                         },
 						{
     "name": "/api/2.0/files/hideconfirmcanceloperation",
-                "description": "",
+                "description": "Hides the confirmation dialog when canceling operations.",
                  "item": [
                             {
-                                "name": "hideConfirmCancelOperation",
+                                "name": "Hide confirmation dialog when canceling operations",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -21367,7 +21385,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Hides the confirmation dialog when canceling operations."
 }
                                 ,"response": [
                             ]
@@ -21376,10 +21394,10 @@
                         },
 						{
     "name": "/api/2.0/files/hideconfirmconvert",
-                "description": "",
+                "description": "Hides the confirmation dialog for saving the file copy in the original format when converting a file.",
                  "item": [
                             {
-                                "name": "hideConfirmConvert",
+                                "name": "Hide the confirmation dialog when converting",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -21421,7 +21439,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Hides the confirmation dialog for saving the file copy in the original format when converting a file."
 }
                                 ,"response": [
                             ]
@@ -21430,10 +21448,10 @@
                         },
 						{
     "name": "/api/2.0/files/hideconfirmroomlifetime",
-                "description": "",
+                "description": "Hides the confirmation dialog when changing the room lifetime settings.",
                  "item": [
                             {
-                                "name": "hideConfirmRoomLifetime",
+                                "name": "Hide confirmation dialog when changing room lifetime settings",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -21475,7 +21493,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Hides the confirmation dialog when changing the room lifetime settings."
 }
                                 ,"response": [
                             ]
@@ -21484,10 +21502,10 @@
                         },
 						{
     "name": "/api/2.0/files/info",
-                "description": "",
+                "description": "Returns the information about the Documents module.",
                  "item": [
                             {
-                                "name": "getFilesModule",
+                                "name": "Get the Documents information",
                                 "request": {
     "method": "GET",
     "header": [
@@ -21523,7 +21541,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns the information about the Documents module."
 }
                                 ,"response": [
                             ]
@@ -21532,10 +21550,10 @@
                         },
 						{
     "name": "/api/2.0/files/keepnewfilename",
-                "description": "",
+                "description": "Specifies whether to ask a user for a file name on creation or not.",
                  "item": [
                             {
-                                "name": "keepNewFileName",
+                                "name": "Ask a new file name",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -21577,7 +21595,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Specifies whether to ask a user for a file name on creation or not."
 }
                                 ,"response": [
                             ]
@@ -21586,10 +21604,10 @@
                         },
 						{
     "name": "/api/2.0/files/settings",
-                "description": "",
+                "description": "Returns all the file settings.",
                  "item": [
                             {
-                                "name": "getFilesSettings",
+                                "name": "Get file settings",
                                 "request": {
     "method": "GET",
     "header": [
@@ -21625,7 +21643,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns all the file settings."
 }
                                 ,"response": [
                             ]
@@ -21634,10 +21652,10 @@
                         },
 						{
     "name": "/api/2.0/files/settings/autocleanup",
-                "description": "",
+                "description": "Updates the trash bin auto-clearing setting.",
                  "item": [
                             {
-                                "name": "changeAutomaticallyCleanUp",
+                                "name": "Update the trash bin auto-clearing setting",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -21680,7 +21698,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Updates the trash bin auto-clearing setting."
 }
                                 ,"response": [
                             ]
@@ -21689,10 +21707,10 @@
                         },
 						{
     "name": "/api/2.0/files/settings/autocleanup",
-                "description": "",
+                "description": "Returns the trash bin auto-clearing setting.",
                  "item": [
                             {
-                                "name": "getAutomaticallyCleanUp",
+                                "name": "Get the trash bin auto-clearing setting",
                                 "request": {
     "method": "GET",
     "header": [
@@ -21729,7 +21747,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Returns the trash bin auto-clearing setting."
 }
                                 ,"response": [
                             ]
@@ -21738,10 +21756,10 @@
                         },
 						{
     "name": "/api/2.0/files/settings/dafaultaccessrights",
-                "description": "",
+                "description": "Changes the default access rights in the sharing settings.",
                  "item": [
                             {
-                                "name": "changeDefaultAccessRights",
+                                "name": "Change the default access rights",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -21784,7 +21802,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Changes the default access rights in the sharing settings."
 }
                                 ,"response": [
                             ]
@@ -21793,10 +21811,10 @@
                         },
 						{
     "name": "/api/2.0/files/settings/downloadtargz",
-                "description": "",
+                "description": "Changes the format of the downloaded archive from .zip to .tar.gz. This method uses the body parameters.",
                  "item": [
                             {
-                                "name": "changeDownloadZipFromBody",
+                                "name": "Change the archive format (using body parameters)",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -21839,7 +21857,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Changes the format of the downloaded archive from .zip to .tar.gz. This method uses the body parameters."
 }
                                 ,"response": [
                             ]
@@ -21848,10 +21866,10 @@
                         },
 						{
     "name": "/api/2.0/files/settings/external",
-                "description": "",
+                "description": "Changes the ability to share a file externally.",
                  "item": [
                             {
-                                "name": "externalShare",
+                                "name": "Change the external sharing ability",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -21894,7 +21912,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Changes the ability to share a file externally."
 }
                                 ,"response": [
                             ]
@@ -21903,10 +21921,10 @@
                         },
 						{
     "name": "/api/2.0/files/settings/externalsocialmedia",
-                "description": "",
+                "description": "Changes the ability to share a file externally on social networks.",
                  "item": [
                             {
-                                "name": "externalShareSocialMedia",
+                                "name": "Change the external sharing ability on social networks",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -21949,7 +21967,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Changes the ability to share a file externally on social networks."
 }
                                 ,"response": [
                             ]
@@ -21958,10 +21976,10 @@
                         },
 						{
     "name": "/api/2.0/files/settings/openeditorinsametab",
-                "description": "",
+                "description": "Changes the ability to open the document in the same browser tab.",
                  "item": [
                             {
-                                "name": "setOpenEditorInSameTab",
+                                "name": "Open document in the same browser tab",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -22004,7 +22022,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Changes the ability to open the document in the same browser tab."
 }
                                 ,"response": [
                             ]
@@ -22013,10 +22031,10 @@
                         },
 						{
     "name": "/api/2.0/files/storeforcesave",
-                "description": "",
+                "description": "Changes the ability to store the forcesaved file versions.",
                  "item": [
                             {
-                                "name": "storeForcesave",
+                                "name": "Change the ability to store the forcesaved files",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -22052,7 +22070,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Changes the ability to store the forcesaved file versions."
 }
                                 ,"response": [
                             ]
@@ -22061,10 +22079,10 @@
                         },
 						{
     "name": "/api/2.0/files/storeoriginal",
-                "description": "",
+                "description": "Changes the ability to upload documents in the original formats as well.",
                  "item": [
                             {
-                                "name": "storeOriginal",
+                                "name": "Change the ability to upload original formats",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -22106,7 +22124,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Changes the ability to upload documents in the original formats as well."
 }
                                 ,"response": [
                             ]
@@ -22115,10 +22133,10 @@
                         },
 						{
     "name": "/api/2.0/files/thirdparty",
-                "description": "",
+                "description": "Changes the access to the third-party settings.",
                  "item": [
                             {
-                                "name": "changeAccessToThirdparty",
+                                "name": "Change the third-party settings access",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -22160,7 +22178,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Changes the access to the third-party settings."
 }
                                 ,"response": [
                             ]
@@ -22169,10 +22187,10 @@
                         },
 						{
     "name": "/api/2.0/files/updateifexist",
-                "description": "",
+                "description": "Updates a file version if a file with such a name already exists.",
                  "item": [
                             {
-                                "name": "updateFileIfExist",
+                                "name": "Update a file version if it exists",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -22214,7 +22232,7 @@
     "query": [
     ]
     },
-    "description": ""
+    "description": "Updates a file version if a file with such a name already exists."
 }
                                 ,"response": [
                             ]
@@ -25776,7 +25794,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"name\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"instruction\": \"<string>\",\n \"canSet\": \"<string>\",\n \"props\": \"<string>\"\n}",
+    "raw": "{\n \"name\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"instruction\": \"<string>\",\n \"canSet\": \"<string>\",\n \"paid\": \"<string>\",\n \"props\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
