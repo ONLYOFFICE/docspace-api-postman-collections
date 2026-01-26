@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "1",
+  "workspace": {
+    "id": "WORKSPACE_ID"
+  },
+  "entities": {
+    "collections": ["../postman.json"],
+    "environments": []
+  }
+}
