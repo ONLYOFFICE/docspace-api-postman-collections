@@ -28917,7 +28917,7 @@
     },
     {
       "key": "baseUrl",
-      "value": "http://localhost:8092/",
+      "value": "http://localhost:8092",
       "type": "string"
     }
   ]
