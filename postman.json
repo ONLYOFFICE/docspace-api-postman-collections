@@ -1,21 +1,22 @@
 {
-	"info": {
-		"name": "Api",
-		"description": {
-		    "content": "",
-		    "type": "text/markdown"
-		},
-		"version": "3.6.0",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "Group",
-			"item": [
-				{
-					"name": "Group",
-					"item": [
-						{
+  "info": {
+    "name": "DocSpace API",
+    "description": {
+      "content": "A simple Postman Collection for integrating with the ONLYOFFICE DocSpace API",
+      "type": "text/markdown"
+    },
+    "version": "3.6.0",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_postman_id": "5d8c9db9-3822-4cc8-864b-75521aa761c2"
+  },
+  "item": [
+    {
+      "name": "Group",
+      "item": [
+        {
+          "name": "Group",
+          "item": [
+            {
     "name": "/api/2.0/group",
                 "description": "Adds a new group with the group manager, name, and members specified in the request.",
                  "item": [
@@ -68,7 +69,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/group",
                 "description": "Returns the general information about all the groups, such as group ID and group manager.   **Note**: This method returns partial group information.",
                  "item": [
@@ -157,7 +158,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/group/:fromId/members/:toId",
                 "description": "Moves all the members from the selected group to another one specified in the request.",
                  "item": [
@@ -217,7 +218,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/group/:id",
                 "description": "Deletes a group with the ID specified in the request from the list of groups on the portal.",
                  "item": [
@@ -270,7 +271,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/group/:id",
                 "description": "Returns the detailed information about the selected group.   **Note**: This method returns full group information.",
                  "item": [
@@ -329,7 +330,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/group/:id",
                 "description": "Updates the existing group changing the group manager, name, and/or members.",
                  "item": [
@@ -388,7 +389,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/group/:id/manager",
                 "description": "Sets a user with the ID specified in the request as a group manager.",
                  "item": [
@@ -448,7 +449,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/group/:id/members",
                 "description": "Adds new group members to the group with the ID specified in the request.",
                  "item": [
@@ -508,7 +509,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/group/:id/members",
                 "description": "Removes the group members specified in the request from the selected group.",
                  "item": [
@@ -568,7 +569,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/group/:id/members",
                 "description": "Replaces the group members with those specified in the request.",
                  "item": [
@@ -628,7 +629,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/group/user/:userid",
                 "description": "Returns a list of groups for the user with the ID specified in the request.",
                  "item": [
@@ -682,12 +683,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Search",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Search",
+          "item": [
+            {
     "name": "/api/2.0/group/file/:id",
                 "description": "Returns groups with their sharing settings for a file with the ID specified in request.",
                  "item": [
@@ -765,7 +766,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/group/folder/:id",
                 "description": "Returns groups with their sharing settings in a folder with the ID specified in request.",
                  "item": [
@@ -843,7 +844,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/group/room/:id",
                 "description": "Returns groups with their sharing settings in a room with the ID specified in request.",
                  "item": [
@@ -921,14 +922,14 @@
                             }
                             ]
                         }
-					]
-				}
-			]
-		},
-		{
-			"name": "Migration",
-			"item": [
-				{
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Migration",
+      "item": [
+        {
     "name": "/api/2.0/migration/cancel",
                 "description": "Cancels the migration.",
                  "item": [
@@ -970,7 +971,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/migration/clear",
                 "description": "Clears the migration.",
                  "item": [
@@ -1012,7 +1013,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/migration/finish",
                 "description": "Finishes the migration process.",
                  "item": [
@@ -1060,7 +1061,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/migration/init/:migratorName",
                 "description": "Uploads and initializes a migration with a migrator name specified in the request.",
                  "item": [
@@ -1108,7 +1109,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/migration/list",
                 "description": "Returns a list of available migrations.",
                  "item": [
@@ -1156,7 +1157,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/migration/logs",
                 "description": "Returns the migration logs.",
                  "item": [
@@ -1198,7 +1199,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/migration/migrate",
                 "description": "Starts the migration process.",
                  "item": [
@@ -1246,7 +1247,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/migration/status",
                 "description": "Returns the migration status.",
                  "item": [
@@ -1294,12 +1295,12 @@
                             }
                             ]
                         }
-			]
-		},
-		{
-			"name": "Backup",
-			"item": [
-				{
+      ]
+    },
+    {
+      "name": "Backup",
+      "item": [
+        {
     "name": "/api/2.0/backup/createbackupschedule",
                 "description": "Creates the backup schedule of the current portal with the parameters specified in the request.",
                  "item": [
@@ -1353,7 +1354,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/backup/deletebackup/:id",
                 "description": "Deletes the backup with the ID specified in the request.",
                  "item": [
@@ -1407,7 +1408,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/backup/deletebackuphistory",
                 "description": "Deletes the backup history from the current portal.",
                  "item": [
@@ -1461,7 +1462,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/backup/deletebackupschedule",
                 "description": "Deletes the backup schedule of the current portal.",
                  "item": [
@@ -1515,7 +1516,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/backup/getbackuphistory",
                 "description": "Returns the history of the started backup.",
                  "item": [
@@ -1569,7 +1570,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/backup/getbackupprogress",
                 "description": "Returns the progress of the started backup.",
                  "item": [
@@ -1623,7 +1624,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/backup/getbackupschedule",
                 "description": "Returns the backup schedule of the current portal.",
                  "item": [
@@ -1677,7 +1678,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/backup/getbackupscount",
                 "description": "Returns the number of backups for a period of time. The default is one month.",
                  "item": [
@@ -1743,7 +1744,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/backup/getrestoreprogress",
                 "description": "Returns the progress of the started restoring process.",
                  "item": [
@@ -1797,7 +1798,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/backup/getservicestate",
                 "description": "Returns the backup service state.",
                  "item": [
@@ -1845,7 +1846,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/backup/startbackup",
                 "description": "Starts the backup of the current portal with the parameters specified in the request.",
                  "item": [
@@ -1899,7 +1900,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/backup/startrestore",
                 "description": "Starts the data restoring process of the current portal with the parameters specified in the request.",
                  "item": [
@@ -1953,15 +1954,15 @@
                             }
                             ]
                         }
-			]
-		},
-		{
-			"name": "People",
-			"item": [
-				{
-					"name": "User data",
-					"item": [
-						{
+      ]
+    },
+    {
+      "name": "People",
+      "item": [
+        {
+          "name": "User data",
+          "item": [
+            {
     "name": "/api/2.0/people/delete/personal/progress",
                 "description": "Returns the progress of deleting the personal folder.",
                  "item": [
@@ -2011,7 +2012,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/delete/personal/start",
                 "description": "Starts deleting the personal folder.",
                  "item": [
@@ -2061,7 +2062,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/reassign/necessary",
                 "description": "Checks whether the reassignment of rooms and shared files is required.",
                  "item": [
@@ -2122,7 +2123,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/reassign/progress/:userid",
                 "description": "Returns the progress of the started data reassignment for the user with the ID specified in the request.",
                  "item": [
@@ -2177,7 +2178,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/reassign/start",
                 "description": "Starts the data reassignment for the user with the ID specified in the request.",
                  "item": [
@@ -2232,7 +2233,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/reassign/terminate",
                 "description": "Terminates the data reassignment for the user with the ID specified in the request.",
                  "item": [
@@ -2287,7 +2288,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/remove/progress/:userid",
                 "description": "Returns the progress of the started data deletion for the user with the ID specified in the request.",
                  "item": [
@@ -2342,7 +2343,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/remove/start",
                 "description": "Starts the data deletion for the user with the ID specified in the request.",
                  "item": [
@@ -2397,7 +2398,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/remove/terminate",
                 "description": "Terminates the data deletion for the user with the ID specified in the request.",
                  "item": [
@@ -2446,7 +2447,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/self/delete",
                 "description": "Sends the instructions for deleting a user profile.",
                  "item": [
@@ -2495,12 +2496,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Photos",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Photos",
+          "item": [
+            {
     "name": "/api/2.0/people/:userid/photo",
                 "description": "Deletes a photo of the user with the ID specified in the request.",
                  "item": [
@@ -2554,7 +2555,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/:userid/photo",
                 "description": "Returns a photo of the user with the ID specified in the request.",
                  "item": [
@@ -2608,7 +2609,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/:userid/photo",
                 "description": "Updates a photo of the user with the ID specified in the request.",
                  "item": [
@@ -2668,7 +2669,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/:userid/photo",
                 "description": "Uploads a photo of the user with the ID specified in the request.",
                  "item": [
@@ -2728,7 +2729,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/:userid/photo/thumbnails",
                 "description": "Creates the user photo thumbnails by coordinates of the original image specified in the request.",
                  "item": [
@@ -2789,12 +2790,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Third-party accounts",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Third-party accounts",
+          "item": [
+            {
     "name": "/api/2.0/people/thirdparty/linkaccount",
                 "description": "Links a third-party account specified in the request to the user profile.",
                  "item": [
@@ -2843,7 +2844,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/thirdparty/providers",
                 "description": "Returns a list of the available third-party accounts.",
                  "item": [
@@ -2916,7 +2917,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/thirdparty/signup",
                 "description": "Creates a third-party account with the parameters specified in the request.",
                  "item": [
@@ -2971,7 +2972,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/thirdparty/unlinkaccount",
                 "description": "Unlinks a third-party account specified in the request from the user profile.",
                  "item": [
@@ -3020,12 +3021,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Guests",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Guests",
+          "item": [
+            {
     "name": "/api/2.0/people/guests",
                 "description": "Deletes guests from the list and excludes them from rooms to which they were invited.",
                  "item": [
@@ -3073,7 +3074,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/guests/share/approve",
                 "description": "Approves a guest sharing link and returns the detailed information about a guest.",
                  "item": [
@@ -3129,12 +3130,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Quota",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Quota",
+          "item": [
+            {
     "name": "/api/2.0/people/resetquota",
                 "description": "Resets a quota limit of users with the IDs specified in the request.",
                  "item": [
@@ -3188,7 +3189,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/userquota",
                 "description": "Changes a quota limit for the users with the IDs specified in the request.",
                  "item": [
@@ -3242,12 +3243,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Search",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Search",
+          "item": [
+            {
     "name": "/api/2.0/accounts/file/:id/search",
                 "description": "Returns the account entries with their sharing settings for a file with the ID specified in request.",
                  "item": [
@@ -3374,7 +3375,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/accounts/folder/:id/search",
                 "description": "Returns the account entries with their sharing settings in a folder with the ID specified in request.",
                  "item": [
@@ -3501,7 +3502,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/accounts/room/:id/search",
                 "description": "Returns the account entries with their sharing settings in a room with the ID specified in request.",
                  "item": [
@@ -3628,7 +3629,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/@search/:query",
                 "description": "Returns a list of users matching the search query.",
                  "item": [
@@ -3694,7 +3695,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/file/:id",
                 "description": "Returns the users with the sharing settings in a file with the ID specified in request.",
                  "item": [
@@ -3820,7 +3821,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/filter",
                 "description": "Returns a list of users with full information about them matching the parameters specified in the request.",
                  "item": [
@@ -3988,7 +3989,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/folder/:id",
                 "description": "Returns the users with the sharing settings in a folder with the ID specified in request.",
                  "item": [
@@ -4114,7 +4115,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/room/:id",
                 "description": "Returns the users with the sharing settings in a room with the ID specified in request.",
                  "item": [
@@ -4240,7 +4241,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/search",
                 "description": "Returns a list of users matching the search query. This method uses the query parameters.",
                  "item": [
@@ -4294,7 +4295,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/simple/filter",
                 "description": "Returns a list of users matching the parameters specified in the request.",
                  "item": [
@@ -4463,7 +4464,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/status/:status/search",
                 "description": "Returns a list of users matching the status filter and search query.",
                  "item": [
@@ -4536,12 +4537,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Profiles",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Profiles",
+          "item": [
+            {
     "name": "/api/2.0/people",
                 "description": "Adds a new portal user with the first name, last name, email address, and several optional parameters specified in the request.",
                  "item": [
@@ -4594,7 +4595,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people",
                 "description": "Returns a list of profiles for all the portal users.",
                  "item": [
@@ -4683,7 +4684,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/:userid",
                 "description": "Deletes a user with the ID specified in the request from the portal.",
                  "item": [
@@ -4736,7 +4737,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/:userid",
                 "description": "Returns the detailed information about a profile of the user with the ID specified in the request.",
                  "item": [
@@ -4789,7 +4790,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/:userid",
                 "description": "Updates the data for the selected portal user with the first name, last name, email address, and/or optional parameters specified in the request.",
                  "item": [
@@ -4848,7 +4849,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/:userid/culture",
                 "description": "Updates the user culture code with the parameters specified in the request.",
                  "item": [
@@ -4908,7 +4909,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/@self",
                 "description": "Deletes the current user profile.",
                  "item": [
@@ -4956,7 +4957,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/@self",
                 "description": "Returns the detailed information about the current user profile.",
                  "item": [
@@ -5004,7 +5005,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/delete",
                 "description": "Deletes a list of the users with the IDs specified in the request.",
                  "item": [
@@ -5058,7 +5059,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/email",
                 "description": "Returns the detailed information about a profile of the user with the email specified in the request.",
                  "item": [
@@ -5124,7 +5125,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/email",
                 "description": "Sends a message to the user email with the instructions to change the email address connected to the portal.",
                  "item": [
@@ -5178,7 +5179,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/invite",
                 "description": "Invites users specified in the request to the current portal.",
                  "item": [
@@ -5232,7 +5233,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/invite",
                 "description": "Resends emails to the users who have not activated their emails.",
                  "item": [
@@ -5286,7 +5287,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/tokendiagnostics",
                 "description": "Returns the user claims.",
                  "item": [
@@ -5334,12 +5335,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "User type",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "User type",
+          "item": [
+            {
     "name": "/api/2.0/people/type",
                 "description": "Starts updating the type of the user or guest when reassigning rooms and shared files.",
                  "item": [
@@ -5393,7 +5394,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/type/:type",
                 "description": "Changes a type of the users with the IDs specified in the request.",
                  "item": [
@@ -5453,7 +5454,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/type/progress/:userid",
                 "description": "Returns the progress of updating the user type.",
                  "item": [
@@ -5508,7 +5509,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/type/terminate",
                 "description": "Terminates the process of updating the type of the user or guest.",
                  "item": [
@@ -5563,12 +5564,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Theme",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Theme",
+          "item": [
+            {
     "name": "/api/2.0/people/theme",
                 "description": "Changes the current portal theme.",
                  "item": [
@@ -5622,7 +5623,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/theme",
                 "description": "Returns a theme which is set to the current portal.",
                  "item": [
@@ -5670,12 +5671,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "User status",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "User status",
+          "item": [
+            {
     "name": "/api/2.0/people/activationstatus/:activationstatus",
                 "description": "Sets the required activation status to the list of users with the IDs specified in the request.",
                  "item": [
@@ -5735,7 +5736,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/status/:status",
                 "description": "Returns a list of profiles filtered by the user status.",
                  "item": [
@@ -5831,7 +5832,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/status/:status",
                 "description": "Changes a status of the users with the IDs specified in the request.",
                  "item": [
@@ -5891,12 +5892,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Password",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Password",
+          "item": [
+            {
     "name": "/api/2.0/people/:userid/password",
                 "description": "Sets a new password to the user with the ID specified in the request.",
                  "item": [
@@ -5956,7 +5957,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/people/password",
                 "description": "Reminds a password to the user using the email address specified in the request.",
                  "item": [
@@ -6010,17 +6011,17 @@
                             }
                             ]
                         }
-					]
-				}
-			]
-		},
-		{
-			"name": "Security",
-			"item": [
-				{
-					"name": "Login history",
-					"item": [
-						{
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Security",
+      "item": [
+        {
+          "name": "Login history",
+          "item": [
+            {
     "name": "/api/2.0/security/audit/login/filter",
                 "description": "Returns a list of the login events by the parameters specified in the request.",
                  "item": [
@@ -6106,7 +6107,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/security/audit/login/last",
                 "description": "Returns all the latest user login activity, including successful logins and error logs.",
                  "item": [
@@ -6156,7 +6157,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/security/audit/login/report",
                 "description": "Generates the login history report.",
                  "item": [
@@ -6206,12 +6207,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Firebase",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Firebase",
+          "item": [
+            {
     "name": "/api/2.0/settings/push/docregisterdevice",
                 "description": "Saves the Firebase device token specified in the request for the Documents application.",
                  "item": [
@@ -6266,7 +6267,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/push/docsubscribe",
                 "description": "Subscribes to the Documents push notification.",
                  "item": [
@@ -6321,12 +6322,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "CSP",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "CSP",
+          "item": [
+            {
     "name": "/api/2.0/security/csp",
                 "description": "Configures the CSP (Content Security Policy) settings for the current portal.",
                  "item": [
@@ -6380,7 +6381,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/security/csp",
                 "description": "Returns the CSP (Content Security Policy) settings for the current portal.",
                  "item": [
@@ -6428,12 +6429,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "OAuth2",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "OAuth2",
+          "item": [
+            {
     "name": "/api/2.0/security/oauth2/token",
                 "description": "Generates a JWT token for communication between login (client) and identity services.",
                  "item": [
@@ -6482,12 +6483,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "SMTP settings",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "SMTP settings",
+          "item": [
+            {
     "name": "/api/2.0/smtpsettings/smtp",
                 "description": "Returns the current portal SMTP settings.",
                  "item": [
@@ -6535,7 +6536,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/smtpsettings/smtp",
                 "description": "Resets the SMTP settings of the current portal.",
                  "item": [
@@ -6583,7 +6584,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/smtpsettings/smtp",
                 "description": "Saves the SMTP settings for the current portal.",
                  "item": [
@@ -6637,7 +6638,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/smtpsettings/smtp/test",
                 "description": "Tests the SMTP settings for the current portal (sends test message to the user email).",
                  "item": [
@@ -6686,7 +6687,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/smtpsettings/smtp/test/status",
                 "description": "Returns the status of the SMTP testing process.",
                  "item": [
@@ -6736,12 +6737,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Active connections",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Active connections",
+          "item": [
+            {
     "name": "/api/2.0/security/activeconnections",
                 "description": "Returns all the active connections to the portal.",
                  "item": [
@@ -6789,7 +6790,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/security/activeconnections/logout/:loginEventId",
                 "description": "Logs out from the connection with the ID specified in the request.",
                  "item": [
@@ -6844,7 +6845,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/security/activeconnections/logoutall/:userId",
                 "description": "Logs out from all the active connections for the user with the ID specified in the request.",
                  "item": [
@@ -6893,7 +6894,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/security/activeconnections/logoutallchangepassword",
                 "description": "Logs out from all the active connections for the current user and changes their password.",
                  "item": [
@@ -6942,7 +6943,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/security/activeconnections/logoutallexceptthis",
                 "description": "Logs out from all the active connections except the current connection.",
                  "item": [
@@ -6991,12 +6992,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Banners visibility",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Banners visibility",
+          "item": [
+            {
     "name": "/api/2.0/settings/banner",
                 "description": "Sets the visibility settings of the promotional banners in the portal.",
                  "item": [
@@ -7050,12 +7051,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Access to DevTools",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Access to DevTools",
+          "item": [
+            {
     "name": "/api/2.0/settings/devtoolsaccess",
                 "description": "Sets the Developer Tools access settings for the portal.",
                  "item": [
@@ -7109,12 +7110,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Audit trail data",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Audit trail data",
+          "item": [
+            {
     "name": "/api/2.0/security/audit/events/filter",
                 "description": "Returns a list of the audit events by the parameters specified in the request.",
                  "item": [
@@ -7224,7 +7225,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/security/audit/events/last",
                 "description": "Returns a list of the latest changes (creation, modification, deletion, etc.) made by users to the entities on the portal.",
                  "item": [
@@ -7274,7 +7275,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/security/audit/events/report",
                 "description": "Generates the audit trail report.",
                  "item": [
@@ -7324,7 +7325,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/security/audit/mappers",
                 "description": "Returns the mappers for the audit trail types.",
                  "item": [
@@ -7385,7 +7386,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/security/audit/settings/lifetime",
                 "description": "Returns the audit trail settings.",
                  "item": [
@@ -7435,7 +7436,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/security/audit/settings/lifetime",
                 "description": "Sets the audit trail settings for the current portal.",
                  "item": [
@@ -7491,7 +7492,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/security/audit/types",
                 "description": "Returns all the available audit trail types.",
                  "item": [
@@ -7540,14 +7541,14 @@
                             }
                             ]
                         }
-					]
-				}
-			]
-		},
-		{
-			"name": "Rooms",
-			"item": [
-				{
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rooms",
+      "item": [
+        {
     "name": "/api/2.0/files/logos",
                 "description": "Uploads a temporary image to create a room logo.",
                  "item": [
@@ -7601,7 +7602,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms",
                 "description": "Creates a room in the Rooms section.",
                  "item": [
@@ -7655,7 +7656,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms",
                 "description": "Returns the contents of the Rooms section by the parameters specified in the request.",
                  "item": [
@@ -7793,7 +7794,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/:id",
                 "description": "Removes a room with the ID specified in the request.",
                  "item": [
@@ -7853,7 +7854,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/:id",
                 "description": "Returns the room information.",
                  "item": [
@@ -7907,7 +7908,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/:id",
                 "description": "Updates a room with the ID specified in the request.",
                  "item": [
@@ -7967,7 +7968,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/:id/archive",
                 "description": "Moves a room with the ID specified in the request to the Archive section.",
                  "item": [
@@ -8028,7 +8029,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/:id/cover",
                 "description": "Changes a cover of a room with the ID specified in the request.",
                  "item": [
@@ -8089,7 +8090,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/:id/indexexport",
                 "description": "Starts the index export of a room with the ID specified in the request.",
                  "item": [
@@ -8144,7 +8145,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/:id/link",
                 "description": "Returns the primary external link of the room with the ID specified in the request.",
                  "item": [
@@ -8199,7 +8200,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/:id/links",
                 "description": "Returns the links of the room with the ID specified in the request.",
                  "item": [
@@ -8260,7 +8261,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/:id/links",
                 "description": "Sets the room external or invitation link with the ID specified in the request.",
                  "item": [
@@ -8321,7 +8322,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/:id/logo",
                 "description": "Creates a logo for a room with the ID specified in the request.",
                  "item": [
@@ -8382,7 +8383,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/:id/logo",
                 "description": "Removes a logo from a room with the ID specified in the request.",
                  "item": [
@@ -8437,7 +8438,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/:id/news",
                 "description": "Returns a list of all the new items from a room with the ID specified in the request.",
                  "item": [
@@ -8492,7 +8493,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/:id/pin",
                 "description": "Pins a room with the ID specified in the request to the top of the list.",
                  "item": [
@@ -8547,7 +8548,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/:id/reorder",
                 "description": "Reorders the room with ID specified in the request.",
                  "item": [
@@ -8602,7 +8603,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/:id/resend",
                 "description": "Resends the email invitations to a room with the ID specified in the request to the selected users.",
                  "item": [
@@ -8657,7 +8658,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/:id/share",
                 "description": "Returns the access rights of a room with the ID specified in the request.",
                  "item": [
@@ -8736,7 +8737,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/:id/share",
                 "description": "Sets the access rights to the room with the ID specified in the request.",
                  "item": [
@@ -8797,7 +8798,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/:id/tags",
                 "description": "Adds the tags to a room with the ID specified in the request.",
                  "item": [
@@ -8858,7 +8859,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/:id/tags",
                 "description": "Removes the tags from a room with the ID specified in the request.",
                  "item": [
@@ -8919,7 +8920,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/:id/unarchive",
                 "description": "Moves a room with the ID specified in the request from the Archive section to the Rooms section.",
                  "item": [
@@ -8980,7 +8981,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/:id/unpin",
                 "description": "Unpins a room with the ID specified in the request from the top of the list.",
                  "item": [
@@ -9035,7 +9036,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/covers",
                 "description": "Returns a list of all covers.",
                  "item": [
@@ -9084,7 +9085,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/fromtemplate",
                 "description": "Creates a room in the Rooms section based on the template.",
                  "item": [
@@ -9139,7 +9140,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/fromtemplate/status",
                 "description": "Returns the progress of creating a room from the template.",
                  "item": [
@@ -9189,7 +9190,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/indexexport",
                 "description": "Returns the room index export.",
                  "item": [
@@ -9238,7 +9239,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/indexexport",
                 "description": "Terminates the room index export.",
                  "item": [
@@ -9281,7 +9282,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/news",
                 "description": "Returns the room new items.",
                  "item": [
@@ -9330,7 +9331,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/rooms/thirdparty/:id",
                 "description": "Creates a room in the Rooms section stored in a third-party storage.",
                  "item": [
@@ -9391,7 +9392,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/roomtemplate",
                 "description": "Starts creating the room template.",
                  "item": [
@@ -9445,7 +9446,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/roomtemplate/:id/public",
                 "description": "Returns the public settings of the room template with the ID specified in the request.",
                  "item": [
@@ -9500,7 +9501,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/roomtemplate/public",
                 "description": "Sets the public settings for the room template with the ID specified in the request.",
                  "item": [
@@ -9549,7 +9550,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/roomtemplate/status",
                 "description": "Returns the progress status of the room template creation process.",
                  "item": [
@@ -9598,7 +9599,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/tags",
                 "description": "Creates a custom room tag with the parameters specified in the request.",
                  "item": [
@@ -9652,7 +9653,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/tags",
                 "description": "Deletes a bunch of custom room tags specified in the request.",
                  "item": [
@@ -9700,7 +9701,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/files/tags",
                 "description": "Returns a list of custom room tags.",
                  "item": [
@@ -9766,12 +9767,12 @@
                             }
                             ]
                         }
-			]
-		},
-		{
-			"name": "Api keys",
-			"item": [
-				{
+      ]
+    },
+    {
+      "name": "Api keys",
+      "item": [
+        {
     "name": "/api/2.0/keys",
                 "description": "Creates a user API key with the parameters specified in the request.",
                  "item": [
@@ -9824,7 +9825,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/keys",
                 "description": "Returns a list of all API keys for the current user.",
                  "item": [
@@ -9871,7 +9872,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/keys/:keyId",
                 "description": "Deletes a user API key by its ID.",
                  "item": [
@@ -9924,7 +9925,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/keys/:keyId",
                 "description": "Updates an existing API key changing its name, permissions, and status.",
                  "item": [
@@ -9983,7 +9984,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/keys/@self",
                 "description": "Returns information about the current user's API key.",
                  "item": [
@@ -10031,7 +10032,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/keys/permissions",
                 "description": "Returns a list of all available permissions for the API key.",
                  "item": [
@@ -10079,15 +10080,15 @@
                             }
                             ]
                         }
-			]
-		},
-		{
-			"name": "OAuth 2.0",
-			"item": [
-				{
-					"name": "Client Management",
-					"item": [
-						{
+      ]
+    },
+    {
+      "name": "OAuth 2.0",
+      "item": [
+        {
+          "name": "Client Management",
+          "item": [
+            {
     "name": "/api/2.0/clients",
                 "description": "Creates a new OAuth2 client with the specified configuration. The client will be created with the provided scopes, redirect URIs, and other settings. Returns the created client details including the generated client ID.",
                  "item": [
@@ -10140,7 +10141,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/clients/:clientId",
                 "description": "Permanently deletes an OAuth2 client and all associated data. All access and refresh tokens issued to this client will be invalidated. This operation cannot be undone.",
                  "item": [
@@ -10193,7 +10194,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/clients/:clientId",
                 "description": "Updates the configuration of an existing OAuth2 client, allowing modifications to the client name, description, redirect URIs, and other settings. The client ID cannot be modified.",
                  "item": [
@@ -10252,7 +10253,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/clients/:clientId/activation",
                 "description": "Activates or deactivates an OAuth2 client. When deactivated, the client cannot request new access tokens, but existing tokens will remain valid until they expire.",
                  "item": [
@@ -10312,7 +10313,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/clients/:clientId/regenerate",
                 "description": "Generates a new client secret for the specified OAuth2 client. The old secret will be immediately invalidated. This operation should be used with caution as it requires updating the secret in all client applications.",
                  "item": [
@@ -10366,7 +10367,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/clients/:clientId/revoke",
                 "description": "Revokes all user consents for the specified OAuth2 client. This will invalidate all access tokens and refresh tokens issued to this client for the current user. The user will need to re-authorize the client to access their resources.",
                  "item": [
@@ -10420,12 +10421,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Authorization",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Authorization",
+          "item": [
+            {
     "name": "/oauth2/authorize",
                 "description": "Initiates the OAuth2 authorization flow.",
                  "item": [
@@ -10489,7 +10490,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/oauth2/authorize",
                 "description": "Sends a consent request with the specified parameters.",
                  "item": [
@@ -10535,7 +10536,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/oauth2/token",
                 "description": "Exchanges an authorization code specified in the request for the access token.",
                  "item": [
@@ -10587,12 +10588,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Client Querying",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Client Querying",
+          "item": [
+            {
     "name": "/api/2.0/clients",
                 "description": "Retrieves a paginated list of OAuth2 clients. The results can be paginated using the 'limit' parameter and the last seen client ID or creation date.",
                  "item": [
@@ -10657,7 +10658,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/clients/:clientId",
                 "description": "Retrieves detailed information about a specific OAuth2 client including its name, description, redirect URIs, and scopes.",
                  "item": [
@@ -10710,7 +10711,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/clients/:clientId/info",
                 "description": "Retrieves the detailed information for a client with the ID specified in the request.",
                  "item": [
@@ -10764,7 +10765,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/clients/:clientId/public/info",
                 "description": "Returns the public information for a client with the ID secified din the request.",
                  "item": [
@@ -10819,7 +10820,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/clients/consents",
                 "description": "Retrieves a paginated list of user consents.",
                  "item": [
@@ -10879,7 +10880,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/clients/info",
                 "description": "Retrieves a paginated list of information for all clients.",
                  "item": [
@@ -10945,12 +10946,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Scope Management",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Scope Management",
+          "item": [
+            {
     "name": "/api/2.0/scopes",
                 "description": "Retrieves a list of all available OAuth2 scopes for the specified tenant. The scopes define the permissions that can be requested by OAuth2 clients. The list is ordered alphabetically, with the 'openid' scope always appearing first.",
                  "item": [
@@ -10997,14 +10998,14 @@
                             }
                             ]
                         }
-					]
-				}
-			]
-		},
-		{
-			"name": "Capabilities",
-			"item": [
-				{
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Capabilities",
+      "item": [
+        {
     "name": "/api/2.0/capabilities",
                 "description": "Returns the information about portal capabilities.",
                  "item": [
@@ -11051,12 +11052,12 @@
                             }
                             ]
                         }
-			]
-		},
-		{
-			"name": "Authentication",
-			"item": [
-				{
+      ]
+    },
+    {
+      "name": "Authentication",
+      "item": [
+        {
     "name": "/api/2.0/authentication",
                 "description": "Authenticates the current user by SMS, authenticator app, or without two-factor authentication.",
                  "item": [
@@ -11109,7 +11110,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/authentication",
                 "description": "Checks if the current user is authenticated or not.",
                  "item": [
@@ -11156,7 +11157,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/authentication/:code",
                 "description": "Authenticates the current user by SMS or two-factor authentication code.",
                  "item": [
@@ -11215,7 +11216,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/authentication/confirm",
                 "description": "Opens a confirmation email URL to validate a certain action (employee invitation, portal removal, phone activation, etc.).",
                  "item": [
@@ -11269,7 +11270,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/authentication/logout",
                 "description": "Logs out of the current user account.",
                  "item": [
@@ -11317,7 +11318,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/authentication/sendsms",
                 "description": "Sends SMS with an authentication code.",
                  "item": [
@@ -11371,7 +11372,7 @@
                             }
                             ]
                         },
-				{
+        {
     "name": "/api/2.0/authentication/setphone",
                 "description": "Sets a mobile phone for the current user.",
                  "item": [
@@ -11425,15 +11426,15 @@
                             }
                             ]
                         }
-			]
-		},
-		{
-			"name": "Portal",
-			"item": [
-				{
-					"name": "Payment",
-					"item": [
-						{
+      ]
+    },
+    {
+      "name": "Portal",
+      "item": [
+        {
+          "name": "Payment",
+          "item": [
+            {
     "name": "/api/2.0/portal/payment/account",
                 "description": "Returns the URL to the payment account.",
                  "item": [
@@ -11488,7 +11489,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/calculatewallet",
                 "description": "Calculates an amount of the wallet payment with the parameters specified in the request.",
                  "item": [
@@ -11543,7 +11544,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/chechoutsetupurl",
                 "description": "Returns the URL to the checkout setup page.",
                  "item": [
@@ -11598,7 +11599,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/currencies",
                 "description": "Returns the available portal currencies.",
                  "item": [
@@ -11647,7 +11648,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/customer/balance",
                 "description": "Returns the customer balance from the accounting service.",
                  "item": [
@@ -11703,7 +11704,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/customer/operations",
                 "description": "Returns the report of customer operations from the accounting service.",
                  "item": [
@@ -11795,7 +11796,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/customer/operationsreport",
                 "description": "Starts generating a customer operations report as an xlsx file and saves it in Documents.",
                  "item": [
@@ -11851,7 +11852,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/customer/operationsreport",
                 "description": "Returns the status of generating a customer operations report.",
                  "item": [
@@ -11901,7 +11902,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/customer/operationsreport",
                 "description": "Terminates generating a customer operations report.",
                  "item": [
@@ -11945,7 +11946,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/customerinfo",
                 "description": "Returns the customer information.",
                  "item": [
@@ -12000,7 +12001,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/deposit",
                 "description": "Returns the result of putting money on deposit.",
                  "item": [
@@ -12055,7 +12056,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/prices",
                 "description": "Returns the available portal prices.",
                  "item": [
@@ -12104,7 +12105,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/quota",
                 "description": "Returns the payment information about the current portal quota.",
                  "item": [
@@ -12159,7 +12160,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/quotas",
                 "description": "Returns the available portal quotas.",
                  "item": [
@@ -12214,7 +12215,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/request",
                 "description": "Sends a request for the portal payment.",
                  "item": [
@@ -12263,7 +12264,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/servicessettings",
                 "description": "Returns the wallet services settings.",
                  "item": [
@@ -12312,7 +12313,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/servicestate",
                 "description": "Changes the wallet service state.",
                  "item": [
@@ -12367,7 +12368,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/topupsettings",
                 "description": "Returns the wallet auto top-up settings.",
                  "item": [
@@ -12416,7 +12417,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/topupsettings",
                 "description": "Sets the wallet auto top-up settings.",
                  "item": [
@@ -12471,7 +12472,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/update",
                 "description": "Updates the payment quantity with the parameters specified in the request.",
                  "item": [
@@ -12526,7 +12527,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/updatewallet",
                 "description": "Updates the wallet payment quantity with the parameters specified in the request.",
                  "item": [
@@ -12581,7 +12582,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/url",
                 "description": "Returns the URL to the payment page.",
                  "item": [
@@ -12636,7 +12637,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/walletservice",
                 "description": "Returns the specified wallet service.",
                  "item": [
@@ -12691,7 +12692,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/payment/walletservices",
                 "description": "Returns the available wallet services.",
                  "item": [
@@ -12740,12 +12741,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Guests",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Guests",
+          "item": [
+            {
     "name": "/api/2.0/people/guests/:userid/share",
                 "description": "Returns a link to share a guest with another user.",
                  "item": [
@@ -12800,12 +12801,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Quota",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Quota",
+          "item": [
+            {
     "name": "/api/2.0/portal/quota",
                 "description": "Returns the current portal quota.",
                  "item": [
@@ -12853,7 +12854,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/quota/right",
                 "description": "Returns the recommended quota for the current portal.",
                  "item": [
@@ -12902,7 +12903,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/tariff",
                 "description": "Returns the current portal tariff.",
                  "item": [
@@ -12956,7 +12957,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/usedspace",
                 "description": "Returns the used space of the current portal.",
                  "item": [
@@ -13004,12 +13005,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Users",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Users",
+          "item": [
+            {
     "name": "/api/2.0/portal/present/mark",
                 "description": "Marks a gift message as read.",
                  "item": [
@@ -13052,7 +13053,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/sendcongratulations",
                 "description": "Sends congratulations to the user after registering a portal.",
                  "item": [
@@ -13106,7 +13107,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/users/:userID",
                 "description": "Returns a user with the ID specified in the request from the current portal.",
                  "item": [
@@ -13160,7 +13161,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/users/invite/:employeeType",
                 "description": "Returns an invitation link for joining the portal.",
                  "item": [
@@ -13215,7 +13216,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/userscount",
                 "description": "Returns a number of portal users.",
                  "item": [
@@ -13263,12 +13264,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Settings",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Settings",
+          "item": [
+            {
     "name": "/api/2.0/portal",
                 "description": "Returns the current portal information.",
                  "item": [
@@ -13315,7 +13316,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/continue",
                 "description": "Restores the current portal.",
                  "item": [
@@ -13357,7 +13358,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/delete",
                 "description": "Deletes the current portal.",
                  "item": [
@@ -13405,7 +13406,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/delete",
                 "description": "Sends the instructions to remove the current portal.",
                  "item": [
@@ -13447,7 +13448,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/path",
                 "description": "Returns the full absolute path to the current portal.",
                  "item": [
@@ -13501,7 +13502,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/suspend",
                 "description": "Sends the instructions to suspend the current portal.",
                  "item": [
@@ -13543,7 +13544,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/portal/suspend",
                 "description": "Deactivates the current portal.",
                  "item": [
@@ -13585,17 +13586,17 @@
                             }
                             ]
                         }
-					]
-				}
-			]
-		},
-		{
-			"name": "Files",
-			"item": [
-				{
-					"name": "Third-party integration",
-					"item": [
-						{
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Files",
+      "item": [
+        {
+          "name": "Third-party integration",
+          "item": [
+            {
     "name": "/api/2.0/files/thirdparty",
                 "description": "Returns a list of all the connected third-party accounts.",
                  "item": [
@@ -13643,7 +13644,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/thirdparty",
                 "description": "Saves the third-party storage service account. For WebDav, Yandex, kDrive and SharePoint, the login and password are used for authentication. For other providers, the authentication is performed using a token received via OAuth 2.0.   **Note**: List of provider keys: DropboxV2, Box, WebDav, Yandex, OneDrive, SharePoint, GoogleDrive, kDrive.",
                  "item": [
@@ -13697,7 +13698,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/thirdparty/:providerId",
                 "description": "Removes the third-party storage service account with the ID specified in the request.",
                  "item": [
@@ -13751,7 +13752,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/thirdparty/backup",
                 "description": "Returns a backup of the connected third-party account.",
                  "item": [
@@ -13800,7 +13801,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/thirdparty/backup",
                 "description": "Saves a backup of the connected third-party account.   **Note**: List of provider keys: DropboxV2, Box, WebDav, Yandex, OneDrive, SharePoint, GoogleDrive, kDrive.",
                  "item": [
@@ -13855,7 +13856,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/thirdparty/capabilities",
                 "description": "Returns the list of the available providers.   **Note**: Available provider keys: DropboxV2, Box, WebDav, Yandex, OneDrive, SharePoint, GoogleDrive, kDrive.",
                  "item": [
@@ -13904,7 +13905,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/thirdparty/common",
                 "description": "Returns a list of the third-party services connected to the Common section.",
                  "item": [
@@ -13953,7 +13954,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/thirdparty/providers",
                 "description": "Returns a list of all providers.   **Note**: Available provider keys: Dropbox, Box, WebDav, OneDrive, GoogleDrive, kDrive, ownCloud, Nextcloud.",
                  "item": [
@@ -14008,12 +14009,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Quota",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Quota",
+          "item": [
+            {
     "name": "/api/2.0/files/rooms/resetquota",
                 "description": "Resets the quota limit for the rooms with the IDs specified in the request.",
                  "item": [
@@ -14068,7 +14069,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/rooms/roomquota",
                 "description": "Changes the quota limit for the rooms with the IDs specified in the request.",
                  "item": [
@@ -14123,12 +14124,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Sharing",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Sharing",
+          "item": [
+            {
     "name": "/api/2.0/files/file/:fileId/group/:groupId/share",
                 "description": "Returns the group members with their file security information.",
                  "item": [
@@ -14208,7 +14209,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/sendeditornotify",
                 "description": "Sends a message to the users who are mentioned in the file with the ID specified in the request.",
                  "item": [
@@ -14269,7 +14270,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/share",
                 "description": "Sets the sharing settings to a file with the ID specified in the request.",
                  "item": [
@@ -14330,7 +14331,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/sharedusers",
                 "description": "Returns a list of users with their access rights to the file with the ID specified in the request.",
                  "item": [
@@ -14385,7 +14386,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:id/share",
                 "description": "Returns the detailed information about the shared file with the ID specified in the request.",
                  "item": [
@@ -14452,7 +14453,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/folder/:folderId/group/:groupId/share",
                 "description": "Returns the group members with their folder security information.",
                  "item": [
@@ -14532,7 +14533,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/folder/:folderId/share",
                 "description": "Sets the sharing settings to a folder with the ID specified in the request.",
                  "item": [
@@ -14593,7 +14594,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/folder/:id/share",
                 "description": "Returns the detailed information about the shared folder with the ID specified in the request.",
                  "item": [
@@ -14660,7 +14661,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/owner",
                 "description": "Changes the owner of the file with the ID specified in the request.",
                  "item": [
@@ -14714,7 +14715,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/share",
                 "description": "Returns the sharing rights for all the files and folders specified in the request.",
                  "item": [
@@ -14768,7 +14769,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/share",
                 "description": "Removes the sharing rights from all the files and folders specified in the request.",
                  "item": [
@@ -14822,7 +14823,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/share",
                 "description": "Sets the sharing rights to all the files and folders specified in the request.",
                  "item": [
@@ -14876,7 +14877,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/share/:key",
                 "description": "Returns the external data by the key specified in the request.",
                  "item": [
@@ -14942,7 +14943,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/share/:key/password",
                 "description": "Applies a password specified in the request to get the external data.",
                  "item": [
@@ -15003,12 +15004,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Folders",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Folders",
+          "item": [
+            {
     "name": "/api/2.0/files/:folderId",
                 "description": "Returns the detailed list of files and folders located in the folder with the ID specified in the request.",
                  "item": [
@@ -15157,7 +15158,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/:folderId/formfilter",
                 "description": "Returns the form filter of a folder with the ID specified in the request.",
                  "item": [
@@ -15211,7 +15212,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/:folderId/insert",
                 "description": "Inserts a file specified in the request to the selected folder by single file uploading.",
                  "item": [
@@ -15271,7 +15272,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/:folderId/news",
                 "description": "Returns a list of all the new items from a folder with the ID specified in the request.",
                  "item": [
@@ -15325,7 +15326,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/:folderId/subfolders",
                 "description": "Returns a list of all the subfolders from a folder with the ID specified in the request.",
                  "item": [
@@ -15379,7 +15380,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/:folderId/upload",
                 "description": "Uploads a file specified in the request to the selected folder by single file uploading or standart multipart/form-data method.   **Note**:  You can upload files in two different ways:   <ol>  <li>Using single file upload. You should set the Content-Type and Content-Disposition headers to specify a file name and content type, and send the file to the request body.</li>  <li>Using standart multipart/form-data method.</li>  </ol>",
                  "item": [
@@ -15439,7 +15440,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/:folderId/upload/check",
                 "description": "Checks the file uploads to the folder with the ID specified in the request.",
                  "item": [
@@ -15500,7 +15501,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/@favorites",
                 "description": "Returns the detailed list of files and folders located in the Favorites section.",
                  "item": [
@@ -15590,7 +15591,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/@my",
                 "description": "Returns the detailed list of files and folders located in the My documents section.",
                  "item": [
@@ -15686,7 +15687,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/@my/insert",
                 "description": "Inserts a file specified in the request to the My documents section by single file uploading.",
                  "item": [
@@ -15741,7 +15742,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/@my/upload",
                 "description": "Uploads a file specified in the request to the My documents section by single file uploading or standart multipart/form-data method.   **Note**:  You can upload files in two different ways:   <ol>  <li>Using single file upload. You should set the Content-Type and Content-Disposition headers to specify a file name and content type, and send the file to the request body.</li>  <li>Using standart multipart/form-data method.</li>  </ol>",
                  "item": [
@@ -15796,7 +15797,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/@privacy",
                 "description": "Returns the detailed list of files and folders located in the Private Room section.",
                  "item": [
@@ -15886,7 +15887,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/@root",
                 "description": "Returns all the sections matching the parameters specified in the request.",
                  "item": [
@@ -15982,7 +15983,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/@trash",
                 "description": "Returns the detailed list of files and folders located in the Trash section.",
                  "item": [
@@ -16078,7 +16079,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/filesusedspace",
                 "description": "Returns the used space of files in the root folders.",
                  "item": [
@@ -16126,7 +16127,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/folder/:folderId",
                 "description": "Creates a new folder with the title specified in the request. The parent folder ID can be also specified.",
                  "item": [
@@ -16186,7 +16187,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/folder/:folderId",
                 "description": "Deletes a folder with the ID specified in the request.",
                  "item": [
@@ -16246,7 +16247,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/folder/:folderId",
                 "description": "Returns the detailed information about a folder with the ID specified in the request.",
                  "item": [
@@ -16300,7 +16301,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/folder/:folderId",
                 "description": "Renames the selected folder with a new title specified in the request.",
                  "item": [
@@ -16360,7 +16361,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/folder/:folderId/log",
                 "description": "Returns the activity history of a folder with a specified identifier.",
                  "item": [
@@ -16439,7 +16440,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/folder/:folderId/log/report",
                 "description": "Generates the activity history of a folder.",
                  "item": [
@@ -16495,7 +16496,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/folder/:folderId/order",
                 "description": "Sets the order of a folder with ID specified in the request.",
                  "item": [
@@ -16556,7 +16557,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/folder/:folderId/path",
                 "description": "Returns a path to the folder with the ID specified in the request.",
                  "item": [
@@ -16611,7 +16612,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/folder/:id/link",
                 "description": "Creates a primary external link by the identifier specified in the request.",
                  "item": [
@@ -16672,7 +16673,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/folder/:id/link",
                 "description": "Returns the primary external link by the identifier specified in the request.",
                  "item": [
@@ -16739,7 +16740,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/folder/:id/links",
                 "description": "Returns the links of the folder with the ID specified in the request.",
                  "item": [
@@ -16794,7 +16795,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/folder/:id/links",
                 "description": "Sets the folder external link with the ID specified in the request.",
                  "item": [
@@ -16855,7 +16856,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/recent",
                 "description": "Returns the detailed list of files located in the Recent section.",
                  "item": [
@@ -16969,12 +16970,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Files",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Files",
+          "item": [
+            {
     "name": "/api/2.0/files/:fileId/order",
                 "description": "Sets the order of the file with the ID specified in the request.",
                  "item": [
@@ -17034,7 +17035,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/:folderId/file",
                 "description": "Creates a new file in the specified folder with the title specified in the request.   **Note**: If a file extension is different from DOCX/XLSX/PPTX and refers to one of the known text, spreadsheet, or presentation formats, it will be changed to DOCX/XLSX/PPTX accordingly. If the file extension is not specified or is unknown, the DOCX extension will be added to the file title.",
                  "item": [
@@ -17094,7 +17095,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/:folderId/html",
                 "description": "Creates an HTML (.html) file in the selected folder with the title and contents specified in the request.",
                  "item": [
@@ -17154,7 +17155,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/:folderId/text",
                 "description": "Creates a text (.txt) file in the selected folder with the title and contents specified in the request.",
                  "item": [
@@ -17214,7 +17215,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/@my/file",
                 "description": "Creates a new file in the My documents section with the title specified in the request.   **Note**: If a file extension is different from DOCX/XLSX/PPTX and refers to one of the known text, spreadsheet, or presentation formats, it will be changed to DOCX/XLSX/PPTX accordingly. If the file extension is not specified or is unknown, the DOCX extension will be added to the file title.",
                  "item": [
@@ -17269,7 +17270,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/@my/html",
                 "description": "Creates an HTML (.html) file in the My documents section with the title and contents specified in the request.",
                  "item": [
@@ -17324,7 +17325,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/@my/text",
                 "description": "Creates a text (.txt) file in the My documents section with the title and contents specified in the request.",
                  "item": [
@@ -17379,7 +17380,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/favorites/:fileId",
                 "description": "Changes the favorite status of the file with the ID specified in the request.",
                  "item": [
@@ -17439,7 +17440,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId",
                 "description": "Deletes a file with the ID specified in the request.",
                  "item": [
@@ -17499,7 +17500,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId",
                 "description": "Returns the detailed information about a file with the ID specified in the request.",
                  "item": [
@@ -17559,7 +17560,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId",
                 "description": "Updates the information of the selected file with the parameters specified in the request.",
                  "item": [
@@ -17619,7 +17620,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/copyas",
                 "description": "Copies (and converts if possible) an existing file to the specified folder.",
                  "item": [
@@ -17680,7 +17681,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/customfilter",
                 "description": "Sets the Custom Filter editing mode to a file with the ID specified in the request.",
                  "item": [
@@ -17741,7 +17742,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/edit/diff",
                 "description": "Returns a URL to the changes of a file version specified in the request.",
                  "item": [
@@ -17803,7 +17804,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/edit/history",
                 "description": "Returns the version history of a file with the ID specified in the request.",
                  "item": [
@@ -17859,7 +17860,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/edit_session",
                 "description": "Creates a session to edit the existing file with multiple chunks (needed for WebDAV).   **Note**: Information about created session which includes:  <ul>  <li><b>id:</b> unique ID of this upload session,</li>  <li><b>created:</b> UTC time when the session was created,</li>  <li><b>expired:</b> UTC time when the session will expire if no chunks are sent before that time,</li>  <li><b>location:</b> URL where you should send your next chunk,</li>  <li><b>bytes_uploaded:</b> number of bytes uploaded for the specific upload ID,</li>  <li><b>bytes_total:</b> total number of bytes which will be uploaded.</li>  </ul>",
                  "item": [
@@ -17920,7 +17921,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/formrolemapping",
                 "description": "Saves the form role mapping.",
                  "item": [
@@ -17975,7 +17976,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/formroles",
                 "description": "Returns all roles for the specified form.",
                  "item": [
@@ -18030,7 +18031,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/history",
                 "description": "Changes the version history of a file with the ID specified in the request.",
                  "item": [
@@ -18091,7 +18092,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/history",
                 "description": "Returns the detailed information about all the available file versions with the ID specified in the request.",
                  "item": [
@@ -18146,7 +18147,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/isformpdf",
                 "description": "Checks if the PDF file is a form or not.",
                  "item": [
@@ -18201,7 +18202,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/lock",
                 "description": "Locks a file with the ID specified in the request.",
                  "item": [
@@ -18262,7 +18263,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/log",
                 "description": "Returns the list of actions performed on the file with the specified identifier.",
                  "item": [
@@ -18341,7 +18342,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/manageformfilling",
                 "description": "Performs the specified form filling action.",
                  "item": [
@@ -18396,7 +18397,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/openedit",
                 "description": "Returns the initialization configuration of a file to open it in the editor.",
                  "item": [
@@ -18481,7 +18482,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/presigned",
                 "description": "Returns a link to download a file with the ID specified in the request asynchronously.",
                  "item": [
@@ -18536,7 +18537,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/presigneduri",
                 "description": "Returns a pre-signed URL to download a file with the specified ID.  This temporary link provides secure access to the file.",
                  "item": [
@@ -18591,7 +18592,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/protectusers",
                 "description": "Returns a list of users with their access rights to the protected file with the ID specified in the request.",
                  "item": [
@@ -18646,7 +18647,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/recent",
                 "description": "Adds a file with the ID specified in the request to the Recent section.",
                  "item": [
@@ -18701,7 +18702,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/restoreversion",
                 "description": "Restores a file version specified in the request.",
                  "item": [
@@ -18768,7 +18769,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/saveediting",
                 "description": "Saves edits to a file with the ID specified in the request.",
                  "item": [
@@ -18829,7 +18830,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/startedit",
                 "description": "Informs about opening a file with the ID specified in the request for editing, locking it from being deleted or moved (this method is called by the mobile editors).",
                  "item": [
@@ -18890,7 +18891,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/startfilling",
                 "description": "Starts filling a file with the ID specified in the request.",
                  "item": [
@@ -18945,7 +18946,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/trackeditfile",
                 "description": "Tracks file changes when editing.",
                  "item": [
@@ -19018,7 +19019,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:id/link",
                 "description": "Creates a primary external link by the identifier specified in the request.",
                  "item": [
@@ -19079,7 +19080,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:id/link",
                 "description": "Returns the primary external link by the identifier specified in the request.",
                  "item": [
@@ -19146,7 +19147,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:id/links",
                 "description": "Returns the external links of a file with the ID specified in the request.",
                  "item": [
@@ -19213,7 +19214,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:id/links",
                 "description": "Sets an external link to a file with the ID specified in the request.",
                  "item": [
@@ -19274,7 +19275,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:id/saveaspdf",
                 "description": "Saves a file with the identifier specified in the request as a PDF document.",
                  "item": [
@@ -19335,7 +19336,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/fillresult",
                 "description": "Retrieves the result of a form-filling session.",
                  "item": [
@@ -19390,7 +19391,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/referencedata",
                 "description": "Returns the reference data to uniquely identify a file in its system and check the availability of insering data into the destination spreadsheet by the external link.",
                  "item": [
@@ -19445,7 +19446,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/masterform/:fileId/checkfillformdraft",
                 "description": "Checks if the current file is a form draft which can be filled out.",
                  "item": [
@@ -19506,7 +19507,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/order",
                 "description": "Sets the order of the files specified in the request.",
                  "item": [
@@ -19560,7 +19561,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/recent",
                 "description": "Removes files with the IDs specified in the request from the Recent section.",
                  "item": [
@@ -19614,7 +19615,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/templates",
                 "description": "Adds files with the IDs specified in the request to the template list.",
                  "item": [
@@ -19668,7 +19669,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/templates",
                 "description": "Removes files with the IDs specified in the request from the template list.",
                  "item": [
@@ -19722,7 +19723,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/thumbnails",
                 "description": "Creates thumbnails for the files with the IDs specified in the request.",
                  "item": [
@@ -19776,12 +19777,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Operations",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Operations",
+          "item": [
+            {
     "name": "/api/2.0/files/:folderId/upload/create_session",
                 "description": "Creates the session to upload large files in multiple chunks to the folder with the ID specified in the request.   **Note**: Each chunk can have different length but the length should be multiple of <b>512</b> and greater or equal to <b>10 mb</b>. Last chunk can have any size.  After the initial response to the request with the <b>200 OK</b> status, you must get the <em>location</em> field value from the response. Send all your chunks to this location.  Each chunk must be sent in the exact order the chunks appear in the file.  After receiving each chunk, the server will respond with the current information about the upload session if no errors occurred.  When the number of bytes uploaded is equal to the number of bytes you sent in the initial request, the server responds with the <b>201 Created</b> status and sends you information about the uploaded file.  Information about created session which includes:  <ul>  <li><b>id:</b> unique ID of this upload session,</li>  <li><b>created:</b> UTC time when the session was created,</li>  <li><b>expired:</b> UTC time when the session will expire if no chunks are sent before that time,</li>  <li><b>location:</b> URL where you should send your next chunk,</li>  <li><b>bytes_uploaded:</b> number of bytes uploaded for the specific upload ID,</li>  <li><b>bytes_total:</b> total number of bytes which will be uploaded.</li>  </ul>",
                  "item": [
@@ -19842,7 +19843,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/favorites",
                 "description": "Adds files and folders with the IDs specified in the request to the favorite list.",
                  "item": [
@@ -19896,7 +19897,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/favorites",
                 "description": "Removes files and folders with the IDs specified in the request from the favorite list. This method uses the body parameters.",
                  "item": [
@@ -19950,7 +19951,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/checkconversion",
                 "description": "Checks the conversion status of a file with the ID specified in the request.",
                  "item": [
@@ -20011,7 +20012,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/checkconversion",
                 "description": "Starts a conversion operation of a file with the ID specified in the request.",
                  "item": [
@@ -20072,7 +20073,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/file/:fileId/comment",
                 "description": "Updates a comment in a file with the ID specified in the request.",
                  "item": [
@@ -20133,7 +20134,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/fileops",
                 "description": "Returns a list of all the active file operations.",
                  "item": [
@@ -20187,7 +20188,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/fileops/:operationType",
                 "description": "Retrieves the statuses of operations filtered by the specified operation type.",
                  "item": [
@@ -20247,7 +20248,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/fileops/bulkdownload",
                 "description": "Starts the download process of files and folders with the IDs specified in the request.",
                  "item": [
@@ -20302,7 +20303,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/fileops/checkdestfolder",
                 "description": "Checks if files can be moved or copied to the specified folder.",
                  "item": [
@@ -20357,7 +20358,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/fileops/copy",
                 "description": "Copies all the selected files and folders to the folder with the ID specified in the request.",
                  "item": [
@@ -20412,7 +20413,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/fileops/delete",
                 "description": "Deletes the files and folders with the IDs specified in the request.",
                  "item": [
@@ -20467,7 +20468,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/fileops/deleteversion",
                 "description": "Deletes the file versions with the IDs specified in the request.",
                  "item": [
@@ -20522,7 +20523,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/fileops/duplicate",
                 "description": "Duplicates all the selected files and folders.",
                  "item": [
@@ -20577,7 +20578,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/fileops/emptytrash",
                 "description": "Deletes all the files and folders from the Trash folder.",
                  "item": [
@@ -20632,7 +20633,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/fileops/markasread",
                 "description": "Marks the files and folders with the IDs specified in the request as read.",
                  "item": [
@@ -20687,7 +20688,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/fileops/move",
                 "description": "Checks if files or folders can be moved or copied to the specified folder, moves or copies them, and returns their information.",
                  "item": [
@@ -20742,7 +20743,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/fileops/move",
                 "description": "Moves or copies all the selected files and folders to the folder with the ID specified in the request.",
                  "item": [
@@ -20797,7 +20798,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/fileops/terminate/:id",
                 "description": "Finishes an operation with the ID specified in the request or all the active operations.",
                  "item": [
@@ -20852,12 +20853,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Settings",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Settings",
+          "item": [
+            {
     "name": "/api/2.0/files/@privacy/available",
                 "description": "Checks if the Private Room settings are available or not.",
                  "item": [
@@ -20906,7 +20907,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/changedeleteconfrim",
                 "description": "Specifies whether to confirm the file deletion or not.",
                  "item": [
@@ -20960,7 +20961,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/displayfileextension",
                 "description": "Specifies whether to display a file extension or not.",
                  "item": [
@@ -21014,7 +21015,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/displayrecent",
                 "description": "Displays the Recent folder.",
                  "item": [
@@ -21068,7 +21069,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/docservice",
                 "description": "Checks the document service location URL.",
                  "item": [
@@ -21122,7 +21123,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/docservice",
                 "description": "Returns the URL address of the connected editors.",
                  "item": [
@@ -21176,7 +21177,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/forcesave",
                 "description": "Specifies if the file forcesaving is enabled or not.",
                  "item": [
@@ -21224,7 +21225,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/hideconfirmcanceloperation",
                 "description": "Hides the confirmation dialog when canceling operations.",
                  "item": [
@@ -21278,7 +21279,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/hideconfirmconvert",
                 "description": "Hides the confirmation dialog for saving the file copy in the original format when converting a file.",
                  "item": [
@@ -21332,7 +21333,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/hideconfirmroomlifetime",
                 "description": "Hides the confirmation dialog when changing the room lifetime settings.",
                  "item": [
@@ -21386,7 +21387,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/info",
                 "description": "Returns the information about the Documents module.",
                  "item": [
@@ -21434,7 +21435,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/keepnewfilename",
                 "description": "Specifies whether to ask a user for a file name on creation or not.",
                  "item": [
@@ -21488,7 +21489,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/settings",
                 "description": "Returns all the file settings.",
                  "item": [
@@ -21536,7 +21537,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/settings/autocleanup",
                 "description": "Updates the trash bin auto-clearing setting.",
                  "item": [
@@ -21591,7 +21592,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/settings/autocleanup",
                 "description": "Returns the trash bin auto-clearing setting.",
                  "item": [
@@ -21640,7 +21641,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/settings/dafaultaccessrights",
                 "description": "Changes the default access rights in the sharing settings.",
                  "item": [
@@ -21695,7 +21696,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/settings/downloadtargz",
                 "description": "Changes the format of the downloaded archive from .zip to .tar.gz. This method uses the body parameters.",
                  "item": [
@@ -21750,7 +21751,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/settings/external",
                 "description": "Changes the ability to share a file externally.",
                  "item": [
@@ -21805,7 +21806,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/settings/externalsocialmedia",
                 "description": "Changes the ability to share a file externally on social networks.",
                  "item": [
@@ -21860,7 +21861,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/settings/openeditorinsametab",
                 "description": "Changes the ability to open the document in the same browser tab.",
                  "item": [
@@ -21915,7 +21916,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/storeforcesave",
                 "description": "Changes the ability to store the forcesaved file versions.",
                  "item": [
@@ -21963,7 +21964,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/storeoriginal",
                 "description": "Changes the ability to upload documents in the original formats as well.",
                  "item": [
@@ -22017,7 +22018,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/thirdparty",
                 "description": "Changes the access to the third-party settings.",
                  "item": [
@@ -22071,7 +22072,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/files/updateifexist",
                 "description": "Updates a file version if a file with such a name already exists.",
                  "item": [
@@ -22125,14 +22126,14 @@
                             }
                             ]
                         }
-					]
-				}
-			]
-		},
-		{
-			"name": "ThirdParty",
-			"item": [
-				{
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ThirdParty",
+      "item": [
+        {
     "name": "/api/2.0/thirdparty/:provider",
                 "description": "Returns a request to get the confirmation code from URL.   **Note**: List of providers: Google, Dropbox, Docusign, Box, OneDrive, Wordpress.",
                  "item": [
@@ -22185,15 +22186,15 @@
                             }
                             ]
                         }
-			]
-		},
-		{
-			"name": "Settings",
-			"item": [
-				{
-					"name": "Webplugins",
-					"item": [
-						{
+      ]
+    },
+    {
+      "name": "Settings",
+      "item": [
+        {
+          "name": "Webplugins",
+          "item": [
+            {
     "name": "/api/2.0/settings/webplugins",
                 "description": "Adds a web plugin from a file to the current portal.",
                  "item": [
@@ -22247,7 +22248,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/webplugins",
                 "description": "Returns the portal web plugins.",
                  "item": [
@@ -22301,7 +22302,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/webplugins/:name",
                 "description": "Deletes a web plugin by the name specified in the request.",
                  "item": [
@@ -22349,7 +22350,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/webplugins/:name",
                 "description": "Returns a web plugin by the name specified in the request.",
                  "item": [
@@ -22403,7 +22404,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/webplugins/:name",
                 "description": "Updates a web plugin with the parameters specified in the request.",
                  "item": [
@@ -22457,12 +22458,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Telegram",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Telegram",
+          "item": [
+            {
     "name": "/api/2.0/settings/telegram/check",
                 "description": "Checks if the current user is connected to the Telegram Bot or not.",
                  "item": [
@@ -22511,7 +22512,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/telegram/link",
                 "description": "Returns a link that will connect the Telegram Bot to your account.",
                  "item": [
@@ -22560,7 +22561,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/telegram/link",
                 "description": "Unlinks the Telegram Bot from your account.",
                  "item": [
@@ -22609,12 +22610,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Owner",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Owner",
+          "item": [
+            {
     "name": "/api/2.0/settings/owner",
                 "description": "Sends the instructions to change the DocSpace owner.",
                  "item": [
@@ -22668,7 +22669,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/owner",
                 "description": "Updates the current portal owner with a new one specified in the request.",
                  "item": [
@@ -22716,12 +22717,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Messages",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Messages",
+          "item": [
+            {
     "name": "/api/2.0/settings/messagesettings",
                 "description": "Displays the contact form on the Sign In page, allowing users to send a message to the DocSpace administrator in case they encounter any issues while accessing DocSpace.",
                  "item": [
@@ -22775,7 +22776,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/sendadmmail",
                 "description": "Sends a message to the administrator email when unauthorized users encounter issues accessing DocSpace.",
                  "item": [
@@ -22829,7 +22830,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/sendjoininvite",
                 "description": "Sends an invitation email with a link to the DocSpace.",
                  "item": [
@@ -22883,12 +22884,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "License",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "License",
+          "item": [
+            {
     "name": "/api/2.0/settings/license",
                 "description": "Uploads a portal license specified in the request.",
                  "item": [
@@ -22942,7 +22943,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/license/accept",
                 "description": "Activates a license for the portal.",
                  "item": [
@@ -22991,7 +22992,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/license/refresh",
                 "description": "Refreshes the portal license.",
                  "item": [
@@ -23040,7 +23041,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/license/required",
                 "description": "Requests a portal license if necessary.",
                  "item": [
@@ -23089,12 +23090,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Greeting settings",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Greeting settings",
+          "item": [
+            {
     "name": "/api/2.0/settings/greetingsettings",
                 "description": "Returns the greeting settings for the current portal.",
                  "item": [
@@ -23142,7 +23143,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/greetingsettings",
                 "description": "Saves the greeting settings specified in the request to the current portal.",
                  "item": [
@@ -23196,7 +23197,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/greetingsettings/isdefault",
                 "description": "Checks if the greeting settings of the current portal are set to default or not.",
                  "item": [
@@ -23245,7 +23246,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/greetingsettings/restore",
                 "description": "Restores the current portal greeting settings.",
                  "item": [
@@ -23294,12 +23295,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Banners visibility",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Banners visibility",
+          "item": [
+            {
     "name": "/api/2.0/settings/banner",
                 "description": "Returns the visibility settings of the promotional banners in the portal.",
                  "item": [
@@ -23347,12 +23348,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Encryption",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Encryption",
+          "item": [
+            {
     "name": "/api/2.0/settings/encryption/progress",
                 "description": "Returns the storage encryption progress.",
                  "item": [
@@ -23401,7 +23402,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/encryption/settings",
                 "description": "Returns the storage encryption settings.",
                  "item": [
@@ -23450,7 +23451,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/encryption/start",
                 "description": "Starts the storage encryption process.",
                  "item": [
@@ -23505,12 +23506,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Security",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Security",
+          "item": [
+            {
     "name": "/api/2.0/settings/security",
                 "description": "Returns the security settings for the modules specified in the request.",
                  "item": [
@@ -23564,7 +23565,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/security",
                 "description": "Sets the security settings to the module with the ID specified in the request.",
                  "item": [
@@ -23618,7 +23619,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/security/:id",
                 "description": "Returns the availability of the module with the ID specified in the request.",
                  "item": [
@@ -23672,7 +23673,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/security/access",
                 "description": "Sets the security settings to the modules with the IDs specified in the request.",
                  "item": [
@@ -23727,7 +23728,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/security/administrator",
                 "description": "Checks if the selected user is an administrator of a product with the ID specified in the request.",
                  "item": [
@@ -23788,7 +23789,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/security/administrator",
                 "description": "Sets the selected user as an administrator of a product with the ID specified in the request.",
                  "item": [
@@ -23843,7 +23844,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/security/administrator/:productid",
                 "description": "Returns a list of all the administrators of a product with the ID specified in the request.",
                  "item": [
@@ -23898,7 +23899,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/security/modules",
                 "description": "Returns a list of all the enabled modules.",
                  "item": [
@@ -23947,7 +23948,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/security/password",
                 "description": "Returns the portal password settings.",
                  "item": [
@@ -23996,7 +23997,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/security/password",
                 "description": "Sets the portal password settings.",
                  "item": [
@@ -24051,12 +24052,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Rebranding",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Rebranding",
+          "item": [
+            {
     "name": "/api/2.0/settings/companywhitelabel",
                 "description": "Returns the licensor data.",
                  "item": [
@@ -24104,7 +24105,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/enablewhitelabel",
                 "description": "Checks if the white label is enabled or not.",
                  "item": [
@@ -24152,7 +24153,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/rebranding/additional",
                 "description": "Deletes the additional white label settings.",
                  "item": [
@@ -24201,7 +24202,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/rebranding/additional",
                 "description": "Returns the additional white label settings.",
                  "item": [
@@ -24250,7 +24251,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/rebranding/additional",
                 "description": "Saves the additional white label settings specified in the request.",
                  "item": [
@@ -24305,7 +24306,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/rebranding/company",
                 "description": "Deletes the company white label settings.",
                  "item": [
@@ -24354,7 +24355,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/rebranding/company",
                 "description": "Returns the company white label settings.",
                  "item": [
@@ -24403,7 +24404,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/rebranding/company",
                 "description": "Saves the company white label settings specified in the request.",
                  "item": [
@@ -24458,7 +24459,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/whitelabel/logos",
                 "description": "Returns the white label logos.",
                  "item": [
@@ -24519,7 +24520,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/whitelabel/logos/isdefault",
                 "description": "Specifies if the white label logos are default or not.",
                  "item": [
@@ -24581,7 +24582,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/whitelabel/logos/restore",
                 "description": "Restores the white label logos.",
                  "item": [
@@ -24643,7 +24644,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/whitelabel/logos/save",
                 "description": "Saves the white label logos specified in the request.",
                  "item": [
@@ -24711,7 +24712,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/whitelabel/logos/savefromfiles",
                 "description": "Saves the white label logos from files.",
                  "item": [
@@ -24773,7 +24774,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/whitelabel/logotext",
                 "description": "Returns the white label logo text.",
                  "item": [
@@ -24834,7 +24835,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/whitelabel/logotext/isdefault",
                 "description": "Specifies if the white label logo text is default or not.",
                  "item": [
@@ -24896,7 +24897,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/whitelabel/logotext/restore",
                 "description": "Restores the white label logo text.",
                  "item": [
@@ -24958,7 +24959,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/whitelabel/logotext/save",
                 "description": "Saves the white label logo text specified in the request.",
                  "item": [
@@ -25026,12 +25027,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Access to DevTools",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Access to DevTools",
+          "item": [
+            {
     "name": "/api/2.0/settings/devtoolsaccess",
                 "description": "Returns the Developer Tools access settings for the portal.",
                  "item": [
@@ -25079,12 +25080,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Statistics",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Statistics",
+          "item": [
+            {
     "name": "/api/2.0/settings/statistics/spaceusage/:id",
                 "description": "Returns the space usage statistics for the module with the ID specified in the request.",
                  "item": [
@@ -25139,12 +25140,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "SSO",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "SSO",
+          "item": [
+            {
     "name": "/api/2.0/settings/ssov2",
                 "description": "Returns the current portal SSO settings.",
                  "item": [
@@ -25192,7 +25193,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/ssov2",
                 "description": "Resets the SSO settings of the current portal.",
                  "item": [
@@ -25240,7 +25241,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/ssov2",
                 "description": "Saves the SSO settings for the current portal.",
                  "item": [
@@ -25294,7 +25295,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/ssov2/constants",
                 "description": "Returns the SSO settings constants.",
                  "item": [
@@ -25343,7 +25344,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/ssov2/default",
                 "description": "Returns the default portal SSO settings.",
                  "item": [
@@ -25392,12 +25393,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "IP restrictions",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "IP restrictions",
+          "item": [
+            {
     "name": "/api/2.0/settings/iprestrictions",
                 "description": "Returns the IP portal restrictions.",
                  "item": [
@@ -25445,7 +25446,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/iprestrictions",
                 "description": "Updates the IP restrictions with the parameters specified in the request.",
                  "item": [
@@ -25499,7 +25500,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/iprestrictions/settings",
                 "description": "Returns the IP restriction settings.",
                  "item": [
@@ -25548,7 +25549,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/iprestrictions/settings",
                 "description": "Updates the IP restriction settings with the parameters specified in the request.",
                  "item": [
@@ -25603,12 +25604,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Authorization",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Authorization",
+          "item": [
+            {
     "name": "/api/2.0/settings/authservice",
                 "description": "Returns the authorization services.",
                  "item": [
@@ -25656,7 +25657,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/authservice",
                 "description": "Saves the authorization keys.",
                  "item": [
@@ -25710,12 +25711,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Storage",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Storage",
+          "item": [
+            {
     "name": "/api/2.0/settings/storage",
                 "description": "Returns a list of all the portal storages.",
                  "item": [
@@ -25763,7 +25764,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/storage",
                 "description": "Resets the storage settings to the default parameters.",
                  "item": [
@@ -25805,7 +25806,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/storage",
                 "description": "Updates a storage with the parameters specified in the request.",
                  "item": [
@@ -25859,7 +25860,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/storage/backup",
                 "description": "Returns a list of all the backup storages.",
                  "item": [
@@ -25914,7 +25915,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/storage/cdn",
                 "description": "Returns a list of all the CDN storages.",
                  "item": [
@@ -25963,7 +25964,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/storage/cdn",
                 "description": "Resets the CDN storage settings to the default parameters.",
                  "item": [
@@ -26006,7 +26007,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/storage/cdn",
                 "description": "Updates the CDN storage with the parameters specified in the request.",
                  "item": [
@@ -26061,7 +26062,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/storage/progress",
                 "description": "Returns the storage progress.",
                  "item": [
@@ -26110,7 +26111,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/storage/s3/regions",
                 "description": "Returns a list of all Amazon regions.",
                  "item": [
@@ -26160,12 +26161,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Quota",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Quota",
+          "item": [
+            {
     "name": "/api/2.0/settings/aiagentquotasettings",
                 "description": "Saves the AI Agent quota settings specified in the request to the current portal.",
                  "item": [
@@ -26219,7 +26220,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/roomquotasettings",
                 "description": "Saves the room quota settings specified in the request to the current portal.",
                  "item": [
@@ -26273,7 +26274,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/tenantquotasettings",
                 "description": "Saves the tenant quota settings specified in the request to the current portal.",
                  "item": [
@@ -26327,7 +26328,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/userquotasettings",
                 "description": "Returns the user quota settings.",
                  "item": [
@@ -26375,12 +26376,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Common settings",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Common settings",
+          "item": [
+            {
     "name": "/api/2.0/settings",
                 "description": "Returns a list of all the available portal settings with the current values for each parameter.",
                  "item": [
@@ -26433,7 +26434,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/closeadminhelper",
                 "description": "Closes the administrator helper notification.",
                  "item": [
@@ -26475,7 +26476,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/colortheme",
                 "description": "Deletes the portal color theme with the ID specified in the request.",
                  "item": [
@@ -26529,7 +26530,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/colortheme",
                 "description": "Returns the portal color theme.",
                  "item": [
@@ -26577,7 +26578,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/colortheme",
                 "description": "Saves the portal color theme specified in the request.",
                  "item": [
@@ -26631,7 +26632,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/cultures",
                 "description": "Returns a list of all the available portal languages in the format of a two-letter or four-letter language code (e.g. de, en-US, etc.).",
                  "item": [
@@ -26679,7 +26680,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/deeplink",
                 "description": "Saves the deep link configuration settings for the portal.",
                  "item": [
@@ -26733,7 +26734,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/deeplink",
                 "description": "Returns the deep link settings.",
                  "item": [
@@ -26781,7 +26782,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/dns",
                 "description": "Saves the DNS settings specified in the request to the current portal.",
                  "item": [
@@ -26835,7 +26836,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/emailactivation",
                 "description": "Updates the email activation settings.",
                  "item": [
@@ -26889,7 +26890,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/invitationsettings",
                 "description": "Returns the portal user invitation settings.",
                  "item": [
@@ -26937,7 +26938,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/invitationsettings",
                 "description": "Updates the portal user invitation settings.",
                  "item": [
@@ -26991,7 +26992,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/logo",
                 "description": "Returns the portal logo image URL.",
                  "item": [
@@ -27039,7 +27040,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/machine",
                 "description": "Returns the portal hostname.",
                  "item": [
@@ -27087,7 +27088,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/maildomainsettings",
                 "description": "Saves the mail domain settings specified in the request to the portal.",
                  "item": [
@@ -27141,7 +27142,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/payment",
                 "description": "Returns the portal payment settings.",
                  "item": [
@@ -27189,7 +27190,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/socket",
                 "description": "Returns the socket settings.",
                  "item": [
@@ -27237,7 +27238,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/timezones",
                 "description": "Returns a list of all the available portal time zones.",
                  "item": [
@@ -27285,7 +27286,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/wizard/complete",
                 "description": "Completes the Wizard settings.",
                  "item": [
@@ -27340,12 +27341,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Cookies",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Cookies",
+          "item": [
+            {
     "name": "/api/2.0/settings/cookiesettings",
                 "description": "Returns the cookies lifetime value in minutes.",
                  "item": [
@@ -27393,7 +27394,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/cookiesettings",
                 "description": "Updates the cookies lifetime value in minutes.",
                  "item": [
@@ -27447,12 +27448,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Login settings",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Login settings",
+          "item": [
+            {
     "name": "/api/2.0/settings/security/loginsettings",
                 "description": "Returns the portal login settings.",
                  "item": [
@@ -27501,7 +27502,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/security/loginsettings",
                 "description": "Resets the portal login settings to default.",
                  "item": [
@@ -27550,7 +27551,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/security/loginsettings",
                 "description": "Updates the login settings with the parameters specified in the request.",
                  "item": [
@@ -27605,12 +27606,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Webhooks",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Webhooks",
+          "item": [
+            {
     "name": "/api/2.0/settings/webhook",
                 "description": "Creates a new tenant webhook with the parameters specified in the request.",
                  "item": [
@@ -27664,7 +27665,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/webhook",
                 "description": "Returns a list of the tenant webhooks.",
                  "item": [
@@ -27712,7 +27713,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/webhook",
                 "description": "Updates a tenant webhook with the parameters specified in the request.",
                  "item": [
@@ -27766,7 +27767,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/webhook/:id",
                 "description": "Removes a tenant webhook with the ID specified in the request.",
                  "item": [
@@ -27820,7 +27821,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/webhook/:id/retry",
                 "description": "Retries a webhook with the ID specified in the request.",
                  "item": [
@@ -27875,7 +27876,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/webhook/enable",
                 "description": "Enables or disables a tenant webhook with the parameters specified in the request.",
                  "item": [
@@ -27930,7 +27931,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/webhook/retry",
                 "description": "Retries all the webhooks with the IDs specified in the request.",
                  "item": [
@@ -27985,7 +27986,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/webhook/triggers",
                 "description": "Returns a list of triggers for a webhook.",
                  "item": [
@@ -28034,7 +28035,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/webhooks/log",
                 "description": "Returns the logs of the webhook activities.",
                  "item": [
@@ -28143,12 +28144,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "TFA settings",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "TFA settings",
+          "item": [
+            {
     "name": "/api/2.0/settings/tfaapp",
                 "description": "Returns the current two-factor authentication settings.",
                  "item": [
@@ -28196,7 +28197,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/tfaapp",
                 "description": "Updates the two-factor authentication settings with the parameters specified in the request.",
                  "item": [
@@ -28250,7 +28251,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/tfaapp/confirm",
                 "description": "Returns the confirmation email URL for authorization via SMS or TFA application.",
                  "item": [
@@ -28299,7 +28300,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/tfaapp/setup",
                 "description": "Generates the setup TFA code for the current user.",
                  "item": [
@@ -28348,7 +28349,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/tfaapp/validate",
                 "description": "Validates the two-factor authentication code specified in the request.",
                  "item": [
@@ -28403,7 +28404,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/tfaappcodes",
                 "description": "Returns the two-factor authentication application codes.",
                  "item": [
@@ -28451,7 +28452,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/tfaappnewapp",
                 "description": "Unlinks the current two-factor authentication application from the user account specified in the request.",
                  "item": [
@@ -28505,7 +28506,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/tfaappnewcodes",
                 "description": "Requests the new backup codes for the two-factor authentication application.",
                  "item": [
@@ -28553,7 +28554,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/tfaappwithlink",
                 "description": "Returns the confirmation email URL for updating TFA settings.",
                  "item": [
@@ -28607,12 +28608,12 @@
                             }
                             ]
                         }
-					]
-				},
-				{
-					"name": "Notifications",
-					"item": [
-						{
+          ]
+        },
+        {
+          "name": "Notifications",
+          "item": [
+            {
     "name": "/api/2.0/settings/notification",
                 "description": "Enables the notification type specified in the request.",
                  "item": [
@@ -28666,7 +28667,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/notification/:type",
                 "description": "Checks if the notification type specified in the request is enabled or not.",
                  "item": [
@@ -28720,7 +28721,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/notification/channels",
                 "description": "Returns a list of notification channels.",
                  "item": [
@@ -28769,7 +28770,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/notification/rooms",
                 "description": "Returns a list of rooms with the disabled notifications.",
                  "item": [
@@ -28818,7 +28819,7 @@
                             }
                             ]
                         },
-						{
+            {
     "name": "/api/2.0/settings/notification/rooms",
                 "description": "Sets a notification status for a room with the ID specified in the request.",
                  "item": [
@@ -28873,52 +28874,52 @@
                             }
                             ]
                         }
-					]
-				}
-			]
-		}
-    ],
-    "auth": {
-    		"type": "apikey",
-    		"apikey": [
-    			{
-    				"key": "value",
-    				"value": "{{asc_auth_key}}",
-    				"type": "string"
-    			},
-    			{
-    				"key": "key",
-    				"value": "asc_auth_key",
-    				"type": "string"
-    			}
-    		]
-    	},
-	"variable": [
-		{
-			"key": "baseUrl",
-			"value": "{baseUrl}",
-			"type": "string"
+          ]
+        }
+      ]
+    }
+  ],
+  "auth": {
+      "type": "apikey",
+      "apikey": [
+        {
+          "key": "value",
+          "value": "{{asc_auth_key}}",
+          "type": "string"
         },
         {
-            "key": "asc_auth_key",
-            "value": "",
-            "type": "string"
-        },
-        {
-            "key": "ApiKeyBearer",
-            "value": "",
-            "type": "string"
-        },
-        {
-            "key": "x-signature",
-            "value": "",
-            "type": "string"
-        },
-		{
-			"key": "baseUrl",
-			"value": "http://localhost:8092/",
-			"type": "string"
-		}
-	]
+          "key": "key",
+          "value": "asc_auth_key",
+          "type": "string"
+        }
+      ]
+    },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "{baseUrl}",
+      "type": "string"
+    },
+    {
+      "key": "asc_auth_key",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "ApiKeyBearer",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "x-signature",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8092/",
+      "type": "string"
+    }
+  ]
 }
 
