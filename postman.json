@@ -59,8 +59,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get groups",
               "request": {
@@ -141,8 +140,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Move group members",
               "request": {
@@ -194,8 +192,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Delete a group",
               "request": {
@@ -240,8 +237,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get a group",
               "request": {
@@ -294,8 +290,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update a group",
               "request": {
@@ -346,8 +341,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Set a group manager",
               "request": {
@@ -399,8 +393,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Add group members",
               "request": {
@@ -452,8 +445,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Remove group members",
               "request": {
@@ -505,8 +497,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Replace group members",
               "request": {
@@ -558,8 +549,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get user groups",
               "request": {
@@ -606,7 +596,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -684,8 +673,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get groups with folder sharing settings",
               "request": {
@@ -757,8 +745,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get groups with room sharing settings",
               "request": {
@@ -831,7 +818,6 @@
               "response": [
               ]
             }
-
           ]
         }
       ]
@@ -870,8 +856,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Clear migration",
               "request": {
@@ -903,8 +888,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Finish migration",
               "request": {
@@ -942,8 +926,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Upload and initialize migration",
               "request": {
@@ -983,8 +966,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get migrations",
               "request": {
@@ -1022,8 +1004,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get migration logs",
               "request": {
@@ -1055,8 +1036,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Start migration",
               "request": {
@@ -1094,8 +1074,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get migration status",
               "request": {
@@ -1134,7 +1113,6 @@
               "response": [
               ]
             }
-
       ]
     },
     {
@@ -1183,8 +1161,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Delete the backup",
               "request": {
@@ -1230,8 +1207,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Delete the backup history",
               "request": {
@@ -1277,8 +1253,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Delete the backup schedule",
               "request": {
@@ -1324,8 +1299,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get the backup history",
               "request": {
@@ -1371,8 +1345,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get the backup progress",
               "request": {
@@ -1418,8 +1391,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get the backup schedule",
               "request": {
@@ -1465,8 +1437,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get the number of backups",
               "request": {
@@ -1524,8 +1495,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get the restoring progress",
               "request": {
@@ -1571,8 +1541,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get the backup service state",
               "request": {
@@ -1610,8 +1579,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Start the backup",
               "request": {
@@ -1655,8 +1623,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Start the restoring process",
               "request": {
@@ -1701,7 +1668,6 @@
               "response": [
               ]
             }
-
       ]
     },
     {
@@ -1750,8 +1716,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Delete the personal folder",
               "request": {
@@ -1791,8 +1756,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Check data for reassignment need",
               "request": {
@@ -1845,8 +1809,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the reassignment progress",
               "request": {
@@ -1893,8 +1856,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Start the data reassignment",
               "request": {
@@ -1939,8 +1901,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Terminate the data reassignment",
               "request": {
@@ -1985,8 +1946,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the deletion progress",
               "request": {
@@ -2033,8 +1993,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Start the data deletion",
               "request": {
@@ -2079,8 +2038,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Terminate the data deletion",
               "request": {
@@ -2119,8 +2077,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Send the deletion instructions",
               "request": {
@@ -2160,7 +2117,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -2212,8 +2168,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get a user photo",
               "request": {
@@ -2259,8 +2214,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update a user photo",
               "request": {
@@ -2312,8 +2266,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Upload a user photo",
               "request": {
@@ -2365,8 +2318,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Create photo thumbnails",
               "request": {
@@ -2420,7 +2372,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -2465,8 +2416,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get third-party accounts",
               "request": {
@@ -2531,8 +2481,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Create a third-pary account",
               "request": {
@@ -2577,8 +2526,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Unlink a third-pary account",
               "request": {
@@ -2620,7 +2568,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -2664,8 +2611,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Approve a guest sharing link",
               "request": {
@@ -2712,7 +2658,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -2762,8 +2707,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Change a user quota limit",
               "request": {
@@ -2808,7 +2752,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -2935,8 +2878,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get account entries with folder sharing settings",
               "request": {
@@ -3057,8 +2999,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get account entries",
               "request": {
@@ -3179,8 +3120,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Search users",
               "request": {
@@ -3240,8 +3180,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get users with file sharing settings",
               "request": {
@@ -3361,8 +3300,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Search users with detailed information by extended filter",
               "request": {
@@ -3522,8 +3460,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get users with folder sharing settings",
               "request": {
@@ -3643,8 +3580,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get users with room sharing settings",
               "request": {
@@ -3764,8 +3700,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Search users (using query parameters)",
               "request": {
@@ -3811,8 +3746,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Search users by extended filter",
               "request": {
@@ -3973,8 +3907,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Search users by status filter",
               "request": {
@@ -4042,7 +3975,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -4091,8 +4023,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get profiles",
               "request": {
@@ -4173,8 +4104,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Delete a user",
               "request": {
@@ -4219,8 +4149,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get a profile by user ID",
               "request": {
@@ -4265,8 +4194,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update a user",
               "request": {
@@ -4317,8 +4245,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update a user culture code",
               "request": {
@@ -4370,8 +4297,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Delete my profile",
               "request": {
@@ -4409,8 +4335,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get my profile",
               "request": {
@@ -4448,8 +4373,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Delete users",
               "request": {
@@ -4493,8 +4417,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get a profile by user email",
               "request": {
@@ -4552,8 +4475,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Send instructions to change email",
               "request": {
@@ -4597,8 +4519,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Invite users",
               "request": {
@@ -4642,8 +4563,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Resend activation emails",
               "request": {
@@ -4687,8 +4607,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get user claims",
               "request": {
@@ -4727,7 +4646,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -4777,8 +4695,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Change a user type",
               "request": {
@@ -4830,8 +4747,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the progress of updating user type",
               "request": {
@@ -4878,8 +4794,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Terminate updating user type",
               "request": {
@@ -4925,7 +4840,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -4975,8 +4889,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the portal theme",
               "request": {
@@ -5015,7 +4928,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -5073,8 +4985,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get profiles by status",
               "request": {
@@ -5164,8 +5075,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Change a user status",
               "request": {
@@ -5218,7 +5128,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -5276,8 +5185,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Remind a user password",
               "request": {
@@ -5322,7 +5230,6 @@
               "response": [
               ]
             }
-
           ]
         }
       ]
@@ -5411,8 +5318,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get login history",
               "request": {
@@ -5452,8 +5358,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Generate the login history report",
               "request": {
@@ -5494,7 +5399,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -5545,8 +5449,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Subscribe to Documents push notification",
               "request": {
@@ -5592,7 +5495,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -5642,8 +5544,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get CSP settings",
               "request": {
@@ -5682,7 +5583,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -5728,7 +5628,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -5772,8 +5671,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Reset the SMTP settings",
               "request": {
@@ -5811,8 +5709,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Save the SMTP settings",
               "request": {
@@ -5856,8 +5753,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Test the SMTP settings",
               "request": {
@@ -5896,8 +5792,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the SMTP testing process status",
               "request": {
@@ -5938,7 +5833,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -5982,8 +5876,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Log out from the connection",
               "request": {
@@ -6030,8 +5923,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Log out for the user by ID",
               "request": {
@@ -6072,8 +5964,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Log out and change password",
               "request": {
@@ -6112,8 +6003,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Log out from all connections except the current one",
               "request": {
@@ -6153,7 +6043,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -6204,7 +6093,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -6255,7 +6143,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -6363,8 +6250,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get audit trail data",
               "request": {
@@ -6404,8 +6290,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Generate the audit trail report",
               "request": {
@@ -6445,8 +6330,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get audit trail mappers",
               "request": {
@@ -6499,8 +6383,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the audit trail settings",
               "request": {
@@ -6540,8 +6423,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Set the audit trail settings",
               "request": {
@@ -6587,8 +6469,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get audit trail types",
               "request": {
@@ -6628,7 +6509,6 @@
               "response": [
               ]
             }
-
           ]
         }
       ]
@@ -6679,8 +6559,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Create a room",
               "request": {
@@ -6724,8 +6603,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get rooms",
               "request": {
@@ -6855,8 +6733,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Remove a room",
               "request": {
@@ -6908,8 +6785,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get room information",
               "request": {
@@ -6955,8 +6831,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Update a room",
               "request": {
@@ -7008,8 +6883,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Archive a room",
               "request": {
@@ -7062,8 +6936,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Change the room cover",
               "request": {
@@ -7116,8 +6989,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Start the room index export",
               "request": {
@@ -7164,8 +7036,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get the room primary external link",
               "request": {
@@ -7212,8 +7083,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get the room links",
               "request": {
@@ -7268,8 +7138,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Set the room external or invitation link",
               "request": {
@@ -7322,8 +7191,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Create a room logo",
               "request": {
@@ -7376,8 +7244,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Remove a room logo",
               "request": {
@@ -7424,8 +7291,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get the new room items",
               "request": {
@@ -7472,8 +7338,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Pin a room",
               "request": {
@@ -7520,8 +7385,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Reorder the room",
               "request": {
@@ -7568,8 +7432,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Resend the room invitations",
               "request": {
@@ -7616,8 +7479,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get the room access rights",
               "request": {
@@ -7690,8 +7552,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Set the room access rights",
               "request": {
@@ -7744,8 +7605,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Add the room tags",
               "request": {
@@ -7798,8 +7658,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Remove the room tags",
               "request": {
@@ -7852,8 +7711,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Unarchive a room",
               "request": {
@@ -7906,8 +7764,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Unpin a room",
               "request": {
@@ -7954,8 +7811,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get covers",
               "request": {
@@ -7994,8 +7850,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Create a room from the template",
               "request": {
@@ -8040,8 +7895,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get the room creation progress",
               "request": {
@@ -8081,8 +7935,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get the room index export",
               "request": {
@@ -8121,8 +7974,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Terminate the room index export",
               "request": {
@@ -8155,8 +8007,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get the room new items",
               "request": {
@@ -8195,8 +8046,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Create a third-party room",
               "request": {
@@ -8249,8 +8099,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Start creating room template",
               "request": {
@@ -8294,8 +8143,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get public settings",
               "request": {
@@ -8342,8 +8190,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Set public settings",
               "request": {
@@ -8382,8 +8229,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get status of room template creation",
               "request": {
@@ -8422,8 +8268,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Create a room tag",
               "request": {
@@ -8467,8 +8312,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Delete the custom room tags",
               "request": {
@@ -8506,8 +8350,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get the room tags",
               "request": {
@@ -8566,7 +8409,6 @@
               "response": [
               ]
             }
-
       ]
     },
     {
@@ -8614,8 +8456,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get current user's API keys",
               "request": {
@@ -8652,8 +8493,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Delete a user API key",
               "request": {
@@ -8698,8 +8538,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Update an API key",
               "request": {
@@ -8750,8 +8589,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get current user's API key",
               "request": {
@@ -8789,8 +8627,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Get API key permissions",
               "request": {
@@ -8829,7 +8666,6 @@
               "response": [
               ]
             }
-
       ]
     },
     {
@@ -8881,8 +8717,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Delete an OAuth2 client",
               "request": {
@@ -8927,8 +8762,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update an existing OAuth2 client",
               "request": {
@@ -8979,8 +8813,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Change the client activation status",
               "request": {
@@ -9032,8 +8865,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Regenerate the client secret",
               "request": {
@@ -9079,8 +8911,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Revoke client consent",
               "request": {
@@ -9127,7 +8958,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -9189,8 +9019,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "OAuth2 consent endpoint",
               "request": {
@@ -9226,8 +9055,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "OAuth2 token endpoint",
               "request": {
@@ -9270,7 +9098,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -9333,8 +9160,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get client details",
               "request": {
@@ -9379,8 +9205,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get detailed client information",
               "request": {
@@ -9426,8 +9251,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get public client information",
               "request": {
@@ -9474,8 +9298,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get user consents",
               "request": {
@@ -9527,8 +9350,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get detailed information of clients",
               "request": {
@@ -9587,7 +9409,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -9631,7 +9452,6 @@
               "response": [
               ]
             }
-
           ]
         }
       ]
@@ -9676,7 +9496,6 @@
               "response": [
               ]
             }
-
       ]
     },
     {
@@ -9724,8 +9543,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Check authentication",
               "request": {
@@ -9762,8 +9580,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Authenticate a user by code",
               "request": {
@@ -9814,8 +9631,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Open confirmation email URL",
               "request": {
@@ -9859,8 +9675,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Log out",
               "request": {
@@ -9898,8 +9713,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Send SMS code",
               "request": {
@@ -9943,8 +9757,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
         {
               "name": "Set a mobile phone",
               "request": {
@@ -9989,7 +9802,6 @@
               "response": [
               ]
             }
-
       ]
     },
     {
@@ -10045,8 +9857,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Calculate the wallet payment amount",
               "request": {
@@ -10091,8 +9902,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the checkout setup page URL",
               "request": {
@@ -10139,8 +9949,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get currencies",
               "request": {
@@ -10179,8 +9988,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the customer balance",
               "request": {
@@ -10228,8 +10036,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the customer operations",
               "request": {
@@ -10313,8 +10120,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Start the customer operations report generation",
               "request": {
@@ -10360,8 +10166,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the status of the customer operations report generation",
               "request": {
@@ -10401,8 +10206,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Terminate the customer operations report generation",
               "request": {
@@ -10436,8 +10240,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the customer information",
               "request": {
@@ -10484,8 +10287,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Put money on deposit",
               "request": {
@@ -10530,8 +10332,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get prices",
               "request": {
@@ -10570,8 +10371,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get quota payment information",
               "request": {
@@ -10618,8 +10418,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get quotas",
               "request": {
@@ -10666,8 +10465,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Send a payment request",
               "request": {
@@ -10706,8 +10504,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get wallet services settings",
               "request": {
@@ -10746,8 +10543,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Change wallet service state",
               "request": {
@@ -10792,8 +10588,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get wallet auto top-up settings",
               "request": {
@@ -10832,8 +10627,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Set wallet auto top-up settings",
               "request": {
@@ -10878,8 +10672,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update the payment quantity",
               "request": {
@@ -10924,8 +10717,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update the wallet payment quantity",
               "request": {
@@ -10970,8 +10762,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the payment page URL",
               "request": {
@@ -11016,8 +10807,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get wallet service",
               "request": {
@@ -11064,8 +10854,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get wallet services",
               "request": {
@@ -11105,7 +10894,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -11159,7 +10947,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -11203,8 +10990,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the recommended quota",
               "request": {
@@ -11243,8 +11029,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get a portal tariff",
               "request": {
@@ -11290,8 +11075,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the portal used space",
               "request": {
@@ -11330,7 +11114,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -11369,8 +11152,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Send congratulations",
               "request": {
@@ -11416,8 +11198,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get a user by ID",
               "request": {
@@ -11463,8 +11244,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get an invitation link",
               "request": {
@@ -11511,8 +11291,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get a number of portal users",
               "request": {
@@ -11551,7 +11330,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -11594,8 +11372,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Restore a portal",
               "request": {
@@ -11627,8 +11404,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Delete a portal",
               "request": {
@@ -11666,8 +11442,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Send removal instructions",
               "request": {
@@ -11699,8 +11474,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get a path to the portal",
               "request": {
@@ -11746,8 +11520,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Send suspension instructions",
               "request": {
@@ -11779,8 +11552,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Deactivate a portal",
               "request": {
@@ -11813,7 +11585,6 @@
               "response": [
               ]
             }
-
           ]
         }
       ]
@@ -11862,8 +11633,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Save a third-party account",
               "request": {
@@ -11907,8 +11677,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Remove a third-party account",
               "request": {
@@ -11954,8 +11723,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get a third-party account backup",
               "request": {
@@ -11994,8 +11762,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Save a third-party account backup",
               "request": {
@@ -12040,8 +11807,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get providers",
               "request": {
@@ -12080,8 +11846,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the common third-party services",
               "request": {
@@ -12120,8 +11885,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get all providers",
               "request": {
@@ -12169,7 +11933,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -12220,8 +11983,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Change the room quota limit",
               "request": {
@@ -12267,7 +12029,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -12347,8 +12108,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Send the mention message",
               "request": {
@@ -12401,8 +12161,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Share a file",
               "request": {
@@ -12455,8 +12214,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get user access rights by file ID",
               "request": {
@@ -12503,8 +12261,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the shared file information",
               "request": {
@@ -12565,8 +12322,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get folder group members with security information",
               "request": {
@@ -12640,8 +12396,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Share a folder",
               "request": {
@@ -12694,8 +12449,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the shared folder information",
               "request": {
@@ -12756,8 +12510,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Change the file owner",
               "request": {
@@ -12801,8 +12554,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the sharing rights",
               "request": {
@@ -12846,8 +12598,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Remove the sharing rights",
               "request": {
@@ -12891,8 +12642,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Set the sharing rights",
               "request": {
@@ -12936,8 +12686,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the external data",
               "request": {
@@ -12997,8 +12746,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Apply external data password",
               "request": {
@@ -13052,7 +12800,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -13201,8 +12948,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get folder form filter",
               "request": {
@@ -13248,8 +12994,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Insert a file",
               "request": {
@@ -13301,8 +13046,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get new folder items",
               "request": {
@@ -13348,8 +13092,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get subfolders",
               "request": {
@@ -13395,8 +13138,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Upload a file",
               "request": {
@@ -13448,8 +13190,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Check file uploads",
               "request": {
@@ -13502,8 +13243,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the \"Favorites\" section",
               "request": {
@@ -13585,8 +13325,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the \"My documents\" section",
               "request": {
@@ -13674,8 +13413,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Insert a file to the \"My documents\" section",
               "request": {
@@ -13720,8 +13458,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Upload a file to the \"My documents\" section",
               "request": {
@@ -13768,8 +13505,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the \"Private Room\" section",
               "request": {
@@ -13851,8 +13587,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get filtered sections",
               "request": {
@@ -13940,8 +13675,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the \"Trash\" section",
               "request": {
@@ -14029,8 +13763,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get used space of files",
               "request": {
@@ -14068,8 +13801,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Create a folder",
               "request": {
@@ -14121,8 +13853,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Delete a folder",
               "request": {
@@ -14174,8 +13905,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get folder information",
               "request": {
@@ -14221,8 +13951,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Rename a folder",
               "request": {
@@ -14274,8 +14003,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get folder history",
               "request": {
@@ -14348,8 +14076,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Generates folder history",
               "request": {
@@ -14397,8 +14124,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Set folder order",
               "request": {
@@ -14451,8 +14177,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the folder path",
               "request": {
@@ -14499,8 +14224,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Create primary external link",
               "request": {
@@ -14553,8 +14277,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get primary external link",
               "request": {
@@ -14615,8 +14338,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the folder links",
               "request": {
@@ -14663,8 +14385,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Set the folder external link",
               "request": {
@@ -14717,8 +14438,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the \"Recent\" section",
               "request": {
@@ -14825,7 +14545,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -14883,8 +14602,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Create a file",
               "request": {
@@ -14936,8 +14654,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Create an HTML file",
               "request": {
@@ -14989,8 +14706,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Create a text file",
               "request": {
@@ -15042,8 +14758,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Create a file in the \"My documents\" section",
               "request": {
@@ -15088,8 +14803,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Create an HTML file in the \"My documents\" section",
               "request": {
@@ -15134,8 +14848,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Create a text file in the \"My documents\" section",
               "request": {
@@ -15180,8 +14893,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Change the file favorite status",
               "request": {
@@ -15235,8 +14947,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Delete a file",
               "request": {
@@ -15288,8 +14999,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get file information",
               "request": {
@@ -15343,8 +15053,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update a file",
               "request": {
@@ -15396,8 +15105,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Copy a file",
               "request": {
@@ -15450,8 +15158,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Set the Custom Filter editing mode",
               "request": {
@@ -15504,8 +15211,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get changes URL",
               "request": {
@@ -15561,8 +15267,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get version history",
               "request": {
@@ -15610,8 +15315,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Create the editing session",
               "request": {
@@ -15666,8 +15370,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Save form role mapping",
               "request": {
@@ -15714,8 +15417,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get form roles",
               "request": {
@@ -15762,8 +15464,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Change version history",
               "request": {
@@ -15816,8 +15517,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get file versions",
               "request": {
@@ -15864,8 +15564,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Check the PDF file",
               "request": {
@@ -15912,8 +15611,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Lock a file",
               "request": {
@@ -15966,8 +15664,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get file history",
               "request": {
@@ -16040,8 +15737,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Perform form filling action",
               "request": {
@@ -16088,8 +15784,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Open a file configuration",
               "request": {
@@ -16168,8 +15863,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get file download link asynchronously",
               "request": {
@@ -16216,8 +15910,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get file download link",
               "request": {
@@ -16264,8 +15957,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get users access rights to the protected file",
               "request": {
@@ -16312,8 +16004,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Add a file to the \"Recent\" section",
               "request": {
@@ -16360,8 +16051,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Restore a file version",
               "request": {
@@ -16422,8 +16112,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Save file edits",
               "request": {
@@ -16476,8 +16165,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Start file editing",
               "request": {
@@ -16530,8 +16218,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Start file filling",
               "request": {
@@ -16578,8 +16265,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Track file editing",
               "request": {
@@ -16646,8 +16332,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Create primary external link",
               "request": {
@@ -16700,8 +16385,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get primary external link",
               "request": {
@@ -16762,8 +16446,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get file external links",
               "request": {
@@ -16824,8 +16507,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Set an external link",
               "request": {
@@ -16878,8 +16560,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Save a file as PDF",
               "request": {
@@ -16932,8 +16613,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get form-filling result",
               "request": {
@@ -16980,8 +16660,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get reference data",
               "request": {
@@ -17026,8 +16705,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Check the form draft filling",
               "request": {
@@ -17080,8 +16758,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Set order of files",
               "request": {
@@ -17125,8 +16802,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Delete recent files",
               "request": {
@@ -17170,8 +16846,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Add template files",
               "request": {
@@ -17215,8 +16890,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Delete template files",
               "request": {
@@ -17260,8 +16934,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Create file thumbnails",
               "request": {
@@ -17306,7 +16979,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -17365,8 +17037,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Add favorite files and folders",
               "request": {
@@ -17410,8 +17081,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Delete favorite files and folders (using body parameters)",
               "request": {
@@ -17455,8 +17125,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get conversion status",
               "request": {
@@ -17511,8 +17180,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Start file conversion",
               "request": {
@@ -17565,8 +17233,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update a comment",
               "request": {
@@ -17619,8 +17286,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get active file operations",
               "request": {
@@ -17666,8 +17332,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get file operation statuses",
               "request": {
@@ -17721,8 +17386,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Bulk download",
               "request": {
@@ -17767,8 +17431,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Check for moving or copying files to a folder",
               "request": {
@@ -17815,8 +17478,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Copy to the folder",
               "request": {
@@ -17861,8 +17523,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Delete files and folders",
               "request": {
@@ -17907,8 +17568,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Delete file versions",
               "request": {
@@ -17953,8 +17613,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Duplicate files and folders",
               "request": {
@@ -17999,8 +17658,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Empty the \"Trash\" folder",
               "request": {
@@ -18047,8 +17705,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Mark as read",
               "request": {
@@ -18093,8 +17750,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Move or copy files to a folder",
               "request": {
@@ -18141,8 +17797,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Move or copy to a folder",
               "request": {
@@ -18187,8 +17842,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Finish active operations",
               "request": {
@@ -18236,7 +17890,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -18281,8 +17934,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Confirm the file deletion",
               "request": {
@@ -18326,8 +17978,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Display a file extension",
               "request": {
@@ -18371,8 +18022,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Display the \"Recent\" folder",
               "request": {
@@ -18416,8 +18066,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Check the document service URL",
               "request": {
@@ -18461,8 +18110,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the document service URL",
               "request": {
@@ -18508,8 +18156,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Change the forcesaving ability",
               "request": {
@@ -18547,8 +18194,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Hide confirmation dialog when canceling operations",
               "request": {
@@ -18592,8 +18238,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Hide the confirmation dialog when converting",
               "request": {
@@ -18637,8 +18282,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Hide confirmation dialog when changing room lifetime settings",
               "request": {
@@ -18682,8 +18326,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the \"Documents\" information",
               "request": {
@@ -18721,8 +18364,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Ask a new file name",
               "request": {
@@ -18766,8 +18408,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get file settings",
               "request": {
@@ -18805,8 +18446,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update the trash bin auto-clearing setting",
               "request": {
@@ -18851,8 +18491,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the trash bin auto-clearing setting",
               "request": {
@@ -18891,8 +18530,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Change the default access rights",
               "request": {
@@ -18937,8 +18575,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Change the archive format (using body parameters)",
               "request": {
@@ -18983,8 +18620,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Change the external sharing ability",
               "request": {
@@ -19029,8 +18665,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Change the external sharing ability on social networks",
               "request": {
@@ -19075,8 +18710,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Open document in the same browser tab",
               "request": {
@@ -19121,8 +18755,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Change the ability to store the forcesaved files",
               "request": {
@@ -19160,8 +18793,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Change the ability to upload original formats",
               "request": {
@@ -19205,8 +18837,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Change the third-party settings access",
               "request": {
@@ -19250,8 +18881,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update a file version if it exists",
               "request": {
@@ -19296,7 +18926,6 @@
               "response": [
               ]
             }
-
           ]
         }
       ]
@@ -19349,7 +18978,6 @@
               "response": [
               ]
             }
-
       ]
     },
     {
@@ -19404,8 +19032,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get web plugins",
               "request": {
@@ -19451,8 +19078,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Delete a web plugin",
               "request": {
@@ -19492,8 +19118,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get a web plugin by name",
               "request": {
@@ -19539,8 +19164,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update a web plugin",
               "request": {
@@ -19587,7 +19211,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -19632,8 +19255,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the Telegram link",
               "request": {
@@ -19672,8 +19294,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Unlink Telegram",
               "request": {
@@ -19713,7 +19334,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -19763,8 +19383,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update the portal owner",
               "request": {
@@ -19803,7 +19422,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -19853,8 +19471,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Send a message to the administrator",
               "request": {
@@ -19898,8 +19515,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Sends an invitation email",
               "request": {
@@ -19944,7 +19560,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -19994,8 +19609,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Activate a license",
               "request": {
@@ -20034,8 +19648,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Refresh the license",
               "request": {
@@ -20074,8 +19687,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Request a license",
               "request": {
@@ -20115,7 +19727,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -20159,8 +19770,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Save the greeting settings",
               "request": {
@@ -20204,8 +19814,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Check the default greeting settings",
               "request": {
@@ -20244,8 +19853,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Restore the greeting settings",
               "request": {
@@ -20285,7 +19893,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -20330,7 +19937,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -20375,8 +19981,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the storage encryption settings",
               "request": {
@@ -20415,8 +20020,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Start the storage encryption process",
               "request": {
@@ -20462,7 +20066,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -20514,8 +20117,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Set the module security settings",
               "request": {
@@ -20559,8 +20161,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the module availability",
               "request": {
@@ -20606,8 +20207,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Set the security settings to modules",
               "request": {
@@ -20652,8 +20252,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Check a product administrator",
               "request": {
@@ -20706,8 +20305,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Set a product administrator",
               "request": {
@@ -20752,8 +20350,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the product administrators",
               "request": {
@@ -20800,8 +20397,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the enabled modules",
               "request": {
@@ -20840,8 +20436,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the password settings",
               "request": {
@@ -20880,8 +20475,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Set the password settings",
               "request": {
@@ -20927,7 +20521,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -20971,8 +20564,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Check the white label availability",
               "request": {
@@ -21010,8 +20602,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Delete the additional white label settings",
               "request": {
@@ -21050,8 +20641,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the additional white label settings",
               "request": {
@@ -21090,8 +20680,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Save the additional white label settings",
               "request": {
@@ -21136,8 +20725,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Delete the company white label settings",
               "request": {
@@ -21176,8 +20764,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the company white label settings",
               "request": {
@@ -21216,8 +20803,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Save the company white label settings",
               "request": {
@@ -21262,8 +20848,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the white label logos",
               "request": {
@@ -21316,8 +20901,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Check the default white label logos",
               "request": {
@@ -21371,8 +20955,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Restore the white label logos",
               "request": {
@@ -21426,8 +21009,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Save the white label logos",
               "request": {
@@ -21487,8 +21069,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Save the white label logos from files",
               "request": {
@@ -21542,8 +21123,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the white label logo text",
               "request": {
@@ -21596,8 +21176,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Check the default white label logo text",
               "request": {
@@ -21651,8 +21230,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Restore the white label logo text",
               "request": {
@@ -21706,8 +21284,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Save the white label logo text settings",
               "request": {
@@ -21768,7 +21345,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -21813,7 +21389,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -21867,7 +21442,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -21911,8 +21485,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Reset the SSO settings",
               "request": {
@@ -21950,8 +21523,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Save the SSO settings",
               "request": {
@@ -21995,8 +21567,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the SSO settings constants",
               "request": {
@@ -22035,8 +21606,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the default SSO settings",
               "request": {
@@ -22076,7 +21646,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -22120,8 +21689,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update the IP restrictions",
               "request": {
@@ -22165,8 +21733,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the IP restriction settings",
               "request": {
@@ -22205,8 +21772,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update the IP restriction settings",
               "request": {
@@ -22252,7 +21818,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -22296,8 +21861,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Save the authorization keys",
               "request": {
@@ -22342,7 +21906,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -22386,8 +21949,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Reset the storage settings",
               "request": {
@@ -22419,8 +21981,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update a storage",
               "request": {
@@ -22464,8 +22025,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the backup storages",
               "request": {
@@ -22512,8 +22072,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the CDN storages",
               "request": {
@@ -22552,8 +22111,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Reset the CDN storage settings",
               "request": {
@@ -22586,8 +22144,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update the CDN storage",
               "request": {
@@ -22632,8 +22189,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the storage progress",
               "request": {
@@ -22672,8 +22228,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get Amazon regions",
               "request": {
@@ -22714,7 +22269,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -22764,8 +22318,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Save the room quota settings",
               "request": {
@@ -22809,8 +22362,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Save the tenant quota settings",
               "request": {
@@ -22854,8 +22406,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the user quota settings",
               "request": {
@@ -22894,7 +22445,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -22945,8 +22495,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Close the admin helper",
               "request": {
@@ -22978,8 +22527,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Delete a color theme",
               "request": {
@@ -23025,8 +22573,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get a color theme",
               "request": {
@@ -23064,8 +22611,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Save a color theme",
               "request": {
@@ -23109,8 +22655,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get supported languages",
               "request": {
@@ -23148,8 +22693,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Configure the deep link settings",
               "request": {
@@ -23193,8 +22737,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the deep link settings",
               "request": {
@@ -23232,8 +22775,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Save the DNS settings",
               "request": {
@@ -23277,8 +22819,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update the email activation settings",
               "request": {
@@ -23322,8 +22863,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the user invitation settings",
               "request": {
@@ -23361,8 +22901,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update user invitation settings",
               "request": {
@@ -23406,8 +22945,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get a portal logo",
               "request": {
@@ -23445,8 +22983,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get hostname",
               "request": {
@@ -23484,8 +23021,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Save the mail domain settings",
               "request": {
@@ -23529,8 +23065,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the payment settings",
               "request": {
@@ -23568,8 +23103,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the socket settings",
               "request": {
@@ -23607,8 +23141,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get time zones",
               "request": {
@@ -23646,8 +23179,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Complete the Wizard settings",
               "request": {
@@ -23693,7 +23225,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -23737,8 +23268,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update cookies lifetime",
               "request": {
@@ -23783,7 +23313,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -23828,8 +23357,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Reset the login settings",
               "request": {
@@ -23868,8 +23396,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update the login settings",
               "request": {
@@ -23915,7 +23442,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -23965,8 +23491,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get webhooks",
               "request": {
@@ -24004,8 +23529,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update a webhook",
               "request": {
@@ -24049,8 +23573,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Remove a webhook",
               "request": {
@@ -24096,8 +23619,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Retry a webhook",
               "request": {
@@ -24144,8 +23666,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Enable a webhook",
               "request": {
@@ -24190,8 +23711,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Retry webhooks",
               "request": {
@@ -24236,8 +23756,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get webhook triggers",
               "request": {
@@ -24276,8 +23795,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get webhook logs",
               "request": {
@@ -24379,7 +23897,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -24423,8 +23940,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update the TFA settings",
               "request": {
@@ -24468,8 +23984,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get confirmation email",
               "request": {
@@ -24508,8 +24023,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Generate setup code",
               "request": {
@@ -24548,8 +24062,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Validate the TFA code",
               "request": {
@@ -24594,8 +24107,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get the TFA codes",
               "request": {
@@ -24633,8 +24145,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Unlink the TFA application",
               "request": {
@@ -24678,8 +24189,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Update the TFA codes",
               "request": {
@@ -24717,8 +24227,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get a confirmation email for updating TFA settings",
               "request": {
@@ -24763,7 +24272,6 @@
               "response": [
               ]
             }
-
           ]
         },
         {
@@ -24813,8 +24321,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Check notification availability",
               "request": {
@@ -24860,8 +24367,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get notification channels",
               "request": {
@@ -24900,8 +24406,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Get room notification settings",
               "request": {
@@ -24940,8 +24445,7 @@
               },
               "response": [
               ]
-            }
-,
+            },
             {
               "name": "Set room notification status",
               "request": {
@@ -24987,7 +24491,6 @@
               "response": [
               ]
             }
-
           ]
         }
       ]
