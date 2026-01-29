@@ -12,10 +12,11 @@
   "item": [
     {
       "name": "Group",
+      "description": "",
       "item": [
         {
           "name": "Group",
-          "description": "",
+          "description": "Operations for working with groups.",
           "item": [
             {
               "name": "Add a new group",
@@ -824,6 +825,7 @@
     },
     {
       "name": "Migration",
+      "description": "Operations for performing migration.",
       "item": [
         {
               "name": "Cancel migration",
@@ -1117,6 +1119,7 @@
     },
     {
       "name": "Backup",
+      "description": "Operations for working with backup",
       "item": [
         {
               "name": "Create the backup schedule",
@@ -1672,6 +1675,7 @@
     },
     {
       "name": "People",
+      "description": "",
       "item": [
         {
           "name": "User data",
@@ -5236,6 +5240,7 @@
     },
     {
       "name": "Security",
+      "description": "",
       "item": [
         {
           "name": "Login history",
@@ -6515,6 +6520,7 @@
     },
     {
       "name": "Rooms",
+      "description": "Operations for working with rooms.",
       "item": [
         {
               "name": "Upload a room logo image",
@@ -8413,6 +8419,7 @@
     },
     {
       "name": "Api keys",
+      "description": "Operations for working with api keys.",
       "item": [
         {
               "name": "Create a user API key",
@@ -8670,6 +8677,7 @@
     },
     {
       "name": "OAuth 2.0",
+      "description": "",
       "item": [
         {
           "name": "Client Management",
@@ -9458,6 +9466,7 @@
     },
     {
       "name": "Capabilities",
+      "description": "Operations for getting information about portal capabilities.",
       "item": [
         {
               "name": "Get portal capabilities",
@@ -9500,6 +9509,7 @@
     },
     {
       "name": "Authentication",
+      "description": "Operations for authenticating users.",
       "item": [
         {
               "name": "Authenticate a user",
@@ -9806,6 +9816,7 @@
     },
     {
       "name": "Portal",
+      "description": "",
       "item": [
         {
           "name": "Payment",
@@ -11591,6 +11602,7 @@
     },
     {
       "name": "Files",
+      "description": "",
       "item": [
         {
           "name": "Third-party integration",
@@ -18932,6 +18944,7 @@
     },
     {
       "name": "ThirdParty",
+      "description": "Operations for working with third-party.",
       "item": [
         {
               "name": "Get the code request",
@@ -18982,6 +18995,7 @@
     },
     {
       "name": "Settings",
+      "description": "",
       "item": [
         {
           "name": "Webplugins",
