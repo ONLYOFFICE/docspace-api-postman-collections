@@ -5,7 +5,7 @@
       "content": "A simple Postman Collection for integrating with the ONLYOFFICE DocSpace API",
       "type": "text/markdown"
     },
-    "version": "3.6.0",
+    "version": "3.7.0",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "_postman_id": "5d8c9db9-3822-4cc8-864b-75521aa761c2"
   },
@@ -6142,6 +6142,12 @@
                       "disabled": true
                     },
                     {
+                      "key": "subjectOwnerId",
+                      "value": "00000000-0000-0000-0000-000000000000",
+                      "description": "The filter by room owner ID.",
+                      "disabled": true
+                    },
+                    {
                       "key": "withoutTags",
                       "value": "false",
                       "description": "Specifies whether to search by tags or not.",
@@ -9510,6 +9516,12 @@
                       "disabled": true
                     },
                     {
+                      "key": "subjectOwnerId",
+                      "value": "00000000-0000-0000-0000-000000000000",
+                      "description": "The filter by room owner ID.",
+                      "disabled": true
+                    },
+                    {
                       "key": "searchArea",
                       "value": "1",
                       "description": "The room search area (Active, Archive, Any, Recent by links).",
@@ -11640,7 +11652,7 @@
       "item": [
         {
           "name": "Client Management",
-          "description": "APIs for managing OAuth2 clients, including creation, updates, deletion, and activation.",
+          "description": "APIs for managing OAuth2 clients including creation, updates, deletion and activation",
           "item": [
             {
               "name": "Create a new OAuth2 client",
@@ -11662,7 +11674,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"logo\": \"<string>\",\n \"scopes\": \"<string>\",\n \"allow_pkce\": \"<string>\",\n \"is_public\": \"<string>\",\n \"website_url\": \"<string>\",\n \"terms_url\": \"<string>\",\n \"policy_url\": \"<string>\",\n \"redirect_uris\": \"<string>\",\n \"allowed_origins\": \"<string>\",\n \"logout_redirect_uri\": \"<string>\"\n}",
+                  "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"logo\": \"<string>\",\n \"scopes\": \"<string>\",\n \"public\": \"<string>\",\n \"allow_pkce\": \"<string>\",\n \"is_public\": \"<string>\",\n \"website_url\": \"<string>\",\n \"terms_url\": \"<string>\",\n \"policy_url\": \"<string>\",\n \"redirect_uris\": \"<string>\",\n \"allowed_origins\": \"<string>\",\n \"logout_redirect_uri\": \"<string>\"\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -11681,6 +11693,43 @@
                   ]
                 },
                 "description": "Creates a new OAuth2 client with the specified configuration. The client will be created with the provided scopes, redirect URIs, and other settings. Returns the created client details including the generated client ID."
+              },
+              "response": [
+              ]
+            },
+            {
+              "name": "Delete all user OAuth2 clients",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/2.0/clients",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "2.0",
+                    "clients"
+                  ]
+                },
+                "description": "Permanently deletes user OAuth2 clients and all associated data. This will invalidate all access tokens and refresh tokens issued to this client. This operation cannot be undone."
               },
               "response": [
               ]
@@ -11721,11 +11770,11 @@
                     {
                       "key": "clientId",
                       "value": "",
-                      "description": "The client identifier."
+                      "description": "ID of the client to delete"
                     }
                   ]
                 },
-                "description": "Permanently deletes an OAuth2 client and all associated data. All access and refresh tokens issued to this client will be invalidated. This operation cannot be undone."
+                "description": "Permanently deletes an OAuth2 client and all associated data. This will invalidate all access tokens and refresh tokens issued to this client. This operation cannot be undone."
               },
               "response": [
               ]
@@ -11750,7 +11799,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"logo\": \"<string>\",\n \"allow_pkce\": \"<string>\",\n \"is_public\": \"<string>\",\n \"allowed_origins\": \"<string>\"\n}",
+                  "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"logo\": \"<string>\",\n \"public\": \"<string>\",\n \"allow_pkce\": \"<string>\",\n \"is_public\": \"<string>\",\n \"allowed_origins\": \"<string>\"\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -11772,17 +11821,17 @@
                     {
                       "key": "clientId",
                       "value": "",
-                      "description": "The client identifier."
+                      "description": "ID of the client to update"
                     }
                   ]
                 },
-                "description": "Updates the configuration of an existing OAuth2 client, allowing modifications to the client name, description, redirect URIs, and other settings. The client ID cannot be modified."
+                "description": "Updates the configuration of an existing OAuth2 client. Allows modification of client name, description, redirect URIs, and other settings. The client ID cannot be modified."
               },
               "response": [
               ]
             },
             {
-              "name": "Change the client activation status",
+              "name": "Change client activation status",
               "request": {
                 "method": "PATCH",
                 "header": [
@@ -11824,7 +11873,7 @@
                     {
                       "key": "clientId",
                       "value": "",
-                      "description": "The client identifier."
+                      "description": "ID of the client to change activation for"
                     }
                   ]
                 },
@@ -11834,7 +11883,7 @@
               ]
             },
             {
-              "name": "Regenerate the client secret",
+              "name": "Regenerate client secret",
               "request": {
                 "method": "PATCH",
                 "header": [
@@ -11870,7 +11919,7 @@
                     {
                       "key": "clientId",
                       "value": "",
-                      "description": "The client identifier."
+                      "description": "ID of the client to regenerate secret for"
                     }
                   ]
                 },
@@ -11916,11 +11965,49 @@
                     {
                       "key": "clientId",
                       "value": "",
-                      "description": "The client identifier."
+                      "description": "ID of the client to revoke consent for"
                     }
                   ]
                 },
                 "description": "Revokes all user consents for the specified OAuth2 client. This will invalidate all access tokens and refresh tokens issued to this client for the current user. The user will need to re-authorize the client to access their resources."
+              },
+              "response": [
+              ]
+            },
+            {
+              "name": "Delete all tenant OAuth2 clients",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/2.0/clients/tenant",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "2.0",
+                    "clients",
+                    "tenant"
+                  ]
+                },
+                "description": "Permanently deletes tenant OAuth2 clients and all associated data. This will invalidate all access tokens and refresh tokens issued to this client. This operation cannot be undone."
               },
               "response": [
               ]
@@ -11932,7 +12019,7 @@
           "description": "APIs for managing OAuth2 authorization, including authorization and consent.",
           "item": [
             {
-              "name": "OAuth2 authorization endpoint",
+              "name": "OAuth2 Authorization Endpoint",
               "request": {
                 "method": "GET",
                 "header": [
@@ -12018,13 +12105,13 @@
                     "authorize"
                   ]
                 },
-                "description": "Sends a consent request with the specified parameters."
+                "description": "Sends consent approval"
               },
               "response": [
               ]
             },
             {
-              "name": "OAuth2 token endpoint",
+              "name": "OAuth2 Token Endpoint",
               "request": {
                 "method": "POST",
                 "header": [
@@ -12060,7 +12147,7 @@
                     "token"
                   ]
                 },
-                "description": "Exchanges an authorization code specified in the request for the access token."
+                "description": "Exchange authorization code for access token"
               },
               "response": [
               ]
@@ -12072,7 +12159,7 @@
           "description": "APIs for retrieving OAuth2 client information and user consents.",
           "item": [
             {
-              "name": "Get clients",
+              "name": "List clients",
               "request": {
                 "method": "GET",
                 "header": [
@@ -12106,24 +12193,24 @@
                     {
                       "key": "limit",
                       "value": "1",
-                      "description": "The maximum number of results returned per page.",
+                      "description": "Pagination limit",
                       "disabled": false
                     },
                     {
                       "key": "lastClientId",
                       "value": "6c7cf17b-1bd3-47d5-94c6-be2d3570e168",
-                      "description": "The ID of the last retrieved client.",
+                      "description": "ID of the last retrieved client",
                       "disabled": true
                     },
                     {
                       "key": "lastCreatedOn",
                       "value": "2024-04-04T12:00:00Z",
-                      "description": "The creation date of the last retrieved client.",
+                      "description": "Date of the last retrieved client",
                       "disabled": true
                     }
                   ]
                 },
-                "description": "Retrieves a paginated list of OAuth2 clients. The results can be paginated using the 'limit' parameter and the last seen client ID or creation date."
+                "description": "Retrieves a paginated list of OAuth2 clients. The results can be paginated using the limit parameter and last seen client ID/creation date."
               },
               "response": [
               ]
@@ -12164,7 +12251,7 @@
                     {
                       "key": "clientId",
                       "value": "",
-                      "description": "The client identifier."
+                      "description": "ID of the client to retrieve"
                     }
                   ]
                 },
@@ -12174,7 +12261,7 @@
               ]
             },
             {
-              "name": "Get detailed client information",
+              "name": "Retrieves detailed information for a specific client",
               "request": {
                 "method": "GET",
                 "header": [
@@ -12210,7 +12297,7 @@
                     {
                       "key": "clientId",
                       "value": "",
-                      "description": "The client identifier."
+                      "description": "ID of the client to retrieve"
                     }
                   ]
                 },
@@ -12220,7 +12307,7 @@
               ]
             },
             {
-              "name": "Get public client information",
+              "name": "Handles the GET request for public client information",
               "request": {
                 "method": "GET",
                 "header": [
@@ -12257,17 +12344,17 @@
                     {
                       "key": "clientId",
                       "value": "",
-                      "description": "The client identifier."
+                      "description": "ID of the client to retrieve"
                     }
                   ]
                 },
-                "description": "Returns the public information for a client with the ID secified din the request."
+                "description": ""
               },
               "response": [
               ]
             },
             {
-              "name": "Get user consents",
+              "name": "Retrieves a pageable list of consents",
               "request": {
                 "method": "GET",
                 "header": [
@@ -12302,13 +12389,13 @@
                     {
                       "key": "limit",
                       "value": "1",
-                      "description": "The maximum number of results returned per page.",
+                      "description": "Pagination limit",
                       "disabled": false
                     },
                     {
                       "key": "lastModifiedOn",
                       "value": "2024-04-04T12:00:00Z",
-                      "description": "The date when the user consent was last modified.",
+                      "description": "Date of the last retrieved consent",
                       "disabled": true
                     }
                   ]
@@ -12319,7 +12406,7 @@
               ]
             },
             {
-              "name": "Get detailed information of clients",
+              "name": "Retrieves a pageable list of client information",
               "request": {
                 "method": "GET",
                 "header": [
@@ -12354,19 +12441,19 @@
                     {
                       "key": "limit",
                       "value": "1",
-                      "description": "The maximum number of results returned per page.",
+                      "description": "Pagination limit",
                       "disabled": false
                     },
                     {
                       "key": "lastClientId",
                       "value": "6c7cf17b-1bd3-47d5-94c6-be2d3570e168",
-                      "description": "The identifier of the last retrieved client.",
+                      "description": "ID of the last retrieved client",
                       "disabled": true
                     },
                     {
                       "key": "lastCreatedOn",
                       "value": "2024-04-04T12:00:00Z",
-                      "description": "The creation date of the last retrieved client.",
+                      "description": "Date of the last retrieved client",
                       "disabled": true
                     }
                   ]
@@ -12383,7 +12470,7 @@
           "description": "APIs for retrieving OAuth2 scopes and their permissions.",
           "item": [
             {
-              "name": "Get available OAuth2 scopes",
+              "name": "List available OAuth2 scopes",
               "request": {
                 "method": "GET",
                 "header": [
@@ -12415,6 +12502,48 @@
                   ]
                 },
                 "description": "Retrieves a list of all available OAuth2 scopes for the specified tenant. The scopes define the permissions that can be requested by OAuth2 clients. The list is ordered alphabetically, with the 'openid' scope always appearing first."
+              },
+              "response": [
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Discovery",
+          "description": "",
+          "item": [
+            {
+              "name": "handleOptions",
+              "request": {
+                "method": "OPTIONS",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "*/*",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/.well-known/oauth-authorization-server",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ".well-known",
+                    "oauth-authorization-server"
+                  ]
+                },
+                "description": ""
               },
               "response": [
               ]
@@ -17639,6 +17768,53 @@
               ]
             },
             {
+              "name": "Generate XLSX report by folder",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/2.0/files/folder/:folderId/xlsx",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "2.0",
+                    "files",
+                    "folder",
+                    ":folderId",
+                    "xlsx"
+                  ],
+                  "variable": [
+                    {
+                      "key": "folderId",
+                      "value": "",
+                      "description": "The folder unique identifier."
+                    }
+                  ]
+                },
+                "description": "Triggers asynchronous XLSX report generation for the specified form results folder."
+              },
+              "response": [
+              ]
+            },
+            {
               "name": "Create primary external link",
               "request": {
                 "method": "POST",
@@ -19814,6 +19990,12 @@
               "request": {
                 "method": "POST",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
