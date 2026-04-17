@@ -2778,7 +2778,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n \"userId\": \"<string>\",\n \"disable\": \"<string>\",\n \"email\": \"<string>\",\n \"isUser\": \"<string>\",\n \"firstName\": \"<string>\",\n \"lastName\": \"<string>\",\n \"department\": \"<string>\",\n \"title\": \"<string>\",\n \"location\": \"<string>\",\n \"sex\": \"<string>\",\n \"birthday\": \"<string>\",\n \"worksfrom\": \"<string>\",\n \"comment\": \"<string>\",\n \"contacts\": \"<string>\",\n \"files\": \"<string>\",\n \"spam\": \"<string>\"\n}",
+                  "raw": "{\n \"userId\": \"<string>\",\n \"disable\": \"<string>\",\n \"email\": \"<string>\",\n \"isUser\": \"<string>\",\n \"firstName\": \"<string>\",\n \"lastName\": \"<string>\",\n \"department\": \"<string>\",\n \"location\": \"<string>\",\n \"comment\": \"<string>\",\n \"contacts\": \"<string>\",\n \"files\": \"<string>\",\n \"spam\": \"<string>\"\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -4145,7 +4145,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n \"password\": \"<string>\",\n \"passwordHash\": \"<string>\",\n \"email\": \"<string>\",\n \"type\": \"<string>\",\n \"isUser\": \"<string>\",\n \"firstName\": \"<string>\",\n \"lastName\": \"<string>\",\n \"department\": \"<string>\",\n \"title\": \"<string>\",\n \"location\": \"<string>\",\n \"sex\": \"<string>\",\n \"birthday\": \"<string>\",\n \"worksfrom\": \"<string>\",\n \"comment\": \"<string>\",\n \"contacts\": \"<string>\",\n \"files\": \"<string>\",\n \"fromInviteLink\": \"<string>\",\n \"key\": \"<string>\",\n \"cultureName\": \"<string>\",\n \"target\": \"<string>\",\n \"spam\": \"<string>\"\n}",
+                  "raw": "{\n \"password\": \"<string>\",\n \"passwordHash\": \"<string>\",\n \"email\": \"<string>\",\n \"type\": \"<string>\",\n \"isUser\": \"<string>\",\n \"firstName\": \"<string>\",\n \"lastName\": \"<string>\",\n \"department\": \"<string>\",\n \"location\": \"<string>\",\n \"comment\": \"<string>\",\n \"contacts\": \"<string>\",\n \"files\": \"<string>\",\n \"fromInviteLink\": \"<string>\",\n \"key\": \"<string>\",\n \"cultureName\": \"<string>\",\n \"target\": \"<string>\",\n \"spam\": \"<string>\"\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -4359,7 +4359,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n \"userId\": \"<string>\",\n \"disable\": \"<string>\",\n \"email\": \"<string>\",\n \"isUser\": \"<string>\",\n \"firstName\": \"<string>\",\n \"lastName\": \"<string>\",\n \"department\": \"<string>\",\n \"title\": \"<string>\",\n \"location\": \"<string>\",\n \"sex\": \"<string>\",\n \"birthday\": \"<string>\",\n \"worksfrom\": \"<string>\",\n \"comment\": \"<string>\",\n \"contacts\": \"<string>\",\n \"files\": \"<string>\",\n \"spam\": \"<string>\"\n}",
+                  "raw": "{\n \"userId\": \"<string>\",\n \"disable\": \"<string>\",\n \"email\": \"<string>\",\n \"isUser\": \"<string>\",\n \"firstName\": \"<string>\",\n \"lastName\": \"<string>\",\n \"department\": \"<string>\",\n \"location\": \"<string>\",\n \"comment\": \"<string>\",\n \"contacts\": \"<string>\",\n \"files\": \"<string>\",\n \"spam\": \"<string>\"\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -5414,7 +5414,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n \"folderId\": \"<number>\",\n \"title\": \"<string>\"\n}",
+                  "raw": "{\n \"folderId\": \"<string>\",\n \"title\": \"<string>\"\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -5713,7 +5713,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n \"folderId\": \"<number>\",\n \"title\": \"<string>\"\n}",
+                  "raw": "{\n \"folderId\": \"<string>\",\n \"title\": \"<string>\"\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -7238,7 +7238,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n \"type\": \"<string>\",\n \"title\": \"<string>\",\n \"url\": \"<string>\",\n \"key\": \"<string>\"\n}",
+                  "raw": "{\n \"type\": \"<string>\",\n \"title\": \"<string>\",\n \"url\": \"<string>\",\n \"key\": \"<string>\",\n \"modelSettings\": \"<string>\"\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -7372,7 +7372,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n \"title\": \"<string>\",\n \"url\": \"<string>\",\n \"key\": \"<string>\"\n}",
+                  "raw": "{\n \"title\": \"<string>\",\n \"url\": \"<string>\",\n \"key\": \"<string>\",\n \"modelSettings\": \"<string>\"\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -7400,6 +7400,53 @@
                   ]
                 },
                 "description": "Updates the configuration of an existing AI provider, including its display title, API endpoint URL, and authentication key.  Only the fields provided in the request body will be updated. This action is rate-limited."
+              },
+              "response": [
+              ]
+            },
+            {
+              "name": "Get all models for a provider with their settings",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/2.0/ai/providers/:providerId/models",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "2.0",
+                    "ai",
+                    "providers",
+                    ":providerId",
+                    "models"
+                  ],
+                  "variable": [
+                    {
+                      "key": "providerId",
+                      "value": "",
+                      "description": "The identifier of the AI provider."
+                    }
+                  ]
+                },
+                "description": "Returns the full list of AI models available from a provider, including both recommended and additional models.  Each model includes its current settings: enabled state, display alias, and capabilities (vision, tool calling, thinking).  Recommended models are enabled by default and their alias and capabilities come from configuration.  Additional models are disabled by default and can be configured by the admin."
               },
               "response": [
               ]
@@ -7523,6 +7570,52 @@
                   ]
                 },
                 "description": "Sets the default AI provider and model for the current tenant.  The specified provider and model will be used as the default for all new AI chat sessions within the tenant."
+              },
+              "response": [
+              ]
+            },
+            {
+              "name": "Preview models for a new AI provider",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n \"type\": \"<string>\",\n \"url\": \"<string>\",\n \"key\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/2.0/ai/providers/models/preview",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "2.0",
+                    "ai",
+                    "providers",
+                    "models",
+                    "preview"
+                  ]
+                },
+                "description": "Connects to the specified AI provider using the provided credentials and returns the available models  with their default settings. This is used to preview models before saving the provider.  Recommended models are enabled by default with configuration-defined settings.  Additional models are disabled by default with empty capabilities."
               },
               "response": [
               ]
@@ -20033,6 +20126,53 @@
               ]
             },
             {
+              "name": "Get XLSX report generation status",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/2.0/files/file/:fileId/xlsx",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "2.0",
+                    "files",
+                    "file",
+                    ":fileId",
+                    "xlsx"
+                  ],
+                  "variable": [
+                    {
+                      "key": "fileId",
+                      "value": "",
+                      "description": "The file unique identifier."
+                    }
+                  ]
+                },
+                "description": "Returns the status of the XLSX report generation task for the specified form."
+              },
+              "response": [
+              ]
+            },
+            {
               "name": "Create primary external link",
               "request": {
                 "method": "POST",
@@ -28362,7 +28502,7 @@
               ]
             },
             {
-              "name": "Get confirmation email",
+              "name": "Get TFA confirmation URL",
               "request": {
                 "method": "GET",
                 "header": [
@@ -28395,7 +28535,7 @@
                     "confirm"
                   ]
                 },
-                "description": "Returns the confirmation email URL for authorization via SMS or TFA application."
+                "description": "Returns the confirmation URL for authorization via SMS or TFA application."
               },
               "response": [
               ]
@@ -28605,7 +28745,7 @@
               ]
             },
             {
-              "name": "Get a confirmation email for updating TFA settings",
+              "name": "Updates TFA settings",
               "request": {
                 "method": "PUT",
                 "header": [
@@ -28643,7 +28783,7 @@
                     "tfaappwithlink"
                   ]
                 },
-                "description": "Returns the confirmation email URL for updating TFA settings."
+                "description": "Updates TFA settings and returns the confirmation URL for authorization via SMS or TFA application."
               },
               "response": [
               ]
