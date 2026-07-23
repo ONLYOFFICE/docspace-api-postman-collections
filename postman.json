@@ -4673,7 +4673,7 @@
                     }
                   ]
                 },
-                "description": "Returns a boolean indicating whether a user with the specified email exists on the portal."
+                "description": "Returns data indicating whether a user with the specified email exists on the portal."
               },
               "response": [
               ]
@@ -5383,7 +5383,7 @@
                     "password"
                   ]
                 },
-                "description": "Reminds a password to the user using the email address specified in the request."
+                "description": "Sends a password recovery email to the specified user address.  For unauthenticated requests, CAPTCHA validation is required when CAPTCHA is enabled in the configuration."
               },
               "response": [
               ]
@@ -5790,6 +5790,60 @@
                   ]
                 },
                 "description": "Returns the list of AI models available for chat conversations.  Optionally filters the results to models from a specific provider when the provider query parameter is specified.  Each model entry includes the provider ID, provider display name, and the model identifier."
+              },
+              "response": [
+              ]
+            },
+            {
+              "name": "Resolve a pending editor file-generation tool",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n \"allow\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/2.0/ai/chats/tool-files/:callId/decision",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "2.0",
+                    "ai",
+                    "chats",
+                    "tool-files",
+                    ":callId",
+                    "decision"
+                  ],
+                  "variable": [
+                    {
+                      "key": "callId",
+                      "value": "",
+                      "description": "The unique identifier of the pending tool call awaiting the user's decision."
+                    }
+                  ]
+                },
+                "description": "Submits the user's approval or denial for a pending editor generation tool call (docx, form, presentation).  On approval the file is created from the original tool arguments and information about it is returned,  while the suspended chat tool is resumed with the same result so the AI session can continue."
               },
               "response": [
               ]
@@ -7710,6 +7764,90 @@
               ]
             },
             {
+              "name": "Get per-user AI settings",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/2.0/ai/config/user",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "2.0",
+                    "ai",
+                    "config",
+                    "user"
+                  ]
+                },
+                "description": "Retrieves the current user's AI settings, including the recommended model banner visibility preference."
+              },
+              "response": [
+              ]
+            },
+            {
+              "name": "Update per-user AI settings",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n \"chatRecommendedModelVisible\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/2.0/ai/config/user",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "2.0",
+                    "ai",
+                    "config",
+                    "user"
+                  ]
+                },
+                "description": "Updates the current user's AI recommended model banner visibility preferences.  Each user's settings are stored independently."
+              },
+              "response": [
+              ]
+            },
+            {
               "name": "Get vectorization settings",
               "request": {
                 "method": "GET",
@@ -9539,7 +9677,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n \"title\": \"<string>\",\n \"quota\": \"<number>\",\n \"indexing\": \"<string>\",\n \"denyDownload\": \"<string>\",\n \"lifetime\": \"<string>\",\n \"watermark\": \"<string>\",\n \"logo\": \"<string>\",\n \"tags\": \"<string>\",\n \"color\": \"<string>\",\n \"cover\": \"<string>\",\n \"roomType\": \"<string>\",\n \"private\": \"<string>\",\n \"share\": \"<string>\",\n \"chatSettings\": \"<string>\"\n}",
+                  "raw": "{\n \"title\": \"<string>\",\n \"quota\": \"<number>\",\n \"indexing\": \"<string>\",\n \"denyDownload\": \"<string>\",\n \"lifetime\": \"<string>\",\n \"watermark\": \"<string>\",\n \"logo\": \"<string>\",\n \"tags\": \"<string>\",\n \"color\": \"<string>\",\n \"cover\": \"<string>\",\n \"roomType\": \"<string>\",\n \"private\": \"<string>\",\n \"share\": \"<string>\",\n \"chatSettings\": \"<string>\",\n \"sendFormToExternalDB\": \"<string>\",\n \"saveFormAsXLSX\": \"<string>\"\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -9957,6 +10095,100 @@
                   ]
                 },
                 "description": "Changes a cover of a room with the ID specified in the request."
+              },
+              "response": [
+              ]
+            },
+        {
+              "name": "Get external DB sync status",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/2.0/files/rooms/:id/externaldbsync",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "2.0",
+                    "files",
+                    "rooms",
+                    ":id",
+                    "externaldbsync"
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "",
+                      "description": "The room ID."
+                    }
+                  ]
+                },
+                "description": "Returns the status of the external DB synchronization task for the specified filling forms room."
+              },
+              "response": [
+              ]
+            },
+        {
+              "name": "Start external DB sync",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/2.0/files/rooms/:id/externaldbsync",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "2.0",
+                    "files",
+                    "rooms",
+                    ":id",
+                    "externaldbsync"
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "",
+                      "description": "The room ID."
+                    }
+                  ]
+                },
+                "description": "Triggers external DB synchronization for all form templates in the specified filling forms room."
               },
               "response": [
               ]
@@ -13176,51 +13408,6 @@
               ]
             },
             {
-              "name": "Purchases a wallet service with the specified quantity.",
-              "request": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "",
-                    "disabled": false
-                  },
-                  {
-                    "key": "Accept",
-                    "value": "application/json",
-                    "description": "",
-                    "disabled": false
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n \"quantity\": \"<number>\",\n \"serviceName\": \"<string>\"\n}",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "{{baseUrl}}/api/2.0/portal/payment/buywalletservice",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "api",
-                    "2.0",
-                    "portal",
-                    "payment",
-                    "buywalletservice"
-                  ]
-                },
-                "description": "This method processes a payment for a wallet service using the configured payment method.  Requires the tariff service to be configured and a valid payment method to be set for the customer.  Rate limiting is applied according to the payments API policy."
-              },
-              "response": [
-              ]
-            },
-            {
               "name": "Calculate the wallet payment amount",
               "request": {
                 "method": "PUT",
@@ -13301,13 +13488,64 @@
                   "query": [
                     {
                       "key": "backUrl",
-                      "value": "https://example.com/setup/complete",
-                      "description": "The URL where the user will be redirected after completing the setup.",
-                      "disabled": true
+                      "value": "https://example.com/payment/back",
+                      "description": "The URL where the user will be redirected after setup cancellation.",
+                      "disabled": false
+                    },
+                    {
+                      "key": "successUrl",
+                      "value": "https://example.com/payment/success",
+                      "description": "The URL where the user will be redirected after successful payment.",
+                      "disabled": false
                     }
                   ]
                 },
                 "description": "Returns the URL to the checkout setup page."
+              },
+              "response": [
+              ]
+            },
+            {
+              "name": "Credit AI balance",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n \"amount\": \"<number>\",\n \"currency\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/2.0/portal/payment/creditaibalance",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "2.0",
+                    "portal",
+                    "payment",
+                    "creditaibalance"
+                  ]
+                },
+                "description": "Credits AI quota to the customer AI sub-account from their main balance.  Requires the customer to have a configured payment method."
               },
               "response": [
               ]
@@ -13347,6 +13585,54 @@
                   ]
                 },
                 "description": "Returns the available portal currencies."
+              },
+              "response": [
+              ]
+            },
+            {
+              "name": "Get the customer AI balance",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/2.0/portal/payment/customer/aibalance",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "2.0",
+                    "portal",
+                    "payment",
+                    "customer",
+                    "aibalance"
+                  ],
+                  "query": [
+                    {
+                      "key": "refresh",
+                      "value": "true",
+                      "description": "Specifies whether to refresh the payment information cache or not.",
+                      "disabled": true
+                    }
+                  ]
+                },
+                "description": "Returns the AI quota balance of a customer from the accounting service."
               },
               "response": [
               ]
@@ -13453,12 +13739,6 @@
                       "disabled": true
                     },
                     {
-                      "key": "writeOffServiceQuota",
-                      "value": "false",
-                      "description": "Write-off of the quota for the service",
-                      "disabled": true
-                    },
-                    {
                       "key": "startDate",
                       "value": "2024-01-01T00:00Z",
                       "description": "The report start date.",
@@ -13472,7 +13752,7 @@
                     },
                     {
                       "key": "participantName",
-                      "value": "ACME Corp",
+                      "value": "My Own Corporation",
                       "description": "The participant name.",
                       "disabled": true
                     },
@@ -13489,15 +13769,15 @@
                       "disabled": true
                     },
                     {
-                      "key": "types",
+                      "key": "type",
                       "value": "Any",
-                      "description": "List of operation types to filter by.",
+                      "description": "The operation type to filter by.",
                       "disabled": true
                     },
                     {
                       "key": "status",
                       "value": "Any",
-                      "description": "List of operation status to filter by.",
+                      "description": "The operation status to filter by.",
                       "disabled": true
                     },
                     {
@@ -13539,7 +13819,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n \"serviceName\": \"<string>\",\n \"writeOffServiceQuota\": \"<string>\",\n \"startDate\": \"<string>\",\n \"endDate\": \"<string>\",\n \"participantName\": \"<string>\",\n \"credit\": \"<string>\",\n \"debit\": \"<string>\",\n \"types\": \"<string>\",\n \"status\": \"<string>\",\n \"orderBy\": \"<string>\",\n \"orderType\": \"<string>\"\n}",
+                  "raw": "{\n \"serviceName\": \"<string>\",\n \"startDate\": \"<string>\",\n \"endDate\": \"<string>\",\n \"participantName\": \"<string>\",\n \"credit\": \"<string>\",\n \"debit\": \"<string>\",\n \"type\": \"<string>\",\n \"status\": \"<string>\",\n \"orderBy\": \"<string>\",\n \"orderType\": \"<string>\"\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -13635,60 +13915,6 @@
                   ]
                 },
                 "description": "Terminates generating a customer operations report."
-              },
-              "response": [
-              ]
-            },
-            {
-              "name": "Get the service quota",
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json",
-                    "description": "",
-                    "disabled": false
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "{{baseUrl}}/api/2.0/portal/payment/customer/servicequota",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "api",
-                    "2.0",
-                    "portal",
-                    "payment",
-                    "customer",
-                    "servicequota"
-                  ],
-                  "query": [
-                    {
-                      "key": "serviceName",
-                      "value": "backup",
-                      "description": "The service name.",
-                      "disabled": true
-                    },
-                    {
-                      "key": "refresh",
-                      "value": "true",
-                      "description": "Specifies whether to refresh the payment information cache or not.",
-                      "disabled": true
-                    }
-                  ]
-                },
-                "description": "Returns the service quota from the accounting service."
               },
               "response": [
               ]
@@ -14235,7 +14461,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n \"backUrl\": \"<string>\",\n \"quantity\": \"<string>\"\n}",
+                  "raw": "{\n \"backUrl\": \"<string>\",\n \"successUrl\": \"<string>\",\n \"quantity\": \"<string>\"\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -16518,6 +16744,12 @@
                       "disabled": true
                     },
                     {
+                      "key": "withSubFolders",
+                      "value": "true",
+                      "description": "Specifies whether to include files from subfolders in the results.",
+                      "disabled": true
+                    },
+                    {
                       "key": "extension",
                       "value": ".docx",
                       "description": "Specifies whether to search for the specific file extension.",
@@ -16781,7 +17013,7 @@
                 "header": [
                   {
                     "key": "Content-Type",
-                    "value": "application/json",
+                    "value": "multipart/form-data",
                     "description": "",
                     "disabled": false
                   },
@@ -16794,7 +17026,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n \"file\": \"<string>\",\n \"contentType\": \"<string>\",\n \"contentDisposition\": \"<string>\",\n \"files\": \"<string>\",\n \"createNewIfExist\": \"<string>\",\n \"storeOriginalFileFlag\": \"<string>\",\n \"keepConvertStatus\": \"<string>\",\n \"stream\": \"<string>\"\n}",
+                  "raw": "",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -16818,6 +17050,26 @@
                       "key": "folderId",
                       "value": "",
                       "description": "The folder ID to upload a file."
+                    }
+                  ],
+                  "query": [
+                    {
+                      "key": "createNewIfExist",
+                      "value": "true",
+                      "description": "Specifies whether to create the new file if it already exists or not.",
+                      "disabled": true
+                    },
+                    {
+                      "key": "storeOriginalFile",
+                      "value": "true",
+                      "description": "Specifies whether to upload documents in the original formats as well or not.",
+                      "disabled": true
+                    },
+                    {
+                      "key": "keepConvertStatus",
+                      "value": "false",
+                      "description": "Specifies whether to keep the file converting status or not.",
+                      "disabled": true
                     }
                   ]
                 },
@@ -17100,6 +17352,12 @@
                 "method": "POST",
                 "header": [
                   {
+                    "key": "Content-Type",
+                    "value": "multipart/form-data",
+                    "description": "",
+                    "disabled": false
+                  },
+                  {
                     "key": "Accept",
                     "value": "application/json",
                     "description": "",
@@ -17129,9 +17387,21 @@
                   ],
                   "query": [
                     {
-                      "key": "inDto",
-                      "value": "",
-                      "description": "The request parameters for uploading a file.",
+                      "key": "createNewIfExist",
+                      "value": "true",
+                      "description": "Specifies whether to create the new file if it already exists or not.",
+                      "disabled": true
+                    },
+                    {
+                      "key": "storeOriginalFile",
+                      "value": "true",
+                      "description": "Specifies whether to upload documents in the original formats as well or not.",
+                      "disabled": true
+                    },
+                    {
+                      "key": "keepConvertStatus",
+                      "value": "false",
+                      "description": "Specifies whether to keep the file converting status or not.",
                       "disabled": true
                     }
                   ]
@@ -22964,6 +23234,51 @@
               ]
             },
             {
+              "name": "Change the Access Control external sharing settings",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n \"externalShare\": \"<string>\",\n \"defaultShareLinkInternal\": \"<string>\",\n \"externalShareApplyToDocuments\": \"<string>\",\n \"externalShareApplyToRooms\": \"<string>\",\n \"blockExistingLinksOnRestrict\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/2.0/files/settings/externalsharingsettings",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "2.0",
+                    "files",
+                    "settings",
+                    "externalsharingsettings"
+                  ]
+                },
+                "description": "Changes the Access Control external sharing settings."
+              },
+              "response": [
+              ]
+            },
+            {
               "name": "Change the external sharing ability on social networks",
               "request": {
                 "method": "PUT",
@@ -28307,7 +28622,7 @@
                     "triggers"
                   ]
                 },
-                "description": "Returns a list of triggers for a webhook."
+                "description": "Returns a list of triggers for a webhook with their availability for the current user."
               },
               "response": [
               ]
@@ -28502,7 +28817,7 @@
               ]
             },
             {
-              "name": "Get TFA confirmation URL",
+              "name": "Get TFA confirmation data",
               "request": {
                 "method": "GET",
                 "header": [
@@ -28535,7 +28850,7 @@
                     "confirm"
                   ]
                 },
-                "description": "Returns the confirmation URL for authorization via SMS or TFA application."
+                "description": "Returns the confirmation data for authorization via SMS or TFA application."
               },
               "response": [
               ]
