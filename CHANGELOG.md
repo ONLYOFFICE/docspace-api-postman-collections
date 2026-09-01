@@ -1,5 +1,33 @@
 # Change Log
 
+## 4.0.0
+
+### Added
+
+- Added the reworked AI API surface as new folders under `AI`: `AI`, `Assignments`, `Attachments`, `Editor tools`, `Export`, `OpenAI passthrough`, `Preferences`, `Profiles`, `Prompts`, `Threads`, `Tools`, `Web search`
+- Added the per-user AI settings requests `Get user AI settings` (`GET /api/2.0/ai/config/user`) and `Update user AI settings` (`PUT /api/2.0/ai/config/user`), together with `Get AI settings` (`GET /api/2.0/ai/config`) and the vectorization settings requests
+- Added the `Apps` folder (`/api/2.0/apps`): get all apps, get a single app, enable or disable an app, get and save the app settings
+- Added the `privacyroom` folder (`/api/2.0/privacyroom`): create, replace and delete the user encryption keys, read the keys of the current user and the keys of a privacy room
+- Added the `Settings / DocsCloud` folder (`/api/2.0/settings/docscloud`): the tenant, tenant configuration, information, quota and usage requests, the trial start, the DocsCloudDevPack switch and its cost calculation
+- Added the asynchronous report requests (start / status / terminate) for the audit trail, the login history, the folder history, the customer service and monthly usage, and the DocsCloud tenant quota
+- Added the file encryption requests `Get file encryption information` and `Set file encryption information` (`/api/2.0/files/{fileId}/access`), and `Get file encryption keys` (`GET /api/2.0/files/file/{fileId}/publickeys`)
+- Added the wallet and subscription payment requests `Get the active wallet services`, `Get the subscription balance information` and `Move the subscription balance to the wallet and purchase admins`
+- Added `Files / Folders / Get the Forms section`, `Backup / Get the number of free and paid backups` and `Portal / Quota / Get upcoming payments`
+
+### Changed
+
+- Updated the collection to the OpenAPI specification v4.0.0 (`info.version`)
+- Regenerated the collection with OpenAPI Generator 7.24.0
+- Renamed the AI agent requests: `Get ai agents` to `List agents`, `Return an ai agent` to `Get an agent`, `Create an ai agent` to `Create an agent`, `Update an ai agent` to `Update an agent`, `Remove an ai agent` to `Delete an agent`, `Get the room new items` to `List agent news items`, `Change the AI agent quota limit` to `Update agents' quota`, `Reset the AI agents quota limit` to `Reset agents' quota`
+
+### Removed
+
+- Removed the superseded AI folders `Chat`, `MCP`, `Messages` and `Providers`
+- Removed the web search requests from `AI / Settings`, superseded by the `AI / Web search` folder
+- Removed the synchronous report requests `Generate the audit trail report`, `Generate the login history report` and `Generates folder history`, superseded by the start / status / terminate requests
+- Removed the AI balance payment requests `Credit AI balance` (`POST /portal/payment/creditaibalance`) and `Get the customer AI balance` (`GET /portal/payment/customer/aibalance`)
+- Removed the Private Room requests `Files / Folders / Get the Private Room section` and `Files / Settings / Check the Private Room availability`
+
 ## 3.7.0
 
 ### Added
