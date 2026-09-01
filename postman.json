@@ -832,6 +832,12 @@
               "request": {
                 "method": "POST",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -864,6 +870,12 @@
               "request": {
                 "method": "POST",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -901,6 +913,12 @@
                     "value": "application/json",
                     "description": "",
                     "disabled": false
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
                   }
                 ],
                 "body": {
@@ -934,6 +952,12 @@
               "request": {
                 "method": "POST",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -1012,6 +1036,12 @@
               "request": {
                 "method": "GET",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -1046,6 +1076,12 @@
                 "header": [
                   {
                     "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  },
+                  {
+                    "key": "Accept",
                     "value": "application/json",
                     "description": "",
                     "disabled": false
@@ -2149,6 +2185,12 @@
                     "value": "application/json",
                     "description": "",
                     "disabled": false
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
                   }
                 ],
                 "body": {
@@ -2488,6 +2530,12 @@
                     "value": "application/json",
                     "description": "",
                     "disabled": false
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
                   }
                 ],
                 "body": {
@@ -2632,6 +2680,12 @@
               "request": {
                 "method": "DELETE",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -2681,6 +2735,12 @@
                 "header": [
                   {
                     "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  },
+                  {
+                    "key": "Accept",
                     "value": "application/json",
                     "description": "",
                     "disabled": false
@@ -2762,7 +2822,7 @@
         },
         {
           "name": "Email",
-          "description": "",
+          "description": "Operations for working with user email addresses.",
           "item": [
             {
               "name": "Change a user email",
@@ -5498,7 +5558,7 @@
                     "create"
                   ]
                 },
-                "description": ""
+                "description": "Saves a new prompt. The name must be non-empty and unique inside its folder, and `folderId` must point at an existing folder - omit it for the root."
               },
               "response": [
               ]
@@ -5543,7 +5603,7 @@
                     "create-folder"
                   ]
                 },
-                "description": ""
+                "description": "Creates a prompt folder. The name must be non-empty and unique across the portal - prompt folders do not nest."
               },
               "response": [
               ]
@@ -5588,7 +5648,7 @@
                     "delete"
                   ]
                 },
-                "description": ""
+                "description": "Deletes a saved prompt. Does nothing when it no longer exists."
               },
               "response": [
               ]
@@ -5633,7 +5693,7 @@
                     "delete-folder"
                   ]
                 },
-                "description": ""
+                "description": "Deletes a prompt folder together with the prompts inside it."
               },
               "response": [
               ]
@@ -5672,7 +5732,7 @@
                     "export"
                   ]
                 },
-                "description": ""
+                "description": "Builds a self-contained, versioned bundle of every saved prompt and folder, ready for `import-bundle`."
               },
               "response": [
               ]
@@ -5714,12 +5774,12 @@
                     {
                       "key": "id",
                       "value": "id_example",
-                      "description": "",
+                      "description": "The saved prompt identifier.",
                       "disabled": false
                     }
                   ]
                 },
-                "description": ""
+                "description": "Returns one saved prompt, or an empty result when the identifier is unknown."
               },
               "response": [
               ]
@@ -5761,12 +5821,12 @@
                     {
                       "key": "id",
                       "value": "id_example",
-                      "description": "",
+                      "description": "The prompt folder identifier.",
                       "disabled": false
                     }
                   ]
                 },
-                "description": ""
+                "description": "Returns one prompt folder, or an empty result when the identifier is unknown."
               },
               "response": [
               ]
@@ -5811,7 +5871,7 @@
                     "import-bundle"
                   ]
                 },
-                "description": ""
+                "description": "Restores a prompt bundle. `replace` wipes the current prompts and folders before writing the bundle, `merge` writes the bundle on top of what is already there; both validate the folder references inside the bundle before any write, so a corrupt bundle is rejected whole."
               },
               "response": [
               ]
@@ -5853,12 +5913,12 @@
                     {
                       "key": "folderId",
                       "value": "folderId_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The prompt folder identifier. Omit to list the prompts that sit outside any folder.",
+                      "disabled": true
                     }
                   ]
                 },
-                "description": ""
+                "description": "Lists saved prompts. Scope the answer to one folder, ask for the root-level prompts only, or omit the folder to get every prompt newest first."
               },
               "response": [
               ]
@@ -5897,7 +5957,7 @@
                     "list-folders"
                   ]
                 },
-                "description": ""
+                "description": "Lists the prompt folders, newest first."
               },
               "response": [
               ]
@@ -5942,7 +6002,7 @@
                     "move"
                   ]
                 },
-                "description": ""
+                "description": "Moves a saved prompt into another folder, or to the root. The name is re-validated in the target folder, so the move fails when a prompt of that name is already there."
               },
               "response": [
               ]
@@ -5987,7 +6047,7 @@
                     "rename-folder"
                   ]
                 },
-                "description": ""
+                "description": "Renames a prompt folder, validating the new name against the existing folders."
               },
               "response": [
               ]
@@ -6032,7 +6092,7 @@
                     "update"
                   ]
                 },
-                "description": ""
+                "description": "Updates a saved prompt. The name and the folder reference are re-validated whenever either of them changes."
               },
               "response": [
               ]
@@ -6083,7 +6143,7 @@
                     "add-custom-server"
                   ]
                 },
-                "description": ""
+                "description": "Registers a custom MCP server in the scope under the given name."
               },
               "response": [
               ]
@@ -6125,12 +6185,12 @@
                     {
                       "key": "entityId",
                       "value": "entityId_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The DocSpace entity the request is scoped to - the room, folder or agent workspace the chat is invoked from. Omit for the portal-wide scope.",
+                      "disabled": true
                     }
                   ]
                 },
-                "description": ""
+                "description": "Lists the tools on the always-allow list of the scope."
               },
               "response": [
               ]
@@ -6172,18 +6232,18 @@
                     {
                       "key": "name",
                       "value": "name_example",
-                      "description": "",
+                      "description": "The custom MCP server name.",
                       "disabled": false
                     },
                     {
                       "key": "entityId",
                       "value": "entityId_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The DocSpace entity the request is scoped to - the room, folder or agent workspace the chat is invoked from. Omit for the portal-wide scope.",
+                      "disabled": true
                     }
                   ]
                 },
-                "description": ""
+                "description": "Returns the configuration of one custom MCP server, or an empty result when it is not registered."
               },
               "response": [
               ]
@@ -6225,12 +6285,12 @@
                     {
                       "key": "entityId",
                       "value": "entityId_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The DocSpace entity the request is scoped to - the room, folder or agent workspace the chat is invoked from. Omit for the portal-wide scope.",
+                      "disabled": true
                     }
                   ]
                 },
-                "description": ""
+                "description": "Returns the switched-off tools of the scope, grouped by server type."
               },
               "response": [
               ]
@@ -6272,24 +6332,24 @@
                     {
                       "key": "serverType",
                       "value": "serverType_example",
-                      "description": "",
+                      "description": "The MCP server type the tool belongs to.",
                       "disabled": false
                     },
                     {
                       "key": "toolName",
                       "value": "toolName_example",
-                      "description": "",
+                      "description": "The tool name.",
                       "disabled": false
                     },
                     {
                       "key": "entityId",
                       "value": "entityId_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The DocSpace entity the request is scoped to - the room, folder or agent workspace the chat is invoked from. Omit for the portal-wide scope.",
+                      "disabled": true
                     }
                   ]
                 },
-                "description": ""
+                "description": "Tells whether one tool is on the always-allow list."
               },
               "response": [
               ]
@@ -6331,24 +6391,24 @@
                     {
                       "key": "serverType",
                       "value": "serverType_example",
-                      "description": "",
+                      "description": "The MCP server type the tool belongs to.",
                       "disabled": false
                     },
                     {
                       "key": "toolName",
                       "value": "toolName_example",
-                      "description": "",
+                      "description": "The tool name.",
                       "disabled": false
                     },
                     {
                       "key": "entityId",
                       "value": "entityId_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The DocSpace entity the request is scoped to - the room, folder or agent workspace the chat is invoked from. Omit for the portal-wide scope.",
+                      "disabled": true
                     }
                   ]
                 },
-                "description": ""
+                "description": "Tells whether one tool of a server type is switched off."
               },
               "response": [
               ]
@@ -6390,12 +6450,12 @@
                     {
                       "key": "entityId",
                       "value": "entityId_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The DocSpace entity the request is scoped to - the room, folder or agent workspace the chat is invoked from. Omit for the portal-wide scope.",
+                      "disabled": true
                     }
                   ]
                 },
-                "description": ""
+                "description": "Lists the custom MCP servers registered in the scope, keyed by name."
               },
               "response": [
               ]
@@ -6437,12 +6497,12 @@
                     {
                       "key": "entityId",
                       "value": "entityId_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The DocSpace entity the request is scoped to - the room, folder or agent workspace the chat is invoked from. Omit for the portal-wide scope.",
+                      "disabled": true
                     }
                   ]
                 },
-                "description": ""
+                "description": "Lists the tools of the host-configured system MCP servers, grouped by server type. The servers are connected and listed server-side, so the client renders its permission cards from one request and never opens an MCP connection of its own."
               },
               "response": [
               ]
@@ -6487,7 +6547,7 @@
                     "remove-custom-server"
                   ]
                 },
-                "description": ""
+                "description": "Removes a custom MCP server from the registry."
               },
               "response": [
               ]
@@ -6532,7 +6592,7 @@
                     "replace-all-custom-servers"
                   ]
                 },
-                "description": ""
+                "description": "Replaces the whole custom MCP server registry of the scope with the supplied map."
               },
               "response": [
               ]
@@ -6577,7 +6637,7 @@
                     "set-allow-always"
                   ]
                 },
-                "description": ""
+                "description": "Adds a tool to the always-allow list, or removes it - the tools on that list run without an approval dialog."
               },
               "response": [
               ]
@@ -6622,7 +6682,7 @@
                     "set-disabled"
                   ]
                 },
-                "description": ""
+                "description": "Marks the listed tools of one server type as switched off, so the model is no longer offered them."
               },
               "response": [
               ]
@@ -6667,7 +6727,7 @@
                     "update-custom-server"
                   ]
                 },
-                "description": ""
+                "description": "Updates the configuration of a registered custom MCP server."
               },
               "response": [
               ]
@@ -6718,7 +6778,7 @@
                     "assign"
                   ]
                 },
-                "description": ""
+                "description": "Binds a profile to an AI action, creating the assignment or updating it in place. The profile's declared capabilities are validated against the action, except for the `Default` slot."
               },
               "response": [
               ]
@@ -6763,7 +6823,7 @@
                     "bulk-assign"
                   ]
                 },
-                "description": ""
+                "description": "Applies many action-to-profile bindings at once. Every entry is validated first and nothing is written if any of them fails, so the assignment set is never left half-written."
               },
               "response": [
               ]
@@ -6808,7 +6868,7 @@
                     "cascade-profile-delete"
                   ]
                 },
-                "description": ""
+                "description": "Cleans up the assignments pointing at a profile that is about to be deleted: the `Default` slot is promoted to the first remaining profile (or dropped when none is left), and every other slot holding that profile is unbound."
               },
               "response": [
               ]
@@ -6850,12 +6910,12 @@
                     {
                       "key": "entityId",
                       "value": "entityId_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The DocSpace entity the request is scoped to - the room, folder or agent workspace the chat is invoked from. Omit for the portal-wide scope.",
+                      "disabled": true
                     }
                   ]
                 },
-                "description": ""
+                "description": "Returns the full action-to-profile assignment map of the scope."
               },
               "response": [
               ]
@@ -6897,12 +6957,12 @@
                     {
                       "key": "actionType",
                       "value": "actionType_example",
-                      "description": "",
+                      "description": "The AI action the request applies to - one of Default, Chat, Code, Summarization, Translation, TextAnalyze, ImageGeneration, OCR, Vision.",
                       "disabled": false
                     }
                   ]
                 },
-                "description": ""
+                "description": "Returns the profile bound to one AI action, without the `Default` fallback."
               },
               "response": [
               ]
@@ -6944,18 +7004,18 @@
                     {
                       "key": "actionType",
                       "value": "actionType_example",
-                      "description": "",
+                      "description": "The AI action the request applies to - one of Default, Chat, Code, Summarization, Translation, TextAnalyze, ImageGeneration, OCR, Vision.",
                       "disabled": false
                     },
                     {
                       "key": "entityId",
                       "value": "entityId_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The DocSpace entity the request is scoped to - the room, folder or agent workspace the chat is invoked from. Omit for the portal-wide scope.",
+                      "disabled": true
                     }
                   ]
                 },
-                "description": ""
+                "description": "Resolves the profile bound to an AI action, falling back to the `Default` slot when the action itself has none. Fails when neither slot is set or the bound profile no longer exists - use `try-resolve-for-action` for an empty answer instead."
               },
               "response": [
               ]
@@ -6997,18 +7057,18 @@
                     {
                       "key": "actionType",
                       "value": "actionType_example",
-                      "description": "",
+                      "description": "The AI action the request applies to - one of Default, Chat, Code, Summarization, Translation, TextAnalyze, ImageGeneration, OCR, Vision.",
                       "disabled": false
                     },
                     {
                       "key": "entityId",
                       "value": "entityId_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The DocSpace entity the request is scoped to - the room, folder or agent workspace the chat is invoked from. Omit for the portal-wide scope.",
+                      "disabled": true
                     }
                   ]
                 },
-                "description": ""
+                "description": "Resolves the profile bound to an AI action exactly like `resolve-for-action`, but answers with an empty result instead of failing when nothing is configured."
               },
               "response": [
               ]
@@ -7053,7 +7113,7 @@
                     "unassign"
                   ]
                 },
-                "description": ""
+                "description": "Removes the profile binding of an AI action. Does nothing when that slot is already empty."
               },
               "response": [
               ]
@@ -7103,7 +7163,7 @@
                     "agents"
                   ]
                 },
-                "description": ""
+                "description": "Creates an AI agent room in the .NET AI service and binds the supplied `profileId` to it as a `Chat` assignment. The instruction is stored on the room as a prompt-only chat setting; a failed binding is reported as an error even though the room already exists."
               },
               "response": [
               ]
@@ -7141,7 +7201,7 @@
                     "agents"
                   ]
                 },
-                "description": ""
+                "description": "Lists the portal's AI agent rooms. Query parameters are forwarded unchanged to the .NET AI service, which answers with its folder-content payload."
               },
               "response": [
               ]
@@ -7189,11 +7249,11 @@
                     {
                       "key": "id",
                       "value": "",
-                      "description": ""
+                      "description": "The agent identifier."
                     }
                   ]
                 },
-                "description": ""
+                "description": "Deletes an AI agent room."
               },
               "response": [
               ]
@@ -7235,11 +7295,11 @@
                     {
                       "key": "id",
                       "value": "",
-                      "description": ""
+                      "description": "The agent identifier."
                     }
                   ]
                 },
-                "description": ""
+                "description": "Returns one AI agent room, enriched with the `profileId` bound to it so an edit form can prefill the profile selector. A missing assignment simply leaves `profileId` out."
               },
               "response": [
               ]
@@ -7287,11 +7347,11 @@
                     {
                       "key": "id",
                       "value": "",
-                      "description": ""
+                      "description": "The agent identifier."
                     }
                   ]
                 },
-                "description": ""
+                "description": "Updates an AI agent room - title, tags, instruction. `profileId` is not part of the room contract: it is stripped from the forwarded body and re-bound as the agent's assignment afterwards."
               },
               "response": [
               ]
@@ -7336,7 +7396,7 @@
                     "agentquota"
                   ]
                 },
-                "description": ""
+                "description": "Changes the storage quota of the given AI agent rooms."
               },
               "response": [
               ]
@@ -7375,7 +7435,7 @@
                     "news"
                   ]
                 },
-                "description": ""
+                "description": "Lists the new items across the caller's AI agent rooms."
               },
               "response": [
               ]
@@ -7420,7 +7480,7 @@
                     "resetquota"
                   ]
                 },
-                "description": ""
+                "description": "Resets the storage quota of the given AI agent rooms."
               },
               "response": [
               ]
@@ -7471,7 +7531,7 @@
                     "approve-tool-call"
                   ]
                 },
-                "description": ""
+                "description": "Resumes a chat round paused on a tool call. The supplied result is persisted onto the assistant message that issued the call and the stream continues with the augmented history."
               },
               "response": [
               ]
@@ -7516,7 +7576,7 @@
                     "deny-tool-call"
                   ]
                 },
-                "description": ""
+                "description": "Denies the pending tool call and resumes the chat immediately, with `User deny tool call` standing in for the tool result."
               },
               "response": [
               ]
@@ -7561,7 +7621,7 @@
                     "regenerate-stream"
                   ]
                 },
-                "description": ""
+                "description": "Re-rolls the last assistant reply in an existing thread: every message after the last user message (the previous reply plus any tool-call hops) is dropped and a fresh reply is streamed against the unchanged prompt. The thread must already exist and no title is generated."
               },
               "response": [
               ]
@@ -7606,7 +7666,7 @@
                     "send"
                   ]
                 },
-                "description": ""
+                "description": "Runs one AI action: the profile bound to `actionType` (falling back to the `Default` slot) is dispatched against a single-message history. Nothing is persisted - no thread, no title generation, no storage writes."
               },
               "response": [
               ]
@@ -7651,7 +7711,7 @@
                     "send-custom"
                   ]
                 },
-                "description": ""
+                "description": "Runs a free-form one-turn call against a caller-supplied system prompt. No thread, no history and no persistence. The profile is the explicit `profileId` when it resolves, otherwise the `Default` assignment slot."
               },
               "response": [
               ]
@@ -7696,7 +7756,7 @@
                     "send-with-stream"
                   ]
                 },
-                "description": ""
+                "description": "Starts a chat round and streams it back as newline-delimited `ChatEvent` objects. The thread is opened or created, the user message and the reply are persisted, a new thread gets a generated title, and a tool call pauses the round until it is approved or denied."
               },
               "response": [
               ]
@@ -7741,7 +7801,7 @@
                     "send-with-stream-openai"
                   ]
                 },
-                "description": ""
+                "description": "The same chat round as `send-with-stream`, re-encoded as an OpenAI Chat Completions stream of `chat.completion.chunk` objects. Storage, title generation and tool-call pauses are identical - only the wire shape differs; a tool call ends the stream with `finish_reason: tool_calls`."
               },
               "response": [
               ]
@@ -7792,7 +7852,7 @@
                     "delete"
                   ]
                 },
-                "description": ""
+                "description": "Permanently deletes one attachment, whether it is still a draft or already linked to a message."
               },
               "response": [
               ]
@@ -7837,7 +7897,7 @@
                     "delete-many"
                   ]
                 },
-                "description": ""
+                "description": "Permanently deletes a batch of attachments in a single round trip."
               },
               "response": [
               ]
@@ -7882,7 +7942,7 @@
                     "get"
                   ]
                 },
-                "description": ""
+                "description": "Returns one attachment by identifier."
               },
               "response": [
               ]
@@ -7927,7 +7987,7 @@
                     "get-many"
                   ]
                 },
-                "description": ""
+                "description": "Returns a batch of attachments, preserving the requested order; an identifier that no longer exists comes back empty."
               },
               "response": [
               ]
@@ -7972,7 +8032,7 @@
                     "link-to-message"
                   ]
                 },
-                "description": ""
+                "description": "Binds draft attachments to the chat message that owns them, once that message has been persisted, so deleting the message removes them too. Identifiers that no longer exist are skipped."
               },
               "response": [
               ]
@@ -8017,7 +8077,7 @@
                     "save-file"
                   ]
                 },
-                "description": ""
+                "description": "Stores one file attachment as a draft, carrying the host-extracted text of the file. Prefer `save-files-many` when adding several files at once so they land as one round trip."
               },
               "response": [
               ]
@@ -8062,7 +8122,7 @@
                     "save-files-many"
                   ]
                 },
-                "description": ""
+                "description": "Stores a batch of file attachments as drafts in a single round trip. The returned records keep the order of the input."
               },
               "response": [
               ]
@@ -8071,7 +8131,7 @@
         },
         {
           "name": "Vectorization",
-          "description": "",
+          "description": "Vectorization tasks over portal content.",
           "item": [
             {
               "name": "Start a vectorization task",
@@ -8113,7 +8173,7 @@
                     "tasks"
                   ]
                 },
-                "description": ""
+                "description": "Starts a vectorization task over the supplied portal files. The indexing itself runs asynchronously on the .NET side."
               },
               "response": [
               ]
@@ -8164,7 +8224,7 @@
                     "append-user-message"
                   ]
                 },
-                "description": ""
+                "description": "Persists a user message in a thread and bumps the thread's last-edit date so it resurfaces in the sidebar. Optionally rebinds the thread to another profile when the model changed mid-conversation."
               },
               "response": [
               ]
@@ -8209,7 +8269,7 @@
                     "clear-messages"
                   ]
                 },
-                "description": ""
+                "description": "Drops every message of a thread while keeping the thread itself, and bumps its last-edit date."
               },
               "response": [
               ]
@@ -8254,7 +8314,7 @@
                     "create"
                   ]
                 },
-                "description": ""
+                "description": "Creates a chat thread with a caller-supplied title. Use `open-or-create` instead when the title should be generated from the first user message."
               },
               "response": [
               ]
@@ -8299,7 +8359,7 @@
                     "delete"
                   ]
                 },
-                "description": ""
+                "description": "Deletes a chat thread together with its messages."
               },
               "response": [
               ]
@@ -8344,7 +8404,7 @@
                     "delete-message"
                   ]
                 },
-                "description": ""
+                "description": "Deletes one chat message, leaving the rest of the thread untouched."
               },
               "response": [
               ]
@@ -8386,12 +8446,12 @@
                     {
                       "key": "threadId",
                       "value": "threadId_example",
-                      "description": "",
+                      "description": "The chat thread identifier.",
                       "disabled": false
                     }
                   ]
                 },
-                "description": ""
+                "description": "Returns one chat thread, or an empty result when the identifier is unknown."
               },
               "response": [
               ]
@@ -8433,12 +8493,12 @@
                     {
                       "key": "messageId",
                       "value": "messageId_example",
-                      "description": "",
+                      "description": "The globally unique chat message identifier.",
                       "disabled": false
                     }
                   ]
                 },
-                "description": ""
+                "description": "Returns one chat message by its globally unique identifier."
               },
               "response": [
               ]
@@ -8480,30 +8540,30 @@
                     {
                       "key": "entityId",
                       "value": "entityId_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The DocSpace entity the request is scoped to - the room, folder or agent workspace the chat is invoked from. Omit for the portal-wide scope.",
+                      "disabled": true
                     },
                     {
                       "key": "count",
                       "value": "count_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The maximum number of items to return in one page.",
+                      "disabled": true
                     },
                     {
                       "key": "cursor",
                       "value": "cursor_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The keyset pagination cursor: the JSON-encoded sort key of the last item already received. Omit for the first page.",
+                      "disabled": true
                     },
                     {
                       "key": "query",
                       "value": "query_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The full-text query the thread list is filtered by.",
+                      "disabled": true
                     }
                   ]
                 },
-                "description": ""
+                "description": "Lists the chat threads of the scope, most recently edited first. Supports cursor pagination and a server-side case-insensitive title search."
               },
               "response": [
               ]
@@ -8548,7 +8608,7 @@
                     "open-or-create"
                   ]
                 },
-                "description": ""
+                "description": "Opens a chat thread and returns its history, or creates one with a title generated from the supplied first message. That first message is not persisted - the caller decides whether to follow up with `append-user-message`."
               },
               "response": [
               ]
@@ -8590,30 +8650,30 @@
                     {
                       "key": "threadId",
                       "value": "threadId_example",
-                      "description": "",
+                      "description": "The chat thread identifier.",
                       "disabled": false
                     },
                     {
                       "key": "count",
                       "value": "count_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The maximum number of items to return in one page.",
+                      "disabled": true
                     },
                     {
                       "key": "cursor",
                       "value": "cursor_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The keyset pagination cursor: the JSON-encoded sort key of the last item already received. Omit for the first page.",
+                      "disabled": true
                     },
                     {
                       "key": "direction",
                       "value": "direction_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The order the message page is read in. Only desc turns the read around and pages back from the newest message; omit for the forward read.",
+                      "disabled": true
                     }
                   ]
                 },
-                "description": ""
+                "description": "Reads the messages of a thread, with the same cursor pagination as the thread list."
               },
               "response": [
               ]
@@ -8658,7 +8718,7 @@
                     "regenerate-title"
                   ]
                 },
-                "description": ""
+                "description": "Generates a fresh title from the thread's first user message and persists it. Fails when the thread has no user message yet."
               },
               "response": [
               ]
@@ -8703,7 +8763,7 @@
                     "rename"
                   ]
                 },
-                "description": ""
+                "description": "Renames a chat thread and bumps its last-edit date so the new title shows up in the sidebar."
               },
               "response": [
               ]
@@ -8748,7 +8808,7 @@
                     "touch"
                   ]
                 },
-                "description": ""
+                "description": "Bumps a thread's last-edit date, and optionally rebinds it to another profile, when something other than a new message - a model switch, say - should resurface it."
               },
               "response": [
               ]
@@ -8793,7 +8853,7 @@
                     "update-message"
                   ]
                 },
-                "description": ""
+                "description": "Replaces the content of a chat message - used by the edit and regenerate flows that change a message outside the streaming lifecycle."
               },
               "response": [
               ]
@@ -8844,7 +8904,7 @@
                     "create"
                   ]
                 },
-                "description": ""
+                "description": "Creates an AI provider profile. The name must be unique and the credentials are validated against the provider before the profile is stored; the portal's first profile also takes the `Default` assignment slot."
               },
               "response": [
               ]
@@ -8889,7 +8949,7 @@
                     "delete"
                   ]
                 },
-                "description": ""
+                "description": "Deletes an AI provider profile and cleans up the assignments pointing at it - the `Default` slot moves to the first remaining profile, the other slots are unbound."
               },
               "response": [
               ]
@@ -8931,12 +8991,12 @@
                     {
                       "key": "id",
                       "value": "id_example",
-                      "description": "",
+                      "description": "The AI provider profile identifier.",
                       "disabled": false
                     }
                   ]
                 },
-                "description": ""
+                "description": "Returns one AI provider profile, or an empty result when the identifier is unknown."
               },
               "response": [
               ]
@@ -8975,7 +9035,7 @@
                     "list"
                   ]
                 },
-                "description": ""
+                "description": "Lists the portal's AI provider profiles."
               },
               "response": [
               ]
@@ -9017,12 +9077,12 @@
                     {
                       "key": "profileId",
                       "value": "profileId_example",
-                      "description": "",
+                      "description": "The AI provider profile identifier.",
                       "disabled": false
                     }
                   ]
                 },
-                "description": ""
+                "description": "Lists the models the given profile's provider offers, as reported by the provider itself."
               },
               "response": [
               ]
@@ -9067,7 +9127,7 @@
                     "list-provider-models"
                   ]
                 },
-                "description": ""
+                "description": "Lists the models a provider offers for the supplied endpoint and key, before any profile is created from them."
               },
               "response": [
               ]
@@ -9112,7 +9172,7 @@
                     "test-connection"
                   ]
                 },
-                "description": ""
+                "description": "Checks a stored profile's credentials against its provider and reports the provider's own error when the call fails. Nothing is written."
               },
               "response": [
               ]
@@ -9157,7 +9217,7 @@
                     "update"
                   ]
                 },
-                "description": ""
+                "description": "Updates an AI provider profile, re-checking name uniqueness and the provider credentials."
               },
               "response": [
               ]
@@ -9207,7 +9267,7 @@
                     "text-to-docx"
                   ]
                 },
-                "description": ""
+                "description": "Starts an asynchronous markdown-to-docx export. The response only acknowledges the task: the AI Worker converts the content and saves the .docx into the target folder (an agent room resolves to its result-storage subfolder), and completion reaches the client as the usual folder-modified socket event."
               },
               "response": [
               ]
@@ -9216,7 +9276,7 @@
         },
         {
           "name": "Editor tools",
-          "description": "",
+          "description": "DocSpace tool catalog and execution for the editor AI plugin.",
           "item": [
             {
               "name": "Execute a DocSpace tool on behalf of the editor AI plugin",
@@ -9258,7 +9318,7 @@
                     "call"
                   ]
                 },
-                "description": ""
+                "description": "Executes one DocSpace tool on behalf of the document editor's AI plugin, server-side and with the caller's forwarded credentials. Whatever the tool produced is returned for the plugin to relay to the model; a failure comes back as an error payload."
               },
               "response": [
               ]
@@ -9297,7 +9357,7 @@
                     "list"
                   ]
                 },
-                "description": ""
+                "description": "Returns the sanitized catalog of DocSpace tools available to the document editor's AI plugin - the same composed tool set the DocSpace chat sees, minus the web-search pair the editor already has through its own passthrough. Only the name, description, parameters and approval flag of each tool are exposed; transport details never reach the browser."
               },
               "response": [
               ]
@@ -9348,7 +9408,7 @@
                     "clear-deep-mode"
                   ]
                 },
-                "description": ""
+                "description": "Drops the persisted deep-mode toggle of the scope, so later reads fall back to the configured default."
               },
               "response": [
               ]
@@ -9390,12 +9450,12 @@
                     {
                       "key": "entityId",
                       "value": "entityId_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The DocSpace entity the request is scoped to - the room, folder or agent workspace the chat is invoked from. Omit for the portal-wide scope.",
+                      "disabled": true
                     }
                   ]
                 },
-                "description": ""
+                "description": "Returns the deep-mode toggle of the scope, falling back to the configured default when nothing has been persisted."
               },
               "response": [
               ]
@@ -9437,12 +9497,12 @@
                     {
                       "key": "entityId",
                       "value": "entityId_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The DocSpace entity the request is scoped to - the room, folder or agent workspace the chat is invoked from. Omit for the portal-wide scope.",
+                      "disabled": true
                     }
                   ]
                 },
-                "description": ""
+                "description": "Tells whether the scope has an explicitly persisted deep-mode value, whichever way that value is set."
               },
               "response": [
               ]
@@ -9487,7 +9547,7 @@
                     "set-deep-mode"
                   ]
                 },
-                "description": ""
+                "description": "Persists the deep-mode toggle of the scope. Idempotent - there is no need to check whether a value already exists."
               },
               "response": [
               ]
@@ -9538,7 +9598,7 @@
                     "clear"
                   ]
                 },
-                "description": ""
+                "description": "Removes the web-search configuration of the scope. Does nothing when web search was not configured there."
               },
               "response": [
               ]
@@ -9583,7 +9643,7 @@
                     "configure"
                   ]
                 },
-                "description": ""
+                "description": "Validates a web-search configuration against the live provider and stores it only when the provider answers, replacing the previous one in a single write."
               },
               "response": [
               ]
@@ -9625,12 +9685,12 @@
                     {
                       "key": "entityId",
                       "value": "entityId_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The DocSpace entity the request is scoped to - the room, folder or agent workspace the chat is invoked from. Omit for the portal-wide scope.",
+                      "disabled": true
                     }
                   ]
                 },
-                "description": ""
+                "description": "Returns the web-search configuration active in the scope, or an empty result when web search is not configured."
               },
               "response": [
               ]
@@ -9672,12 +9732,12 @@
                     {
                       "key": "entityId",
                       "value": "entityId_example",
-                      "description": "",
-                      "disabled": false
+                      "description": "The DocSpace entity the request is scoped to - the room, folder or agent workspace the chat is invoked from. Omit for the portal-wide scope.",
+                      "disabled": true
                     }
                   ]
                 },
-                "description": ""
+                "description": "Tells whether web search is configured in the scope."
               },
               "response": [
               ]
@@ -9722,7 +9782,7 @@
                     "set-active-config"
                   ]
                 },
-                "description": ""
+                "description": "Stores a web-search configuration without contacting the provider first, for forms that validate locally."
               },
               "response": [
               ]
@@ -9767,7 +9827,7 @@
                     "test-connection"
                   ]
                 },
-                "description": ""
+                "description": "Checks a web-search configuration against the live provider without storing it - for a Test button that must not commit on success."
               },
               "response": [
               ]
@@ -9813,7 +9873,7 @@
                     "contents"
                   ]
                 },
-                "description": ""
+                "description": "Fetches web page contents on behalf of the document editor's AI plugin, against the portal's active web-search provider, the same way as the search passthrough."
               },
               "response": [
               ]
@@ -9859,7 +9919,7 @@
                     "search"
                   ]
                 },
-                "description": ""
+                "description": "Runs a web search on behalf of the document editor's AI plugin. The plugin only holds a placeholder configuration; the portal's active provider and its key are resolved here and never reach the browser."
               },
               "response": [
               ]
@@ -9868,7 +9928,7 @@
         },
         {
           "name": "Settings",
-          "description": "",
+          "description": "Portal-wide, vectorization and per-user AI settings.",
           "item": [
             {
               "name": "Get AI settings",
@@ -9903,7 +9963,7 @@
                     "config"
                   ]
                 },
-                "description": ""
+                "description": "Reports the portal's combined AI configuration and readiness."
               },
               "response": [
               ]
@@ -9942,7 +10002,7 @@
                     "user"
                   ]
                 },
-                "description": ""
+                "description": "Returns the current user's AI settings."
               },
               "response": [
               ]
@@ -9987,7 +10047,7 @@
                     "user"
                   ]
                 },
-                "description": ""
+                "description": "Updates the current user's AI settings."
               },
               "response": [
               ]
@@ -10026,7 +10086,7 @@
                     "vectorization"
                   ]
                 },
-                "description": ""
+                "description": "Returns the portal's vectorization settings."
               },
               "response": [
               ]
@@ -10071,7 +10131,7 @@
                     "vectorization"
                   ]
                 },
-                "description": ""
+                "description": "Updates the portal's vectorization settings."
               },
               "response": [
               ]
@@ -10080,7 +10140,7 @@
         },
         {
           "name": "OpenAI passthrough",
-          "description": "",
+          "description": "OpenAI-compatible endpoints proxied to a profile's provider.",
           "item": [
             {
               "name": "OpenAI-compatible chat completions proxied to the profile's provider",
@@ -10128,11 +10188,11 @@
                     {
                       "key": "profileId",
                       "value": "",
-                      "description": ""
+                      "description": "The AI provider profile identifier."
                     }
                   ]
                 },
-                "description": ""
+                "description": "OpenAI-compatible chat completions for the document editor's AI plugin. The profile is resolved server-side, its credentials are attached, and the body is forwarded to the provider verbatim - the payload is owned by the plugin's SDK on one end and the provider on the other. A client disconnect cancels the provider call."
               },
               "response": [
               ]
@@ -10183,235 +10243,17 @@
                     {
                       "key": "profileId",
                       "value": "",
-                      "description": ""
+                      "description": "The AI provider profile identifier."
                     }
                   ]
                 },
-                "description": ""
+                "description": "OpenAI-compatible image generation for the document editor's AI plugin. As with the chat-completions passthrough, the profile's credentials are attached server-side and the body reaches the provider unchanged."
               },
               "response": [
               ]
             }
           ]
         }
-      ]
-    },
-    {
-      "name": "privacyroom",
-      "description": "",
-      "item": [
-        {
-              "name": "Retrieves the encryption keys associated with a specific privacy room.",
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json",
-                    "description": "",
-                    "disabled": false
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "{{baseUrl}}/api/2.0/privacyroom/:roomId/access",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "api",
-                    "2.0",
-                    "privacyroom",
-                    ":roomId",
-                    "access"
-                  ],
-                  "variable": [
-                    {
-                      "key": "roomId",
-                      "value": "",
-                      "description": "The identifier of the privacy room."
-                    }
-                  ]
-                },
-                "description": "Retrieves the encryption keys associated with a specific privacy room."
-              },
-              "response": [
-              ]
-            },
-        {
-              "name": "Retrieves encryption keys associated with the current user.",
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json",
-                    "description": "",
-                    "disabled": false
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "{{baseUrl}}/api/2.0/privacyroom/keys",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "api",
-                    "2.0",
-                    "privacyroom",
-                    "keys"
-                  ]
-                },
-                "description": "Retrieves encryption keys associated with the current user."
-              },
-              "response": [
-              ]
-            },
-        {
-              "name": "Replaces an existing encryption key with a new one for the user.",
-              "request": {
-                "method": "PUT",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "",
-                    "disabled": false
-                  },
-                  {
-                    "key": "Accept",
-                    "value": "application/json",
-                    "description": "",
-                    "disabled": false
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n \"id\": \"<string>\",\n \"publicKey\": \"<string>\",\n \"privateKeyEnc\": \"<string>\"\n}",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "{{baseUrl}}/api/2.0/privacyroom/keys",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "api",
-                    "2.0",
-                    "privacyroom",
-                    "keys"
-                  ]
-                },
-                "description": "Replaces an existing encryption key with a new one for the user."
-              },
-              "response": [
-              ]
-            },
-        {
-              "name": "Creates and sets encryption keys for the user.",
-              "request": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "",
-                    "disabled": false
-                  },
-                  {
-                    "key": "Accept",
-                    "value": "application/json",
-                    "description": "",
-                    "disabled": false
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n \"id\": \"<string>\",\n \"publicKey\": \"<string>\",\n \"privateKeyEnc\": \"<string>\"\n}",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "{{baseUrl}}/api/2.0/privacyroom/keys",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "api",
-                    "2.0",
-                    "privacyroom",
-                    "keys"
-                  ]
-                },
-                "description": "Creates and sets encryption keys for the user."
-              },
-              "response": [
-              ]
-            },
-        {
-              "name": "Deletes an encryption key and removes it from the system.",
-              "request": {
-                "method": "DELETE",
-                "header": [
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "{{baseUrl}}/api/2.0/privacyroom/keys/:id",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "api",
-                    "2.0",
-                    "privacyroom",
-                    "keys",
-                    ":id"
-                  ],
-                  "variable": [
-                    {
-                      "key": "id",
-                      "value": "",
-                      "description": "The unique identifier of the encryption key to be deleted."
-                    }
-                  ]
-                },
-                "description": "Deletes an encryption key and removes it from the system based on the provided key identifier.    Breaking change in DocSpace 4.0: the endpoint used to answer 200 with the caller's remaining  encryption keys and now answers 204 with no body. A client that read that list must call  `GET api/2.0/privacyroom/keys` instead."
-              },
-              "response": [
-              ]
-            }
       ]
     },
     {
@@ -10633,6 +10475,12 @@
               "request": {
                 "method": "DELETE",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -11192,6 +11040,12 @@
               "request": {
                 "method": "PUT",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -11647,6 +11501,12 @@
               "request": {
                 "method": "DELETE",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -11860,7 +11720,7 @@
     },
     {
       "name": "Apps",
-      "description": "",
+      "description": "Operations for working with portal applications.",
       "item": [
         {
               "name": "Get all apps",
@@ -12101,6 +11961,230 @@
       "description": "Operations for working with rooms.",
       "item": [
         {
+          "name": "Privacy room",
+          "description": "Operations for working with private rooms and their encryption keys.",
+          "item": [
+            {
+              "name": "Retrieves the encryption keys associated with a specific privacy room.",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/2.0/privacyroom/:roomId/access",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "2.0",
+                    "privacyroom",
+                    ":roomId",
+                    "access"
+                  ],
+                  "variable": [
+                    {
+                      "key": "roomId",
+                      "value": "",
+                      "description": "The identifier of the privacy room."
+                    }
+                  ]
+                },
+                "description": "Retrieves the encryption keys associated with a specific privacy room."
+              },
+              "response": [
+              ]
+            },
+            {
+              "name": "Retrieves encryption keys associated with the current user.",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/2.0/privacyroom/keys",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "2.0",
+                    "privacyroom",
+                    "keys"
+                  ]
+                },
+                "description": "Retrieves encryption keys associated with the current user."
+              },
+              "response": [
+              ]
+            },
+            {
+              "name": "Replaces an existing encryption key with a new one for the user.",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n \"id\": \"<string>\",\n \"publicKey\": \"<string>\",\n \"privateKeyEnc\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/2.0/privacyroom/keys",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "2.0",
+                    "privacyroom",
+                    "keys"
+                  ]
+                },
+                "description": "Replaces an existing encryption key with a new one for the user."
+              },
+              "response": [
+              ]
+            },
+            {
+              "name": "Creates and sets encryption keys for the user.",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n \"id\": \"<string>\",\n \"publicKey\": \"<string>\",\n \"privateKeyEnc\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/2.0/privacyroom/keys",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "2.0",
+                    "privacyroom",
+                    "keys"
+                  ]
+                },
+                "description": "Creates and sets encryption keys for the user."
+              },
+              "response": [
+              ]
+            },
+            {
+              "name": "Deletes an encryption key and removes it from the system.",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/2.0/privacyroom/keys/:id",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "2.0",
+                    "privacyroom",
+                    "keys",
+                    ":id"
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "",
+                      "description": "The unique identifier of the encryption key to be deleted."
+                    }
+                  ]
+                },
+                "description": "Deletes an encryption key and removes it from the system based on the provided key identifier.    Breaking change in DocSpace 4.0: the endpoint used to answer 200 with the caller's remaining  encryption keys and now answers 204 with no body. A client that read that list must call  `GET api/2.0/privacyroom/keys` instead."
+              },
+              "response": [
+              ]
+            }
+          ]
+        },
+        {
           "name": "Groups",
           "description": "Operations for managing groups within rooms.",
           "item": [
@@ -12180,13 +12264,6 @@
                     "files",
                     "group"
                   ],
-                  "variable": [
-                    {
-                      "key": "id",
-                      "value": "",
-                      "description": "The group unique identifier."
-                    }
-                  ],
                   "query": [
                     {
                       "key": "includeMembers",
@@ -12206,6 +12283,12 @@
               "request": {
                 "method": "DELETE",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -13443,6 +13526,12 @@
                     "value": "application/json",
                     "description": "",
                     "disabled": false
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
                   }
                 ],
                 "body": {
@@ -13980,6 +14069,12 @@
               "request": {
                 "method": "DELETE",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -14201,6 +14296,12 @@
                     "value": "application/json",
                     "description": "",
                     "disabled": false
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
                   }
                 ],
                 "body": {
@@ -14320,6 +14421,12 @@
                 "header": [
                   {
                     "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  },
+                  {
+                    "key": "Accept",
                     "value": "application/json",
                     "description": "",
                     "disabled": false
@@ -14491,7 +14598,7 @@
                     {
                       "key": "tagName2",
                       "value": "",
-                      "description": ""
+                      "description": "The tag being checked. Send the same value as the `tagName` query parameter, which is the one the handler reads."
                     }
                   ],
                   "query": [
@@ -15843,7 +15950,7 @@
                     {
                       "key": "code",
                       "value": "",
-                      "description": ""
+                      "description": "The two-factor authentication code. Send the same value as the `code` of the request body, which is the one the handler reads."
                     }
                   ]
                 },
@@ -16513,13 +16620,13 @@
                     },
                     {
                       "key": "type",
-                      "value": "Any",
+                      "value": "ServicePayment",
                       "description": "The operation type to filter by.",
                       "disabled": true
                     },
                     {
                       "key": "status",
-                      "value": "Any",
+                      "value": "Completed",
                       "description": "The operation status to filter by.",
                       "disabled": true
                     },
@@ -16633,6 +16740,12 @@
               "request": {
                 "method": "DELETE",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -16914,6 +17027,12 @@
               "request": {
                 "method": "DELETE",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -17038,6 +17157,12 @@
               "request": {
                 "method": "DELETE",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -17306,6 +17431,12 @@
                 "header": [
                   {
                     "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  },
+                  {
+                    "key": "Accept",
                     "value": "application/json",
                     "description": "",
                     "disabled": false
@@ -18091,6 +18222,12 @@
               "request": {
                 "method": "POST",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -18124,6 +18261,12 @@
               "request": {
                 "method": "POST",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -18526,6 +18669,12 @@
               "request": {
                 "method": "PUT",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -18596,6 +18745,12 @@
               "request": {
                 "method": "POST",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -18674,6 +18829,12 @@
               "request": {
                 "method": "POST",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -18706,6 +18867,12 @@
               "request": {
                 "method": "PUT",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -19359,59 +19526,6 @@
               ]
             },
             {
-              "name": "Share a file",
-              "request": {
-                "method": "PUT",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "",
-                    "disabled": false
-                  },
-                  {
-                    "key": "Accept",
-                    "value": "application/json",
-                    "description": "",
-                    "disabled": false
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n \"share\": \"<string>\",\n \"notify\": \"<string>\",\n \"sharingMessage\": \"<string>\"\n}",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "{{baseUrl}}/api/2.0/files/file/:fileId/share",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "api",
-                    "2.0",
-                    "files",
-                    "file",
-                    ":fileId",
-                    "share"
-                  ],
-                  "variable": [
-                    {
-                      "key": "fileId",
-                      "value": "",
-                      "description": "The file ID."
-                    }
-                  ]
-                },
-                "description": "Sets the sharing settings to a file with the ID specified in the request."
-              },
-              "response": [
-              ]
-            },
-            {
               "name": "Get user access rights by file ID",
               "request": {
                 "method": "GET",
@@ -19520,6 +19634,59 @@
               ]
             },
             {
+              "name": "Share a file",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n \"share\": \"<string>\",\n \"notify\": \"<string>\",\n \"sharingMessage\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/2.0/files/file/:id/share",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "2.0",
+                    "files",
+                    "file",
+                    ":id",
+                    "share"
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "",
+                      "description": "The file ID."
+                    }
+                  ]
+                },
+                "description": "Sets the sharing settings to a file with the ID specified in the request."
+              },
+              "response": [
+              ]
+            },
+            {
               "name": "Get folder group members with security information",
               "request": {
                 "method": "GET",
@@ -19594,59 +19761,6 @@
               ]
             },
             {
-              "name": "Share a folder",
-              "request": {
-                "method": "PUT",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "",
-                    "disabled": false
-                  },
-                  {
-                    "key": "Accept",
-                    "value": "application/json",
-                    "description": "",
-                    "disabled": false
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n \"share\": \"<string>\",\n \"notify\": \"<string>\",\n \"sharingMessage\": \"<string>\"\n}",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "{{baseUrl}}/api/2.0/files/folder/:folderId/share",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "api",
-                    "2.0",
-                    "files",
-                    "folder",
-                    ":folderId",
-                    "share"
-                  ],
-                  "variable": [
-                    {
-                      "key": "folderId",
-                      "value": "",
-                      "description": "The folder ID."
-                    }
-                  ]
-                },
-                "description": "Sets the sharing settings to a folder with the ID specified in the request."
-              },
-              "response": [
-              ]
-            },
-            {
               "name": "Get the shared folder information",
               "request": {
                 "method": "GET",
@@ -19703,6 +19817,59 @@
                   ]
                 },
                 "description": "Returns the detailed information about the shared folder with the ID specified in the request."
+              },
+              "response": [
+              ]
+            },
+            {
+              "name": "Share a folder",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n \"share\": \"<string>\",\n \"notify\": \"<string>\",\n \"sharingMessage\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/2.0/files/folder/:id/share",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "2.0",
+                    "files",
+                    "folder",
+                    ":id",
+                    "share"
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "",
+                      "description": "The folder ID."
+                    }
+                  ]
+                },
+                "description": "Sets the sharing settings to a folder with the ID specified in the request."
               },
               "response": [
               ]
@@ -21430,7 +21597,7 @@
                     {
                       "key": "folderId",
                       "value": "",
-                      "description": ""
+                      "description": "The folder unique identifier."
                     }
                   ]
                 },
@@ -21444,6 +21611,12 @@
               "request": {
                 "method": "DELETE",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -21472,7 +21645,7 @@
                     {
                       "key": "folderId",
                       "value": "",
-                      "description": ""
+                      "description": "The folder unique identifier."
                     }
                   ]
                 },
@@ -21991,7 +22164,7 @@
                     {
                       "key": "fileId",
                       "value": "",
-                      "description": ""
+                      "description": "The file unique identifier."
                     }
                   ]
                 },
@@ -22007,6 +22180,12 @@
                 "header": [
                   {
                     "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  },
+                  {
+                    "key": "Accept",
                     "value": "application/json",
                     "description": "",
                     "disabled": false
@@ -22884,6 +23063,12 @@
                     "value": "application/json",
                     "description": "",
                     "disabled": false
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
                   }
                 ],
                 "body": {
@@ -22912,7 +23097,7 @@
                     {
                       "key": "fileId",
                       "value": "",
-                      "description": ""
+                      "description": "The form the role mapping belongs to. Send the same value as the `formId` of the request body, which is the one the handler reads."
                     }
                   ]
                 },
@@ -23251,6 +23436,12 @@
                     "value": "application/json",
                     "description": "",
                     "disabled": false
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
                   }
                 ],
                 "body": {
@@ -23279,7 +23470,7 @@
                     {
                       "key": "fileId",
                       "value": "",
-                      "description": ""
+                      "description": "The form the action applies to. Send the same value as the `formId` of the request body, which is the one the handler reads."
                     }
                   ]
                 },
@@ -24694,6 +24885,12 @@
               "request": {
                 "method": "DELETE",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -27253,6 +27450,12 @@
               "request": {
                 "method": "DELETE",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -27341,6 +27544,12 @@
                 "header": [
                   {
                     "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  },
+                  {
+                    "key": "Accept",
                     "value": "application/json",
                     "description": "",
                     "disabled": false
@@ -27563,6 +27772,12 @@
                     "value": "application/json",
                     "description": "",
                     "disabled": false
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
                   }
                 ],
                 "body": {
@@ -27733,7 +27948,7 @@
         },
         {
           "name": "DocsCloud",
-          "description": "",
+          "description": "Operations for working with DocsCloud settings.",
           "item": [
             {
               "name": "Calculate the DocsCloud subscription switch cost",
@@ -27862,7 +28077,7 @@
                     {
                       "key": "refresh",
                       "value": "true",
-                      "description": "",
+                      "description": "Specifies whether to bypass the cache and request the tenant from DocsCloud again.",
                       "disabled": true
                     }
                   ]
@@ -27910,7 +28125,7 @@
                     {
                       "key": "refresh",
                       "value": "true",
-                      "description": "",
+                      "description": "Specifies whether to bypass the cache and request the tenant configuration from DocsCloud again.",
                       "disabled": true
                     }
                   ]
@@ -28004,7 +28219,7 @@
                     {
                       "key": "refresh",
                       "value": "true",
-                      "description": "",
+                      "description": "Specifies whether to bypass the cache and request the tenant information from DocsCloud again.",
                       "disabled": true
                     }
                   ]
@@ -28052,7 +28267,7 @@
                     {
                       "key": "refresh",
                       "value": "true",
-                      "description": "",
+                      "description": "Specifies whether to bypass the cache and request the user quota from DocsCloud again.",
                       "disabled": true
                     }
                   ]
@@ -28149,6 +28364,12 @@
               "request": {
                 "method": "DELETE",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -28217,7 +28438,7 @@
                     {
                       "key": "refresh",
                       "value": "true",
-                      "description": "",
+                      "description": "Specifies whether to bypass the cache and request the usage statistics from DocsCloud again.",
                       "disabled": true
                     }
                   ]
@@ -30707,6 +30928,12 @@
               "request": {
                 "method": "DELETE",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -30869,6 +31096,12 @@
               "request": {
                 "method": "DELETE",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",
@@ -31335,6 +31568,12 @@
               "request": {
                 "method": "PUT",
                 "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                  }
                 ],
                 "body": {
                   "mode": "raw",

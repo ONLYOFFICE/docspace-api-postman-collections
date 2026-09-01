@@ -7,7 +7,7 @@
 - Added the reworked AI API surface as new folders under `AI`: `AI`, `Assignments`, `Attachments`, `Editor tools`, `Export`, `OpenAI passthrough`, `Preferences`, `Profiles`, `Prompts`, `Threads`, `Tools`, `Web search`
 - Added the per-user AI settings requests `Get user AI settings` (`GET /api/2.0/ai/config/user`) and `Update user AI settings` (`PUT /api/2.0/ai/config/user`), together with `Get AI settings` (`GET /api/2.0/ai/config`) and the vectorization settings requests
 - Added the `Apps` folder (`/api/2.0/apps`): get all apps, get a single app, enable or disable an app, get and save the app settings
-- Added the `privacyroom` folder (`/api/2.0/privacyroom`): create, replace and delete the user encryption keys, read the keys of the current user and the keys of a privacy room
+- Added the `Rooms / Privacy room` folder (`/api/2.0/privacyroom`): create, replace and delete the user encryption keys, read the keys of the current user and the keys of a privacy room
 - Added the `Settings / DocsCloud` folder (`/api/2.0/settings/docscloud`): the tenant, tenant configuration, information, quota and usage requests, the trial start, the DocsCloudDevPack switch and its cost calculation
 - Added the asynchronous report requests (start / status / terminate) for the audit trail, the login history, the folder history, the customer service and monthly usage, and the DocsCloud tenant quota
 - Added the file encryption requests `Get file encryption information` and `Set file encryption information` (`/api/2.0/files/{fileId}/access`), and `Get file encryption keys` (`GET /api/2.0/files/file/{fileId}/publickeys`)
